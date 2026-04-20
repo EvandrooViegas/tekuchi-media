@@ -24,16 +24,45 @@ def compare_word_lists(str1: List[str], str2: List[str]):
 async def create_thumbnails(files: List[UploadFile] = File(...)):
     results = []
     
+    # Final container dimensions
+    TARGET_W = 661
+    TARGET_H = 931
+    
     for file in files:
         pdf_bytes = await file.read()
         doc = fitz.open(stream=pdf_bytes, filetype="pdf")
         
         if len(doc) > 0:
             page = doc[0]
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), colorspace=fitz.csRGB)
-            img_data = pix.tobytes("jpg")
+            rect = page.rect
             
-            # Encode to base64 so we can send multiple in one JSON response
+            # 1. Calculate the 'Fit' factor
+            ratio_w = TARGET_W / rect.width
+            ratio_h = TARGET_H / rect.height
+            scaling_factor = min(ratio_w, ratio_h)
+            
+            # 2. Render the PDF page to an image
+            mat = fitz.Matrix(scaling_factor, scaling_factor)
+            pix = page.get_pixmap(matrix=mat, colorspace=fitz.csRGB)
+            
+            # 3. Create the blank white canvas (661x931)
+            # We use an IRect to define the exact boundaries
+            final_canvas = fitz.Pixmap(fitz.csRGB, fitz.IRect(0, 0, TARGET_W, TARGET_H))
+            final_canvas.clear_with(255) # Fill with white
+            
+            # 4. Calculate the center position
+            x_offset = int((TARGET_W - pix.width) / 2)
+            y_offset = int((TARGET_H - pix.height) / 2)
+            
+            # 5. THE FIX: Shift the rendered image's internal coordinates
+            pix.set_origin(x_offset, y_offset)
+            
+            # 6. Paste the shifted image onto the white canvas
+            final_canvas.copy(pix, pix.irect)
+            
+            # 7. Convert to JPG bytes
+            img_data = final_canvas.tobytes("jpg")
+            
             base64_img = base64.b64encode(img_data).decode('utf-8')
             results.append({
                 "fileName": file.filename,
@@ -41,7 +70,7 @@ async def create_thumbnails(files: List[UploadFile] = File(...)):
             })
             
     return {"thumbnails": results}
-    
+
 @app.get("/ping")
 async def ping():
     return {"ping": "pong"}
