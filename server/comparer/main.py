@@ -36,31 +36,38 @@ async def create_thumbnails(files: List[UploadFile] = File(...)):
             page = doc[0]
             rect = page.rect
             
-            # 1. Calculate the 'Fit' factor
+            # 1. Calculate ratios for both width and height
             ratio_w = TARGET_W / rect.width
             ratio_h = TARGET_H / rect.height
-            scaling_factor = min(ratio_w, ratio_h)
             
-            # 2. Render the PDF page to an image
+            # 2. Use MAX to ensure the canvas is completely filled.
+            # This acts exactly like CSS `object-fit: cover`.
+            scaling_factor = max(ratio_w, ratio_h)
             mat = fitz.Matrix(scaling_factor, scaling_factor)
+            
+            # 3. Create the rendered image of the PDF page
             pix = page.get_pixmap(matrix=mat, colorspace=fitz.csRGB)
             
-            # 3. Create the blank white canvas (661x931)
-            # We use an IRect to define the exact boundaries
+            # 4. Create the blank canvas (661x931)
             final_canvas = fitz.Pixmap(fitz.csRGB, fitz.IRect(0, 0, TARGET_W, TARGET_H))
-            final_canvas.clear_with(255) # Fill with white
             
-            # 4. Calculate the center position
+            # We still clear with white just in case of transparent PDFs, 
+            # though it will be completely covered by the image.
+            final_canvas.clear_with(255) 
+            
+            # 5. Calculate the center position
+            # Because we used max(), pix.width/height are now equal to OR larger than TARGET.
+            # This makes the offset negative, which perfectly centers the crop.
             x_offset = int((TARGET_W - pix.width) / 2)
             y_offset = int((TARGET_H - pix.height) / 2)
             
-            # 5. THE FIX: Shift the rendered image's internal coordinates
+            # 6. Shift the image coordinates
             pix.set_origin(x_offset, y_offset)
             
-            # 6. Paste the shifted image onto the white canvas
+            # 7. Stamp the image. The parts hanging outside the 661x931 canvas are cropped off.
             final_canvas.copy(pix, pix.irect)
             
-            # 7. Convert to JPG bytes
+            # 8. Convert to JPG bytes
             img_data = final_canvas.tobytes("jpg")
             
             base64_img = base64.b64encode(img_data).decode('utf-8')
