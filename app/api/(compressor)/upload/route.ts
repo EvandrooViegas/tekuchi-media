@@ -14,7 +14,7 @@ export async function POST(req: Request) {
 const paths = getProcessorPaths();
   // Use the 'inbox' path from the config
   const dest = path.join(paths.inbox, filename); 
-
+  console.log("😁😁😀😀: ", dest)
   const writeStream = fs.createWriteStream(dest);
 
   try {

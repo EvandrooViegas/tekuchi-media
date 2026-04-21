@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 # ── Config ────────────────────────────────────────────────────────────────────
 SCRIPT_DIR  = Path(__file__).parent
-CONFIG_FILE = SCRIPT_DIR / "config.ini"
+CONFIG_FILE = SCRIPT_DIR.parent.parent / "config.ini"
 LOG_FILE    = SCRIPT_DIR / "log.json"
 LOG_TEXT    = SCRIPT_DIR / "converter.log"
 CANCEL_FILE = SCRIPT_DIR / "cancel_requests.txt"

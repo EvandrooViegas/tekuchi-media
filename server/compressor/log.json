@@ -1,731 +1,146 @@
 {
   "jobs": [
     {
-      "file": "foto-de-alta-resolucao-definicao.jpg",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:04:45.443522",
-      "outputs": [
-        "foto-de-alta-resolucao-definic_20260414_160444.jpg"
-      ],
-      "error": null,
-      "duration_s": 1.2,
-      "orig_kb": 146,
-      "final_kb": 146
-    },
-    {
-      "file": "Screenshot (1).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:07.722008",
-      "outputs": [
-        "Screenshot (1)_20260414_164107.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 1773,
-      "final_kb": 1773
-    },
-    {
-      "file": "Screenshot (10).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:08.002080",
-      "outputs": [
-        "Screenshot (10)_20260414_164107.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3088,
-      "final_kb": 3088
-    },
-    {
-      "file": "Screenshot (11).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:08.246767",
-      "outputs": [
-        "Screenshot (11)_20260414_164108.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 1478,
-      "final_kb": 1478
-    },
-    {
-      "file": "Screenshot (12).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:08.490801",
-      "outputs": [
-        "Screenshot (12)_20260414_164108.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 1478,
-      "final_kb": 1478
-    },
-    {
-      "file": "Screenshot (13).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:09.081756",
-      "outputs": [
-        "Screenshot (13)_20260414_164108.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 1478,
-      "final_kb": 1478
-    },
-    {
-      "file": "Screenshot (14).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:09.339750",
-      "outputs": [
-        "Screenshot (14)_20260414_164109.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3235,
-      "final_kb": 3235
-    },
-    {
-      "file": "Screenshot (15).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:09.601318",
-      "outputs": [
-        "Screenshot (15)_20260414_164109.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3176,
-      "final_kb": 3176
-    },
-    {
-      "file": "Screenshot (16).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:09.801026",
-      "outputs": [
-        "Screenshot (16)_20260414_164109.png"
-      ],
-      "error": null,
-      "duration_s": 0.1,
-      "orig_kb": 689,
-      "final_kb": 689
-    },
-    {
-      "file": "Screenshot (17).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:10.357212",
-      "outputs": [
-        "Screenshot (17)_20260414_164110.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3186,
-      "final_kb": 3186
-    },
-    {
-      "file": "Screenshot (18).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:10.625754",
-      "outputs": [
-        "Screenshot (18)_20260414_164110.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3789,
-      "final_kb": 3789
-    },
-    {
-      "file": "Screenshot (19).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:10.913711",
-      "outputs": [
-        "Screenshot (19)_20260414_164110.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3896,
-      "final_kb": 3896
-    },
-    {
-      "file": "Screenshot (2).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:11.123614",
-      "outputs": [
-        "Screenshot (2)_20260414_164110.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 738,
-      "final_kb": 738
-    },
-    {
-      "file": "Screenshot (20).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:11.619429",
-      "outputs": [
-        "Screenshot (20)_20260414_164111.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3898,
-      "final_kb": 3898
-    },
-    {
-      "file": "Screenshot (21).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:11.879230",
-      "outputs": [
-        "Screenshot (21)_20260414_164111.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3893,
-      "final_kb": 3893
-    },
-    {
-      "file": "Screenshot (22).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:12.149170",
-      "outputs": [
-        "Screenshot (22)_20260414_164111.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3896,
-      "final_kb": 3896
-    },
-    {
-      "file": "Screenshot (23).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:12.435383",
-      "outputs": [
-        "Screenshot (23)_20260414_164112.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3906,
-      "final_kb": 3906
-    },
-    {
-      "file": "Screenshot (24).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:12.732757",
-      "outputs": [
-        "Screenshot (24)_20260414_164112.png"
-      ],
-      "error": null,
-      "duration_s": 0.3,
-      "orig_kb": 3896,
-      "final_kb": 3896
-    },
-    {
-      "file": "Screenshot (25).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:13.003199",
-      "outputs": [
-        "Screenshot (25)_20260414_164112.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3908,
-      "final_kb": 3908
-    },
-    {
-      "file": "Screenshot (26).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:13.287490",
-      "outputs": [
-        "Screenshot (26)_20260414_164113.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3902,
-      "final_kb": 3902
-    },
-    {
-      "file": "Screenshot (27).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:13.555125",
-      "outputs": [
-        "Screenshot (27)_20260414_164113.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3888,
-      "final_kb": 3888
-    },
-    {
-      "file": "Screenshot (28).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:13.827588",
-      "outputs": [
-        "Screenshot (28)_20260414_164113.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3910,
-      "final_kb": 3910
-    },
-    {
-      "file": "Screenshot (29).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:14.106236",
-      "outputs": [
-        "Screenshot (29)_20260414_164113.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3889,
-      "final_kb": 3889
-    },
-    {
-      "file": "Screenshot (3).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:14.352691",
-      "outputs": [
-        "Screenshot (3)_20260414_164114.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 2049,
-      "final_kb": 2049
-    },
-    {
-      "file": "Screenshot (30).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:14.618241",
-      "outputs": [
-        "Screenshot (30)_20260414_164114.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3914,
-      "final_kb": 3914
-    },
-    {
-      "file": "Screenshot (31).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:14.885688",
-      "outputs": [
-        "Screenshot (31)_20260414_164114.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3883,
-      "final_kb": 3883
-    },
-    {
-      "file": "Screenshot (32).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:15.134820",
-      "outputs": [
-        "Screenshot (32)_20260414_164114.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3870,
-      "final_kb": 3870
-    },
-    {
-      "file": "Screenshot (33).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:15.390015",
-      "outputs": [
-        "Screenshot (33)_20260414_164115.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3897,
-      "final_kb": 3897
-    },
-    {
-      "file": "Screenshot (34).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:15.807381",
-      "outputs": [
-        "Screenshot (34)_20260414_164115.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3897,
-      "final_kb": 3897
-    },
-    {
-      "file": "Screenshot (35).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:16.072587",
-      "outputs": [
-        "Screenshot (35)_20260414_164115.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3901,
-      "final_kb": 3901
-    },
-    {
-      "file": "Screenshot (36).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:16.321342",
-      "outputs": [
-        "Screenshot (36)_20260414_164116.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3905,
-      "final_kb": 3905
-    },
-    {
-      "file": "Screenshot (37).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:16.578330",
-      "outputs": [
-        "Screenshot (37)_20260414_164116.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3910,
-      "final_kb": 3910
-    },
-    {
-      "file": "Screenshot (38).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:16.958758",
-      "outputs": [
-        "Screenshot (38)_20260414_164116.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3888,
-      "final_kb": 3888
-    },
-    {
-      "file": "Screenshot (39).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:17.205869",
-      "outputs": [
-        "Screenshot (39)_20260414_164116.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3876,
-      "final_kb": 3876
-    },
-    {
-      "file": "Screenshot (4).png",
+      "file": "unnamed (1).jpg",
       "kind": "image",
       "status": "success",
-      "timestamp": "2026-04-14T16:41:18.455904",
+      "timestamp": "2026-04-21T15:34:57.813018",
       "outputs": [
-        "Screenshot (4)_20260414_164117.png"
-      ],
-      "error": null,
-      "duration_s": 1.2,
-      "orig_kb": 4622,
-      "final_kb": 1463
-    },
-    {
-      "file": "Screenshot (40).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:18.723927",
-      "outputs": [
-        "Screenshot (40)_20260414_164118.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3902,
-      "final_kb": 3902
-    },
-    {
-      "file": "Screenshot (41).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:18.988935",
-      "outputs": [
-        "Screenshot (41)_20260414_164118.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3899,
-      "final_kb": 3899
-    },
-    {
-      "file": "Screenshot (42).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:19.256913",
-      "outputs": [
-        "Screenshot (42)_20260414_164119.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3899,
-      "final_kb": 3899
-    },
-    {
-      "file": "Screenshot (43).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:19.500461",
-      "outputs": [
-        "Screenshot (43)_20260414_164119.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3899,
-      "final_kb": 3899
-    },
-    {
-      "file": "Screenshot (44).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:19.755461",
-      "outputs": [
-        "Screenshot (44)_20260414_164119.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3900,
-      "final_kb": 3900
-    },
-    {
-      "file": "Screenshot (45).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:20.006814",
-      "outputs": [
-        "Screenshot (45)_20260414_164119.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 3879,
-      "final_kb": 3879
-    },
-    {
-      "file": "Screenshot (46).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:20.237927",
-      "outputs": [
-        "Screenshot (46)_20260414_164120.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 2830,
-      "final_kb": 2830
-    },
-    {
-      "file": "Screenshot (47).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:20.441771",
-      "outputs": [
-        "Screenshot (47)_20260414_164120.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 2250,
-      "final_kb": 2250
-    },
-    {
-      "file": "Screenshot (48).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:20.659550",
-      "outputs": [
-        "Screenshot (48)_20260414_164120.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 2254,
-      "final_kb": 2254
-    },
-    {
-      "file": "Screenshot (49).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:20.873037",
-      "outputs": [
-        "Screenshot (49)_20260414_164120.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 2250,
-      "final_kb": 2250
-    },
-    {
-      "file": "Screenshot (5).png",
-      "kind": "image",
-      "status": "success",
-      "timestamp": "2026-04-14T16:41:22.290956",
-      "outputs": [
-        "Screenshot (5)_20260414_164120.png"
-      ],
-      "error": null,
-      "duration_s": 1.4,
-      "orig_kb": 4622,
-      "final_kb": 1463
-    },
-    {
-      "file": "Screenshot (50).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:22.488871",
-      "outputs": [
-        "Screenshot (50)_20260414_164122.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 2054,
-      "final_kb": 2054
-    },
-    {
-      "file": "Screenshot (51).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:22.676701",
-      "outputs": [
-        "Screenshot (51)_20260414_164122.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 2061,
-      "final_kb": 2061
-    },
-    {
-      "file": "Screenshot (52).png",
-      "kind": "image",
-      "status": "success",
-      "timestamp": "2026-04-14T16:41:23.954251",
-      "outputs": [
-        "Screenshot (52)_20260414_164122.png"
+        "unnamed (1)_20260421_153456.jpg"
       ],
       "error": null,
       "duration_s": 1.3,
-      "orig_kb": 7435,
-      "final_kb": 2427
+      "orig_kb": 133,
+      "final_kb": 81
     },
     {
-      "file": "Screenshot (53).png",
+      "file": "HD_top_3001-A.jpg",
       "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:24.112705",
+      "status": "success",
+      "timestamp": "2026-04-21T15:35:16.485445",
       "outputs": [
-        "Screenshot (53)_20260414_164123.png"
+        "HD_top_3001-A_20260421_153516.jpg"
+      ],
+      "error": null,
+      "duration_s": 0.2,
+      "orig_kb": 835,
+      "final_kb": 688
+    },
+    {
+      "file": "0331.mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-21T15:37:28.269594",
+      "outputs": [
+        "0331_20260421_153534.mp4",
+        "0331_20260421_153534.webm",
+        "0331_thumb_02s.jpg",
+        "0331_thumb_03s.jpg",
+        "0331_thumb_04s.jpg",
+        "0331_thumb_05s.jpg",
+        "0331_thumb_06s.jpg",
+        "0331_thumb_07s.jpg",
+        "0331_thumb_08s.jpg",
+        "0331_thumb_09s.jpg",
+        "0331_thumb_10s.jpg",
+        "0331_thumb_11s.jpg"
+      ],
+      "error": null,
+      "duration_s": 113.5,
+      "orig_kb": 21271,
+      "final_kb": 30176,
+      "thumb_count": 10
+    },
+    {
+      "file": "HD_center_3001-A (1).jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-21T15:37:28.501453",
+      "outputs": [
+        "HD_center_3001-A (1)_20260421_153728.jpg"
+      ],
+      "error": null,
+      "duration_s": 0.2,
+      "orig_kb": 886,
+      "final_kb": 730
+    },
+    {
+      "file": "HD_center_3001-A.jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-21T15:37:28.613588",
+      "outputs": [
+        "HD_center_3001-A_20260421_153728.jpg"
       ],
       "error": null,
       "duration_s": 0.1,
-      "orig_kb": 214,
-      "final_kb": 214
+      "orig_kb": 27,
+      "final_kb": 22
     },
     {
-      "file": "Screenshot (6).png",
+      "file": "HD_center_dg_brochure_v1747758206.jpg",
       "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:24.367985",
-      "outputs": [
-        "Screenshot (6)_20260414_164124.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 4685,
-      "final_kb": 4685
-    },
-    {
-      "file": "Screenshot (7).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:24.620043",
-      "outputs": [
-        "Screenshot (7)_20260414_164124.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 4684,
-      "final_kb": 4684
-    },
-    {
-      "file": "Screenshot (8).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:24.865312",
-      "outputs": [
-        "Screenshot (8)_20260414_164124.png"
-      ],
-      "error": null,
-      "duration_s": 0.2,
-      "orig_kb": 4531,
-      "final_kb": 4531
-    },
-    {
-      "file": "Screenshot (9).png",
-      "kind": "image",
-      "status": "Original kept (optimal)",
-      "timestamp": "2026-04-14T16:41:25.128070",
-      "outputs": [
-        "Screenshot (9)_20260414_164124.png"
-      ],
-      "error": null,
-      "duration_s": 0.3,
-      "orig_kb": 4775,
-      "final_kb": 4775
-    },
-    {
-      "file": "Chase_Claremont_Teaser.mp4",
-      "kind": "video",
       "status": "success",
-      "timestamp": "2026-04-14T16:45:42.166448",
+      "timestamp": "2026-04-21T15:37:28.755480",
       "outputs": [
-        "Chase_Claremont_Teaser_20260414_164522.mp4",
-        "Chase_Claremont_Teaser_20260414_164522.webm",
-        "Chase_Claremont_Teaser_thumb_02s.jpg",
-        "Chase_Claremont_Teaser_thumb_03s.jpg",
-        "Chase_Claremont_Teaser_thumb_04s.jpg",
-        "Chase_Claremont_Teaser_thumb_05s.jpg",
-        "Chase_Claremont_Teaser_thumb_06s.jpg",
-        "Chase_Claremont_Teaser_thumb_07s.jpg",
-        "Chase_Claremont_Teaser_thumb_08s.jpg",
-        "Chase_Claremont_Teaser_thumb_09s.jpg",
-        "Chase_Claremont_Teaser_thumb_10s.jpg",
-        "Chase_Claremont_Teaser_thumb_11s.jpg"
+        "HD_center_dg_brochure_v1747758_20260421_153728.jpg"
       ],
       "error": null,
-      "duration_s": 20.0,
-      "orig_kb": 33898,
-      "final_kb": 19144,
-      "thumb_count": 10
+      "duration_s": 0.1,
+      "orig_kb": 210,
+      "final_kb": 152
+    },
+    {
+      "file": "HD_center_thumb_dataloft_dagenham_green_v1747757073.jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-21T15:37:28.905261",
+      "outputs": [
+        "HD_center_thumb_dataloft_dagen_20260421_153728.jpg"
+      ],
+      "error": null,
+      "duration_s": 0.1,
+      "orig_kb": 374,
+      "final_kb": 300
+    },
+    {
+      "file": "HD_top_3001-A (1).jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-21T15:37:29.011565",
+      "outputs": [
+        "HD_top_3001-A (1)_20260421_153728.jpg"
+      ],
+      "error": null,
+      "duration_s": 0.1,
+      "orig_kb": 25,
+      "final_kb": 20
+    },
+    {
+      "file": "HD_top_3001-A (2).jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-21T15:37:29.177211",
+      "outputs": [
+        "HD_top_3001-A (2)_20260421_153729.jpg"
+      ],
+      "error": null,
+      "duration_s": 0.2,
+      "orig_kb": 835,
+      "final_kb": 688
+    },
+    {
+      "file": "HD_top_3001-A.jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-21T15:37:29.346435",
+      "outputs": [
+        "HD_top_3001-A_20260421_153729.jpg"
+      ],
+      "error": null,
+      "duration_s": 0.2,
+      "orig_kb": 835,
+      "final_kb": 688
     }
   ]
 }
