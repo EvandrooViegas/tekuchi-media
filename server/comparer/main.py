@@ -11,8 +11,12 @@ import shutil
 import uuid
 from datetime import datetime
 from pathlib import Path
+from apscheduler.schedulers.background import BackgroundScheduler
+from contextlib import asynccontextmanager
 
-app = FastAPI()
+
+
+
 
 # --- Load Shared Config ---
 config = configparser.ConfigParser()
@@ -26,8 +30,6 @@ root_dir = os.path.abspath(os.path.join(current_dir, "..", ".."))
 # 3. Target the config file at the root
 config_path = os.path.join(root_dir, "config.ini")
 
-# Debug print (optional, helps you see exactly where it's looking)
-print(f"Looking for config at: {config_path}")
 
 if not os.path.exists(config_path):
     raise FileNotFoundError(f"Could not find config.ini at {config_path}")
@@ -40,6 +42,61 @@ if 'paths' not in config:
 
 CROP_INBOX = config['paths']['cropper_inbox']
 CROP_PROCESSED = config['paths']['cropper_processed']
+
+# --- Load Interval from Config ---
+# 'interval' is in [general] section, default to 900 if not found
+POLL_INTERVAL = config.getint('general', 'interval', fallback=5)
+
+# --- Scheduler Setup ---
+def auto_run_job():
+    """Wrapper to run the batch process automatically."""
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Auto-checking folder for images...")
+    # We use a non-async call to our run_batch logic
+    import asyncio
+    asyncio.run(run_batch())
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(auto_run_job, 'interval', seconds=POLL_INTERVAL)
+
+
+
+# --- Load Shared Config ---
+config = configparser.ConfigParser()
+
+# 1. Get the directory of main.py (server/comparer)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Go up two levels to the root (comparer -> server -> root)
+root_dir = os.path.abspath(os.path.join(current_dir, "..", ".."))
+
+# 3. Target the config file at the root
+config_path = os.path.join(root_dir, "config.ini")
+
+
+if not os.path.exists(config_path):
+    raise FileNotFoundError(f"Could not find config.ini at {config_path}")
+
+config.read(config_path)
+
+# Verify 'paths' exists
+if 'paths' not in config:
+    raise KeyError(f"The config file at {config_path} is missing the [paths] section.")
+
+CROP_INBOX = config['paths']['cropper_inbox']
+CROP_PROCESSED = config['paths']['cropper_processed']
+# This handles starting/stopping the scheduler with the FastAPI app
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    scheduler.start()
+    print(f"Automation Started: Checking folder every {POLL_INTERVAL}s")
+    yield
+    scheduler.shutdown()
+
+
+# Update your FastAPI app initialization to use the lifespan
+app = FastAPI(lifespan=lifespan)
+
+
 
 def compare_word_lists(str1: List[str], str2: List[str]):
     # A simple but effective method to categorize text changes
