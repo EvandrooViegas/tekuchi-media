@@ -38,6 +38,8 @@ if "%LOCAL_HASH%" NEQ "%REMOTE_HASH%" (
     echo.
     echo [UPDATE] New version found on GitHub!
     
+    if exist ".git\index.lock" del /f /q ".git\index.lock"
+    
     :: 1. Kill the specific Manager window
     echo [KILL] Closing old Manager window...
     taskkill /fi "windowtitle eq Tekuchi Suite - Dev Manager" /f >nul 2>&1
