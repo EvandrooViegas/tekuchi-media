@@ -30,7 +30,8 @@ echo [START] Launching Frontend...
 start /b "Next" cmd /c "cd /d "%FRONTEND_DIR%" && npm run dev >> "%LOG_DIR%\frontend.log" 2>&1"
 
 echo -------------------------------------------------------
-echo SERVICES ACTIVE. API: :8000 | Frontend: :3000
+:: FIXED LINE: Changed the pipe to a hyphen so batch doesn't break
+echo SERVICES ACTIVE. API: 8000 - Frontend: 3000
 echo -------------------------------------------------------
 
 :monitor
