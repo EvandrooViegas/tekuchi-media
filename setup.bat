@@ -1,6 +1,6 @@
 @echo off
-setlocal
-title Tekuchi Suite - Dev Manager
+setlocal enabledelayedexpansion
+title Tekuchi Suite: Dev Manager
 
 :: 1. SETTINGS
 set "PYTHON=python"
@@ -9,73 +9,60 @@ set "SERVER_DIR=%~dp0server\comparer"
 set "FRONTEND_DIR=%~dp0"
 
 :init_services
+cls
 echo --- Tekuchi Suite: Dev Manager ---
 echo --------------------------------------------------------
 
-:: 2. PREREQUISITE CHECKS
-echo [CHECK] Verifying environment...
-%PYTHON% --version >nul 2>&1 || (echo [ERROR] Python not found & pause & exit)
-call npm -v >nul 2>&1 || (echo [ERROR] Node.js not found & pause & exit)
+:: 2. AUTO-INSTALL DEPENDENCIES
+echo [CHECK] Updating Python & Node dependencies...
+%PYTHON% -m pip install -r "%SERVER_DIR%\requirements.txt" >nul 2>&1
+call npm install --prefix "%FRONTEND_DIR%" --no-audit --no-fund >nul 2>&1
 
-:: 3. CLEANUP & PREP
+:: 3. CLEANUP OLD PROCESSES
 if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
-
-echo [AUTO] Killing existing Python and Node processes...
+echo [AUTO] Resetting processes...
 taskkill /f /im python.exe >nul 2>&1
 taskkill /f /im node.exe >nul 2>&1
 timeout /t 1 >nul
 
-:: Clear log files for a fresh start
-copy /y nul "%LOG_DIR%\api.log" >nul 2>&1
-copy /y nul "%LOG_DIR%\frontend.log" >nul 2>&1
-
-:: 4. LAUNCH SERVICES
+:: 4. LAUNCH SERVICES IN BACKGROUND
+:: Using 'start /b' is critical here so they don't take over this window
 echo [AUTO] Starting Backend (API)...
-:: Runs pip install then launches Uvicorn
-start /b "Tekuchi_API" cmd /c "cd /d "%SERVER_DIR%" && %PYTHON% -m pip install -r requirements.txt >> "%LOG_DIR%\api.log" 2>&1 && %PYTHON% -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload >> "%LOG_DIR%\api.log" 2>&1"
+start /b "API" cmd /c "cd /d "%SERVER_DIR%" && %PYTHON% -m uvicorn main:app --host 0.0.0.0 --port 8000 >> "%LOG_DIR%\api.log" 2>&1"
 
 echo [AUTO] Starting Frontend (Next.js)...
-:: Always runs npm install (it only installs what is missing, fixing the update issue)
-start /b "Tekuchi_Frontend" cmd /c "cd /d "%FRONTEND_DIR%" && npm install --no-audit --no-fund && npm run dev >> "%LOG_DIR%\frontend.log" 2>&1"
+start /b "Next" cmd /c "cd /d "%FRONTEND_DIR%" && npm run dev >> "%LOG_DIR%\frontend.log" 2>&1"
 
 echo --------------------------------------------------------
-echo [SUCCESS] Services are launching in the background.
-echo API: http://localhost:8000
-echo Frontend: http://localhost:3000
+echo [SUCCESS] Services are running in background.
+echo API: http://localhost:8000 | Frontend: http://localhost:3000
 echo --------------------------------------------------------
 
 :monitor
 echo.
-echo COMMANDS: [ LOGS | FLOGS | RESTART | STOP ]
-set /p userinput="Enter Command: "
+set "choice="
+:: This prompt keeps the window alive and waits for your input
+set /p choice="Enter Command [ LOGS | FLOGS | RESTART | STOP ]: "
 
-if /i "%userinput%"=="LOGS"    goto do_logs
-if /i "%userinput%"=="FLOGS"   goto do_flogs
-if /i "%userinput%"=="RESTART" goto do_restart
-if /i "%userinput%"=="STOP"    goto do_stop
+if /i "%choice%"=="LOGS"    goto do_logs
+if /i "%choice%"=="FLOGS"   goto do_flogs
+if /i "%choice%"=="RESTART" goto do_restart
+if /i "%choice%"=="STOP"    goto do_stop
+echo Invalid input.
 goto monitor
 
 :do_logs
-echo Opening API logs...
-start "API Logs" powershell -command "if(Test-Path '%LOG_DIR%\api.log'){ Get-Content '%LOG_DIR%\api.log' -Wait } else { Write-Host 'Log file not created yet.' }"
+start powershell -command "Get-Content '%LOG_DIR%\api.log' -Wait"
 goto monitor
 
 :do_flogs
-echo Opening Frontend logs...
-start "Frontend Logs" powershell -command "if(Test-Path '%LOG_DIR%\frontend.log'){ Get-Content '%LOG_DIR%\frontend.log' -Wait } else { Write-Host 'Log file not created yet.' }"
+start powershell -command "Get-Content '%LOG_DIR%\frontend.log' -Wait"
 goto monitor
 
 :do_restart
-echo Restarting all services...
-taskkill /f /im node.exe >nul 2>&1
-taskkill /f /im python.exe >nul 2>&1
-timeout /t 1 >nul
 goto init_services
 
 :do_stop
-echo Stopping all services...
 taskkill /f /im node.exe >nul 2>&1
 taskkill /f /im python.exe >nul 2>&1
-echo Done.
-timeout /t 2 >nul
 exit
