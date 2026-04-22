@@ -164,20 +164,24 @@ async def get_processed_history():
             reverse=True
         )
 
-        for folder in folders[:15]: # Show a few more for the horizontal scroll
+        for folder in folders[:15]: 
             folder_path = os.path.join(CROP_PROCESSED, folder)
-            # We want to identify the CENTER image to use as a key, 
-            # and the ORIGINAL image for the thumbnail
+            
+            # Find the exact filenames
             center_imgs = [f for f in os.listdir(folder_path) if f.startswith("center_")]
+            original_imgs = [f for f in os.listdir(folder_path) if f.startswith("original_")]
+            
             if center_imgs:
                 history.append({
                     "folder": folder,
-                    "preview": center_imgs[0] # Keeping 'center_' as the reference filename
+                    "preview": center_imgs[0], 
+                    "original_file": original_imgs[0] if original_imgs else None # Send exact original filename
                 })
     except Exception as e:
         print(f"History Error: {e}")
             
     return {"history": history}
+
 
 @app.get("/full-resolution")
 async def get_full_resolution(filename: str, isProcessed: bool = False):

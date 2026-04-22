@@ -141,6 +141,19 @@
       "duration_s": 0.2,
       "orig_kb": 835,
       "final_kb": 688
+    },
+    {
+      "file": "unnamed (1).jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-22T11:26:25.585871",
+      "outputs": [
+        "unnamed (1)_20260422_112624.jpg"
+      ],
+      "error": null,
+      "duration_s": 1.5,
+      "orig_kb": 133,
+      "final_kb": 81
     }
   ]
 }

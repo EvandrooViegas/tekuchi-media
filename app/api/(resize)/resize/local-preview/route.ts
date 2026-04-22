@@ -7,7 +7,7 @@ export async function GET(req: Request) {
 
   // Forward the request to Python with the exact parameters
   const pythonUrl = `http://localhost:8000/local-preview?filename=${encodeURIComponent(filename || '')}&isProcessed=${isProcessed}`;
-  
+  console.log("😀😀😁😁: ", pythonUrl)
   try {
     const res = await fetch(pythonUrl);
     if (!res.ok) return new NextResponse(null, { status: res.status });

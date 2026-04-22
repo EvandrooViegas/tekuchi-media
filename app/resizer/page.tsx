@@ -168,7 +168,7 @@ export default function ResizerPage() {
     };
 
     return (
-  <div className="p-8  mx-auto space-y-8 font-sans h-full overflow-y-auto pb-20">
+        <div className="p-8  mx-auto space-y-8 font-sans h-full overflow-y-auto pb-20">
             <header className="flex justify-between items-center">
                 <div>
                     <h1 className="text-3xl font-black text-slate-800 tracking-tight">Tekuchi Resizer</h1>
@@ -228,42 +228,44 @@ export default function ResizerPage() {
 
                             {/* Scrollable Container */}
                             <div className="flex gap-6 overflow-x-auto pb-6 pt-2 custom-scrollbar snap-x">
-                                {processedHistory.map((item, i) => (
-                                    <Card
-                                        key={i}
-                                     onClick={() => setActiveResult({
-  id: i.toString(),
-  name: item.folder,
-  // Change local-preview to full-resolution here
-  center: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/center_" + item.folder + ".jpg")}&isProcessed=true`,
-  top: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/top_" + item.folder + ".jpg")}&isProcessed=true`,
-  original: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/" + item.preview.replace('center_', 'original_'))}&isProcessed=true`
-})}
-                                        className="flex-none w-64 group border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white hover:ring-blue-400 transition-all cursor-pointer snap-start"
-                                    >
-                                        <div className="aspect-video bg-slate-100 relative overflow-hidden">
-                                            <img
-                                                // Show the ORIGINAL as the primary display as requested
-                                                src={`/api/resize/local-preview?filename=${encodeURIComponent(item.folder + "/" + item.preview.replace('center_', 'original_'))}&isProcessed=true`}
-                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                alt="Folder Original"
-                                            />
-                                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                                <Maximize2 className="text-white" size={24} />
-                                            </div>
-                                        </div>
-                                        <div className="p-3 border-t bg-white">
-                                            <p className="text-[10px] font-black text-slate-800 truncate" title={item.folder}>
-                                                {item.folder}
-                                            </p>
-                                            <div className="flex items-center gap-1 mt-1">
-                                                <CheckCircle2 size={10} className="text-green-500" />
-                                                <span className="text-[9px] text-slate-400 font-bold uppercase">Folder Organised</span>
-                                            </div>
-                                        </div>
-                                    </Card>
-                                ))}
-                            </div>
+    {processedHistory.map((item, i) => (
+        <Card
+            key={i}
+            onClick={() => setActiveResult({
+                id: i.toString(),
+                name: item.folder,
+                center: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/center_" + item.folder + ".jpg")}&isProcessed=true`,
+                top: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/top_" + item.folder + ".jpg")}&isProcessed=true`,
+                // Safely apply the exact original file for the High-Res Modal
+                original: item.original_file 
+                    ? `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` 
+                    : undefined
+            })}
+            className="flex-none w-64 group border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white hover:ring-blue-400 transition-all cursor-pointer snap-start"
+        >
+            <div className="aspect-video bg-slate-100 relative overflow-hidden">
+                <img
+                    // Safely apply the exact original file for the Thumbnail Preview
+                    src={item.original_file ? `/api/resize/local-preview?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` : ""}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    alt="Folder Original"
+                />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <Maximize2 className="text-white" size={24} />
+                </div>
+            </div>
+            <div className="p-3 border-t bg-white">
+                <p className="text-[10px] font-black text-slate-800 truncate" title={item.folder}>
+                    {item.folder}
+                </p>
+                <div className="flex items-center gap-1 mt-1">
+                    <CheckCircle2 size={10} className="text-green-500" />
+                    <span className="text-[9px] text-slate-400 font-bold uppercase">Folder Organised</span>
+                </div>
+            </div>
+        </Card>
+    ))}
+</div>
                         </div>
                     )}
                 </div>
@@ -299,54 +301,54 @@ export default function ResizerPage() {
             {/* MODAL VIEW */}
             {activeResult && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10 bg-slate-900/95 backdrop-blur-md animate-in fade-in duration-200">
-          <div className="bg-white rounded-[2.5rem] w-full max-w-7xl max-h-full overflow-hidden flex flex-col shadow-2xl">
-            <div className="p-6 border-b flex justify-between items-center bg-white sticky top-0 z-10">
-              <h2 className="font-black text-xl text-slate-800 truncate pr-8">{activeResult.name}</h2>
-              <button onClick={() => setActiveResult(null)} className="p-2 hover:bg-slate-100 rounded-full text-slate-400 transition-colors"><X size={24}/></button>
-            </div>
-            
-            <div className="p-8 overflow-y-auto space-y-12">
-              {/* Original Preview (Large) */}
-              {activeResult.original && (
-                <div className="space-y-4">
-                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-black uppercase text-slate-400 tracking-widest">Source Image</span>
-                    <div className="h-[1px] flex-grow bg-slate-100" />
-                  </div>
-                  <div className="rounded-3xl overflow-hidden border-4 border-slate-50 shadow-md">
-                    <img src={activeResult.original} className="w-full h-auto max-h-[500px] object-contain bg-slate-900" alt="Original Source" />
-                  </div>
-                </div>
-              )}
+                    <div className="bg-white rounded-[2.5rem] w-full max-w-7xl max-h-full overflow-hidden flex flex-col shadow-2xl">
+                        <div className="p-6 border-b flex justify-between items-center bg-white sticky top-0 z-10">
+                            <h2 className="font-black text-xl text-slate-800 truncate pr-8">{activeResult.name}</h2>
+                            <button onClick={() => setActiveResult(null)} className="p-2 hover:bg-slate-100 rounded-full text-slate-400 transition-colors"><X size={24} /></button>
+                        </div>
 
-              {/* Cropped Results Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-8">
-                <ModalBlock title="Center Balanced Crop" img={activeResult.center} onDownload={() => download(activeResult.center, 'center', activeResult.name)} />
-                <ModalBlock title="Top Weighted Crop" img={activeResult.top} onDownload={() => download(activeResult.top, 'top', activeResult.name)} />
-              </div>
-            </div>
-          </div>
-        </div>
+                        <div className="p-8 overflow-y-auto space-y-12">
+                            {/* Original Preview (Large) */}
+                            {activeResult.original && (
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-xs font-black uppercase text-slate-400 tracking-widest">Source Image</span>
+                                        <div className="h-[1px] flex-grow bg-slate-100" />
+                                    </div>
+                                    <div className="rounded-3xl overflow-hidden border-4 border-slate-50 shadow-md">
+                                        <img src={activeResult.original} className="w-full h-auto max-h-[500px] object-contain bg-slate-900" alt="Original Source" />
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Cropped Results Grid */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-8">
+                                <ModalBlock title="Center Balanced Crop" img={activeResult.center} onDownload={() => download(activeResult.center, 'center', activeResult.name)} />
+                                <ModalBlock title="Top Weighted Crop" img={activeResult.top} onDownload={() => download(activeResult.top, 'top', activeResult.name)} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     );
 }
 
 function ModalBlock({ title, img, onDownload }: any) {
-  return (
-    <div className="space-y-4">
-      <div className="flex justify-between items-center">
-        <span className="text-xs font-black uppercase text-blue-600 tracking-widest">{title}</span>
-        <Button onClick={onDownload} size="sm" className="bg-blue-600 rounded-xl h-10 px-6">Download HD</Button>
-      </div>
-      <div className="rounded-2xl overflow-hidden border-4 border-slate-50 shadow-sm ring-1 ring-slate-200 bg-slate-100">
-        <img 
-          src={img} 
-          className="w-full h-auto" 
-          alt={title} 
-          loading="lazy" // Added lazy loading as these are now heavy HD files
-        />
-      </div>
-    </div>
-  );
+    return (
+        <div className="space-y-4">
+            <div className="flex justify-between items-center">
+                <span className="text-xs font-black uppercase text-blue-600 tracking-widest">{title}</span>
+                <Button onClick={onDownload} size="sm" className="bg-blue-600 rounded-xl h-10 px-6">Download HD</Button>
+            </div>
+            <div className="rounded-2xl overflow-hidden border-4 border-slate-50 shadow-sm ring-1 ring-slate-200 bg-slate-100">
+                <img
+                    src={img}
+                    className="w-full h-auto"
+                    alt={title}
+                    loading="lazy" // Added lazy loading as these are now heavy HD files
+                />
+            </div>
+        </div>
+    );
 }

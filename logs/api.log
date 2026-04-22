@@ -30,4 +30,446 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+^CINFO:     Started server process [10932]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [17424]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Automation Started: Checking folder every 900s
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52001 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52023 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52022 - "GET /processed-history HTTP/1.1" 200 OK
+^CINFO:     Started server process [17592]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Automation Started: Checking folder every 900s
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52112 - "GET /local-preview?filename=3001-A.jpg&isProcessed=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52113 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=false HTTP/1.1" 200 OK
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_dataloft_dagenham_green_v1747757073_1\original_thumb_dataloft_dagenham_green_v1747757073_1.jpg
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_1%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_6003 Ballymore CUBA individual plan test_V6.pdf_1\original_thumb_6003 Ballymore CUBA individual plan test_V6.pdf_1.jpg
+INFO:     127.0.0.1:52112 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_1%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\3001-A_1\original_3001-A_1.jpg
+INFO:     127.0.0.1:52112 - "GET /local-preview?filename=3001-A_1%2Foriginal_3001-A_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52113 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=3001-A%2Foriginal_3001-A.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "POST /run-batch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_dataloft_dagenham_green_v1747757073_2\original_thumb_dataloft_dagenham_green_v1747757073_2.jpg
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_6003 Ballymore CUBA individual plan test_V6.pdf_2\original_thumb_6003 Ballymore CUBA individual plan test_V6.pdf_2.jpg
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_2%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\3001-A_2\original_3001-A_2.jpg
+INFO:     127.0.0.1:52128 - "GET /local-preview?filename=3001-A_2%2Foriginal_3001-A_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_dataloft_dagenham_green_v1747757073_1\original_thumb_dataloft_dagenham_green_v1747757073_1.jpg
+INFO:     127.0.0.1:52129 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_1%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_6003 Ballymore CUBA individual plan test_V6.pdf_1\original_thumb_6003 Ballymore CUBA individual plan test_V6.pdf_1.jpg
+INFO:     127.0.0.1:52130 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_1%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\3001-A_1\original_3001-A_1.jpg
+INFO:     127.0.0.1:52131 - "GET /local-preview?filename=3001-A_1%2Foriginal_3001-A_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52108 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Fcenter_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52143 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Ftop_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52211 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52212 - "GET /local-preview?filename=3001-A%2Foriginal_3001-A.jpg&isProcessed=true HTTP/1.1" 200 OK
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_dataloft_dagenham_green_v1747757073_2\original_thumb_dataloft_dagenham_green_v1747757073_2.jpg
+INFO:     127.0.0.1:52213 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_6003 Ballymore CUBA individual plan test_V6.pdf_2\original_thumb_6003 Ballymore CUBA individual plan test_V6.pdf_2.jpg
+INFO:     127.0.0.1:52214 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_2%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\3001-A_2\original_3001-A_2.jpg
+INFO:     127.0.0.1:52215 - "GET /local-preview?filename=3001-A_2%2Foriginal_3001-A_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\3001-A_1\original_3001-A_1.jpg
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=3001-A_1%2Foriginal_3001-A_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_6003 Ballymore CUBA individual plan test_V6.pdf_1\original_thumb_6003 Ballymore CUBA individual plan test_V6.pdf_1.jpg
+INFO:     127.0.0.1:52211 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_1%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+DEBUG: File not found -> D:\Media\VIEWS_PROCESSED\thumb_dataloft_dagenham_green_v1747757073_1\original_thumb_dataloft_dagenham_green_v1747757073_1.jpg
+INFO:     127.0.0.1:52108 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_1%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_1.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52108 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Fcenter_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52222 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52223 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Ftop_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Foriginal_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52108 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Fcenter_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52227 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Ftop_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52243 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52243 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52275 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52275 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52297 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52297 - "GET /processed-history HTTP/1.1" 200 OK
+^CINFO:     Started server process [252]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Automation Started: Checking folder every 900s
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52383 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_2%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52384 - "GET /local-preview?filename=3001-A_2%2Foriginal_3001-A.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52385 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_1%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52386 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_1%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52387 - "GET /local-preview?filename=3001-A_1%2Foriginal_3001-A.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52383 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52384 - "GET /local-preview?filename=3001-A%2Foriginal_3001-A.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52383 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Fcenter_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52384 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_2%2Ftop_thumb_dataloft_dagenham_green_v1747757073_2.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /local-preview?filename=3001-A.jpg&isProcessed=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52396 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52398 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "POST /run-batch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52396 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /local-preview?filename=thumb_dataloft_dagenham_green_v1747757073_3%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52396 - "GET /local-preview?filename=thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf_3%2Foriginal_thumb_6003%20Ballymore%20CUBA%20individual%20plan%20test_V6.pdf.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52398 - "GET /local-preview?filename=3001-A_3%2Foriginal_3001-A.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_3%2Foriginal_thumb_dataloft_dagenham_green_v1747757073.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_3%2Fcenter_thumb_dataloft_dagenham_green_v1747757073_3.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52403 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_3%2Ftop_thumb_dataloft_dagenham_green_v1747757073_3.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /full-resolution?filename=thumb_dataloft_dagenham_green_v1747757073_3%2Fcenter_thumb_dataloft_dagenham_green_v1747757073_3.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
 ^C
