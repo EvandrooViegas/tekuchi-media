@@ -8,6 +8,7 @@ set "LOG_DIR=%~dp0logs"
 set "SERVER_DIR=%~dp0server\comparer"
 set "FRONTEND_DIR=%~dp0"
 
+:init_services
 echo --- Tekuchi Suite: Dev Manager ---
 echo --------------------------------------------------------
 
@@ -69,7 +70,7 @@ echo Restarting all services...
 taskkill /f /im node.exe >nul 2>&1
 taskkill /f /im python.exe >nul 2>&1
 timeout /t 1 >nul
-goto monitor
+goto init_services
 
 :do_stop
 echo Stopping all services...
