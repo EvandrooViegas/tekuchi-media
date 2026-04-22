@@ -8,3 +8,8 @@
 - Environments: .env
 ✓ Ready in 1683ms
 
+
+> pdf-analyser@0.1.0 dev
+> next dev
+
+^C^CTerminate batch job (Y/N)? 
