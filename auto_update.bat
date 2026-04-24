@@ -9,7 +9,9 @@ cd /d "%~dp0"
 echo [INIT] System starting. Performing initial sync...
 :: Force a sync on startup to ensure we are current
 git fetch origin %BRANCH%
+git clean -fd
 git reset --hard origin/%BRANCH%
+git pull origin %BRANCH% --force
 
 :: Launch the Manager immediately
 start "Tekuchi Manager" cmd /c "manager.bat"
@@ -33,10 +35,14 @@ if "%LOCAL_HASH%" NEQ "%REMOTE_HASH%" (
     
     :: Kill the active manager window
     taskkill /fi "windowtitle eq Tekuchi Manager" /f >nul 2>&1
+    taskkill /f /im python.exe >nul 2>&1
+    taskkill /f /im node.exe >nul 2>&1
     
     :: Clean lock files and sync
     if exist ".git\index.lock" del /f /q ".git\index.lock"
+    git clean -fd
     git reset --hard origin/%BRANCH%
+    git pull origin %BRANCH% --force
     
     echo [RESTART] Launching updated version...
     timeout /t 2 >nul
