@@ -4,7 +4,7 @@ title Tekuchi Manager
 
 :: --- SETTINGS ---
 set "BASE_DIR=%~dp0"
-set "SERVER_DIR=%BASE_DIR%server\comparer"
+set "SERVER_DIR=%BASE_DIR%server"
 set "LOG_DIR=%BASE_DIR%logs"
 
 :init

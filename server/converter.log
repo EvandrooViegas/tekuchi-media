@@ -58,3 +58,6 @@ D:\Media\processing\b21f1748-7921-4dcc-9da1-8f8c3ded98d5.mp4: Invalid data found
 2026-04-24 10:15  INFO     Added job "auto_run_job" to job store "default"
 2026-04-24 10:15  INFO     Scheduler started
 2026-04-24 10:18  INFO     Scheduler has been shut down
+2026-04-24 11:56  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-24 11:56  INFO     Added job "auto_run_job" to job store "default"
+2026-04-24 11:56  INFO     Scheduler started
