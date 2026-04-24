@@ -36,3 +36,10 @@ export function getProcessorPaths() {
     cropper_processed: interpolatedPaths.cropper_processed
   };
 }
+
+/**
+ * Base URL of the FastAPI server.
+ * Override with the PYTHON_API_URL environment variable in production.
+ */
+export const PYTHON_API_URL =
+  process.env.PYTHON_API_URL ?? 'http://localhost:8000';

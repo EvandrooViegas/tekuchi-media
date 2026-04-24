@@ -1,22 +1,29 @@
 import { NextResponse } from 'next/server';
-import { exec } from 'child_process';
-import path from 'path';
+import { PYTHON_API_URL } from '@/lib/config';
 
 export async function POST() {
-    const scriptDir = path.join(process.cwd(), 'server', 'compressor');
-    const scriptPath = 'converter.py';
-
-    // Running the python script using the correct directory context
-    exec(`python ${scriptPath}`, { cwd: scriptDir }, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`Exec error: ${error}`);
-            return;
-        }
-        if (stderr) {
-            console.error(`Python stderr: ${stderr}`);
-        }
-        console.log(`Output: ${stdout}`);
+  try {
+    const response = await fetch(`${PYTHON_API_URL}/compress/run`, {
+      method: 'POST',
+      // No files body — triggers a run of whatever is already in the inbox
+      body: new FormData(),
     });
 
-    return NextResponse.json({ message: "Started converter from server/compressor" });
+    if (!response.ok) {
+      const text = await response.text();
+      return NextResponse.json(
+        { error: 'Compress service error', detail: text },
+        { status: response.status }
+      );
+    }
+
+    const data = await response.json();
+    return NextResponse.json(data);
+  } catch (error) {
+    console.error('[/api/run] Failed to reach compress service:', error);
+    return NextResponse.json(
+      { error: 'Compress service unreachable' },
+      { status: 502 }
+    );
+  }
 }

@@ -1,0 +1,56 @@
+2026-04-22 16:47  INFO     [VIDEO] 0124.mp4
+2026-04-22 16:48  INFO       Done in 65.3s (39948KB -> 15584KB)
+2026-04-22 16:51  INFO     Scheduler has been shut down
+2026-04-22 16:51  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-22 16:51  INFO     Added job "auto_run_job" to job store "default"
+2026-04-22 16:51  INFO     Scheduler started
+2026-04-22 16:51  INFO     [VIDEO] b21f1748-7921-4dcc-9da1-8f8c3ded98d5.mp4
+2026-04-22 16:51  ERROR      FAILED: [mov,mp4,m4a,3gp,3g2,mj2 @ 000001f2add47980] moov atom not found
+D:\Media\processing\b21f1748-7921-4dcc-9da1-8f8c3ded98d5.mp4: Invalid data found when processing input
+
+2026-04-22 16:51  INFO     [VIDEO] 0121.mp4
+2026-04-22 16:52  INFO       Done in 40.2s (5591KB -> 6862KB)
+2026-04-22 16:56  INFO     Scheduler has been shut down
+2026-04-22 16:56  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-22 16:56  INFO     Added job "auto_run_job" to job store "default"
+2026-04-22 16:56  INFO     Scheduler started
+2026-04-22 16:56  INFO     [VIDEO] 0115 (1).mp4
+2026-04-22 16:57  INFO       Done in 92.0s (55816KB -> 16328KB)
+2026-04-22 16:58  INFO     [VIDEO] 0115 (1).mp4
+2026-04-22 17:00  INFO       Done in 100.0s (55816KB -> 16328KB)
+2026-04-22 17:00  INFO     [VIDEO] 0121(1).mp4
+2026-04-22 17:00  INFO       Done in 43.8s (17322KB -> 5829KB)
+2026-04-22 17:00  INFO     [VIDEO] 0121(2).mp4
+2026-04-22 17:01  INFO       Done in 61.6s (13473KB -> 6233KB)
+2026-04-22 17:01  INFO     [VIDEO] 0121.mp4
+2026-04-22 17:02  INFO       Done in 55.2s (5591KB -> 6862KB)
+2026-04-22 17:09  INFO     Scheduler has been shut down
+2026-04-22 17:10  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-22 17:10  INFO     Added job "auto_run_job" to job store "default"
+2026-04-22 17:10  INFO     Scheduler started
+2026-04-22 17:19  INFO     Scheduler has been shut down
+2026-04-22 17:19  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-22 17:19  INFO     Added job "auto_run_job" to job store "default"
+2026-04-22 17:19  INFO     Scheduler started
+2026-04-22 17:21  INFO     Scheduler has been shut down
+2026-04-22 17:21  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-22 17:21  INFO     Added job "auto_run_job" to job store "default"
+2026-04-22 17:21  INFO     Scheduler started
+2026-04-22 17:22  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:04 BST)" (scheduled at 2026-04-22 17:22:04.751068+01:00)
+2026-04-22 17:22  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:13 BST)" executed successfully
+2026-04-22 17:22  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:22 BST)" (scheduled at 2026-04-22 17:22:13.751068+01:00)
+2026-04-22 17:22  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:22 BST)" executed successfully
+2026-04-22 17:22  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:31 BST)" (scheduled at 2026-04-22 17:22:22.751068+01:00)
+2026-04-22 17:22  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:31 BST)" executed successfully
+2026-04-22 17:22  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:40 BST)" (scheduled at 2026-04-22 17:22:31.751068+01:00)
+2026-04-22 17:22  INFO     [IMAGE] 3001-A.jpg
+2026-04-22 17:22  INFO     [IMAGE] thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg
+2026-04-22 17:22  INFO     [IMAGE] thumb_dataloft_dagenham_green_v1747757073.jpg
+2026-04-22 17:22  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:40 BST)" executed successfully
+2026-04-22 17:22  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:49 BST)" (scheduled at 2026-04-22 17:22:40.751068+01:00)
+2026-04-22 17:22  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:49 BST)" executed successfully
+2026-04-22 17:22  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:58 BST)" (scheduled at 2026-04-22 17:22:49.751068+01:00)
+2026-04-22 17:22  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:22:58 BST)" executed successfully
+2026-04-22 17:22  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:23:07 BST)" (scheduled at 2026-04-22 17:22:58.751068+01:00)
+2026-04-22 17:22  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-22 17:23:07 BST)" executed successfully
+2026-04-22 17:23  INFO     Scheduler has been shut down

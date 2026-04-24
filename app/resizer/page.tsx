@@ -14,7 +14,9 @@ import { toast } from 'sonner';
 interface ResizeResult {
     id: string;
     center: string;
+    centerStats?: string;
     top: string;
+    topStats?: string;
     original?: string; // Optional for history view
     name: string;
 }
@@ -151,7 +153,9 @@ export default function ResizerPage() {
                     id: Math.random().toString(36).slice(2, 11),
                     name: r.fileName,
                     center: r.centerCrop,
-                    top: r.topCrop
+                    centerStats: r.centerStats,
+                    top: r.topCrop,
+                    topStats: r.topStats
                 }));
                 setDirectHistory(prev => [...newEntries, ...prev]);
             }
@@ -235,7 +239,9 @@ export default function ResizerPage() {
                 id: i.toString(),
                 name: item.folder,
                 center: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/center_" + item.folder + ".jpg")}&isProcessed=true`,
+                centerStats: item.centerStats,
                 top: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/top_" + item.folder + ".jpg")}&isProcessed=true`,
+                topStats: item.topStats,
                 // Safely apply the exact original file for the High-Res Modal
                 original: item.original_file 
                     ? `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` 
@@ -323,8 +329,8 @@ export default function ResizerPage() {
 
                             {/* Cropped Results Grid */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-8">
-                                <ModalBlock title="Center Balanced Crop" img={activeResult.center} onDownload={() => download(activeResult.center, 'center', activeResult.name)} />
-                                <ModalBlock title="Top Weighted Crop" img={activeResult.top} onDownload={() => download(activeResult.top, 'top', activeResult.name)} />
+                                <ModalBlock title="Center Balanced Crop" img={activeResult.center} stats={activeResult.centerStats} onDownload={() => download(activeResult.center, 'center', activeResult.name)} />
+                                <ModalBlock title="Top Weighted Crop" img={activeResult.top} stats={activeResult.topStats} onDownload={() => download(activeResult.top, 'top', activeResult.name)} />
                             </div>
                         </div>
                     </div>
@@ -334,11 +340,19 @@ export default function ResizerPage() {
     );
 }
 
-function ModalBlock({ title, img, onDownload }: any) {
+function ModalBlock({ title, img, onDownload, stats }: any) {
     return (
         <div className="space-y-4">
             <div className="flex justify-between items-center">
-                <span className="text-xs font-black uppercase text-blue-600 tracking-widest">{title}</span>
+                <div className="flex flex-col">
+                    <span className="text-xs font-black uppercase text-blue-600 tracking-widest">{title}</span>
+                    {stats && (
+                        <div className="mt-1 flex items-center gap-1.5 text-[10px] font-black text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full w-max border border-emerald-100">
+                            <CheckCircle2 size={10} />
+                            COMPRESSED: {stats}
+                        </div>
+                    )}
+                </div>
                 <Button onClick={onDownload} size="sm" className="bg-blue-600 rounded-xl h-10 px-6">Download HD</Button>
             </div>
             <div className="rounded-2xl overflow-hidden border-4 border-slate-50 shadow-sm ring-1 ring-slate-200 bg-slate-100">

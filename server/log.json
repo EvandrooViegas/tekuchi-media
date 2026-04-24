@@ -1,0 +1,227 @@
+{
+  "jobs": [
+    {
+      "file": "0124.mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-22T16:48:11.302580",
+      "outputs": [
+        "0124_20260422_164706.mp4",
+        "0124_20260422_164706.webm",
+        "0124_thumb_02s.jpg",
+        "0124_thumb_03s.jpg",
+        "0124_thumb_04s.jpg",
+        "0124_thumb_05s.jpg",
+        "0124_thumb_06s.jpg",
+        "0124_thumb_07s.jpg",
+        "0124_thumb_08s.jpg",
+        "0124_thumb_09s.jpg",
+        "0124_thumb_10s.jpg",
+        "0124_thumb_11s.jpg"
+      ],
+      "error": null,
+      "duration_s": 65.3,
+      "orig_kb": 39948,
+      "final_kb": 15584,
+      "thumb_count": 10
+    },
+    {
+      "file": "b21f1748-7921-4dcc-9da1-8f8c3ded98d5.mp4",
+      "kind": "video",
+      "status": "error",
+      "timestamp": "2026-04-22T16:51:31.296500",
+      "outputs": [],
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f2add47980] moov atom not found\nD:\\Media\\processing\\b21f1748-7921-4dcc-9da1-8f8c3ded98d5.mp4: Invalid data found when processing input\n",
+      "duration_s": 0.1
+    },
+    {
+      "file": "0121.mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-22T16:52:22.716971",
+      "outputs": [
+        "0121_20260422_165142.mp4",
+        "0121_20260422_165142.webm",
+        "0121_thumb_02s.jpg",
+        "0121_thumb_03s.jpg",
+        "0121_thumb_04s.jpg",
+        "0121_thumb_05s.jpg",
+        "0121_thumb_06s.jpg",
+        "0121_thumb_07s.jpg",
+        "0121_thumb_08s.jpg",
+        "0121_thumb_09s.jpg",
+        "0121_thumb_10s.jpg",
+        "0121_thumb_11s.jpg"
+      ],
+      "error": null,
+      "duration_s": 40.2,
+      "orig_kb": 5591,
+      "final_kb": 6862,
+      "thumb_count": 10
+    },
+    {
+      "file": "0115 (1).mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-22T16:57:56.217098",
+      "outputs": [
+        "0115 (1)_20260422_165624.mp4",
+        "0115 (1)_20260422_165624.webm",
+        "0115 (1)_thumb_02s.jpg",
+        "0115 (1)_thumb_03s.jpg",
+        "0115 (1)_thumb_04s.jpg",
+        "0115 (1)_thumb_05s.jpg",
+        "0115 (1)_thumb_06s.jpg",
+        "0115 (1)_thumb_07s.jpg",
+        "0115 (1)_thumb_08s.jpg",
+        "0115 (1)_thumb_09s.jpg",
+        "0115 (1)_thumb_10s.jpg",
+        "0115 (1)_thumb_11s.jpg"
+      ],
+      "error": null,
+      "duration_s": 92.0,
+      "orig_kb": 55816,
+      "final_kb": 16328,
+      "thumb_count": 10
+    },
+    {
+      "file": "0115 (1).mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-22T17:00:13.548555",
+      "outputs": [
+        "0115 (1)_20260422_165833.mp4",
+        "0115 (1)_20260422_165833.webm",
+        "0115 (1)_thumb_02s_1776873613.jpg",
+        "0115 (1)_thumb_03s_1776873613.jpg",
+        "0115 (1)_thumb_04s_1776873613.jpg",
+        "0115 (1)_thumb_05s_1776873613.jpg",
+        "0115 (1)_thumb_06s_1776873613.jpg",
+        "0115 (1)_thumb_07s_1776873613.jpg",
+        "0115 (1)_thumb_08s_1776873613.jpg",
+        "0115 (1)_thumb_09s_1776873613.jpg",
+        "0115 (1)_thumb_10s_1776873613.jpg",
+        "0115 (1)_thumb_11s_1776873613.jpg"
+      ],
+      "error": null,
+      "duration_s": 100.0,
+      "orig_kb": 55816,
+      "final_kb": 16328,
+      "thumb_count": 10
+    },
+    {
+      "file": "0121(1).mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-22T17:00:57.360021",
+      "outputs": [
+        "0121(1)_20260422_170013.mp4",
+        "0121(1)_20260422_170013.webm",
+        "0121(1)_thumb_02s.jpg",
+        "0121(1)_thumb_03s.jpg",
+        "0121(1)_thumb_04s.jpg",
+        "0121(1)_thumb_05s.jpg",
+        "0121(1)_thumb_06s.jpg",
+        "0121(1)_thumb_07s.jpg",
+        "0121(1)_thumb_08s.jpg",
+        "0121(1)_thumb_09s.jpg",
+        "0121(1)_thumb_10s.jpg",
+        "0121(1)_thumb_11s.jpg"
+      ],
+      "error": null,
+      "duration_s": 43.8,
+      "orig_kb": 17322,
+      "final_kb": 5829,
+      "thumb_count": 10
+    },
+    {
+      "file": "0121(2).mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-22T17:01:58.943625",
+      "outputs": [
+        "0121(2)_20260422_170057.mp4",
+        "0121(2)_20260422_170057.webm",
+        "0121(2)_thumb_02s.jpg",
+        "0121(2)_thumb_03s.jpg",
+        "0121(2)_thumb_04s.jpg",
+        "0121(2)_thumb_05s.jpg",
+        "0121(2)_thumb_06s.jpg",
+        "0121(2)_thumb_07s.jpg",
+        "0121(2)_thumb_08s.jpg",
+        "0121(2)_thumb_09s.jpg",
+        "0121(2)_thumb_10s.jpg",
+        "0121(2)_thumb_11s.jpg"
+      ],
+      "error": null,
+      "duration_s": 61.6,
+      "orig_kb": 13473,
+      "final_kb": 6233,
+      "thumb_count": 10
+    },
+    {
+      "file": "0121.mp4",
+      "kind": "video",
+      "status": "success",
+      "timestamp": "2026-04-22T17:02:54.174993",
+      "outputs": [
+        "0121_20260422_170158.mp4",
+        "0121_20260422_170158.webm",
+        "0121_thumb_02s_1776873774.jpg",
+        "0121_thumb_03s_1776873774.jpg",
+        "0121_thumb_04s_1776873774.jpg",
+        "0121_thumb_05s_1776873774.jpg",
+        "0121_thumb_06s_1776873774.jpg",
+        "0121_thumb_07s_1776873774.jpg",
+        "0121_thumb_08s_1776873774.jpg",
+        "0121_thumb_09s_1776873774.jpg",
+        "0121_thumb_10s_1776873774.jpg",
+        "0121_thumb_11s_1776873774.jpg"
+      ],
+      "error": null,
+      "duration_s": 55.2,
+      "orig_kb": 5591,
+      "final_kb": 6862,
+      "thumb_count": 10
+    },
+    {
+      "file": "3001-A.jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-22T17:22:33.025457",
+      "outputs": [
+        "3001-A_20260422_172231.jpg"
+      ],
+      "error": null,
+      "duration_s": 1.2,
+      "orig_kb": 12294,
+      "final_kb": 434
+    },
+    {
+      "file": "thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-22T17:22:34.166231",
+      "outputs": [
+        "thumb_6003 Ballymore CUBA indi_20260422_172233.jpg"
+      ],
+      "error": null,
+      "duration_s": 1.1,
+      "orig_kb": 185,
+      "final_kb": 72
+    },
+    {
+      "file": "thumb_dataloft_dagenham_green_v1747757073.jpg",
+      "kind": "image",
+      "status": "success",
+      "timestamp": "2026-04-22T17:22:34.345982",
+      "outputs": [
+        "thumb_dataloft_dagenham_green__20260422_172234.jpg"
+      ],
+      "error": null,
+      "duration_s": 0.2,
+      "orig_kb": 212,
+      "final_kb": 156
+    }
+  ]
+}

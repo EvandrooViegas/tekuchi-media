@@ -1,27 +1,27 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
+import { PYTHON_API_URL } from '@/lib/config';
 
 export async function POST(req: Request) {
   try {
     const formData = await req.formData();
-    
-    const pythonResponse = await fetch('http://localhost:8000/compare', {
+
+    const response = await fetch(`${PYTHON_API_URL}/compare/`, {
       method: 'POST',
       body: formData,
     });
 
-    if (!pythonResponse.ok) {
-      throw new Error('Python service failed');
+    if (!response.ok) {
+      const text = await response.text();
+      return NextResponse.json(
+        { error: 'Compare service error', detail: text },
+        { status: response.status }
+      );
     }
-const data = await pythonResponse.json();
 
-    // UNWRAP THE DATA HERE
-    // If Python sends { result: { changes: [] } }, we send just { changes: [] }
-    const cleanData = data.result ? data.result : data;
-
-    return NextResponse.json(cleanData);
-    
+    const data = await response.json();
+    return NextResponse.json(data);
   } catch (error) {
-    console.error(error);
-    return NextResponse.json({ error: 'Python service unreachable' }, { status: 500 });
+    console.error('[/api/compare] Failed to reach compare service:', error);
+    return NextResponse.json({ error: 'Compare service unreachable' }, { status: 502 });
   }
 }
