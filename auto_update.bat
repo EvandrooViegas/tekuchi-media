@@ -1,54 +1,43 @@
 @echo off
 setlocal enabledelayedexpansion
-title Tekuchi - Auto Update Watcher
+title Tekuchi Auto-Updater
 
 :: --- CONFIGURATION ---
-set "BRANCH=master"
-cd /d "%~dp0"
+set "REPO_URL=https://github.com/EvandrooViegas/tekuchi-media"
+set "BRANCH=main"
+set "CHECK_INTERVAL=60"
 
-echo [INIT] System starting. Performing initial sync...
-:: Force a sync on startup to ensure we are current
-git fetch origin %BRANCH%
-git clean -fd
-git reset --hard origin/%BRANCH%
-git pull origin %BRANCH% --force
-
-:: Launch the Manager immediately
-start "Tekuchi Manager" cmd /c "manager.bat"
-
-:loop
+:check_loop
 cls
-echo =======================================================
-echo  TEKUCHI MEDIA - AUTO PULL WATCHER
-echo  Status: Monitoring GitHub... | Branch: %BRANCH%
-echo  Last Check: %time%
-echo =======================================================
+echo [%time%] Checking for updates on %BRANCH%...
 
-:: Check for remote changes
+:: Fetch latest info from remote
 git fetch origin %BRANCH% >nul 2>&1
 
+:: Compare local HEAD with origin/BRANCH
 for /f %%i in ('git rev-parse HEAD') do set LOCAL_HASH=%%i
-for /f %%j in ('git rev-parse origin/%BRANCH%') do set REMOTE_HASH=%%j
+for /f %%i in ('git rev-parse origin/%BRANCH%') do set REMOTE_HASH=%%i
 
-if "%LOCAL_HASH%" NEQ "%REMOTE_HASH%" (
+if "%LOCAL_HASH%"=="%REMOTE_HASH%" (
+    echo [OK] Already up to date.
+) else (
     echo [UPDATE] New version detected!
     
-    :: Kill the active manager window
-    taskkill /fi "windowtitle eq Tekuchi Manager" /f >nul 2>&1
+    echo [1/4] Stopping application...
+    taskkill /FI "WINDOWTITLE eq Tekuchi Manager" /T /F >nul 2>&1
     taskkill /f /im python.exe >nul 2>&1
     taskkill /f /im node.exe >nul 2>&1
-    
-    :: Clean lock files and sync
-    if exist ".git\index.lock" del /f /q ".git\index.lock"
-    git clean -fd
+
+    echo [2/4] Cleaning local files and pulling...
+    :: This removes all local changes and pulls the fresh version
     git reset --hard origin/%BRANCH%
-    git pull origin %BRANCH% --force
-    
-    echo [RESTART] Launching updated version...
-    timeout /t 2 >nul
+    git clean -fd
+
+    echo [3/4] Update complete.
+    echo [4/4] Restarting Manager...
     start "Tekuchi Manager" cmd /c "manager.bat"
 )
 
-:: Check every 60 seconds
-timeout /t 60 >nul
-goto loop
+echo [%time%] Next check in %CHECK_INTERVAL% seconds.
+timeout /t %CHECK_INTERVAL% >nul
+goto check_loop
