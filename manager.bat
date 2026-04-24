@@ -16,38 +16,38 @@ if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
 
 :: 1. AUTO-INSTALL PYTHON DEPENDENCIES
 echo [DEP] Checking Python dependencies...
-if exist "%SERVER_DIR%\requirements.txt" (
-    python -m pip install -r "%SERVER_DIR%\requirements.txt" >nul 2>&1
-) else (
-    echo [WARN] Python requirements.txt not found at %SERVER_DIR%
-)
+if not exist "%SERVER_DIR%\requirements.txt" goto skip_python
+python -m pip install -r "%SERVER_DIR%\requirements.txt" >nul 2>&1
+:skip_python
 
 :: 2. AUTO-INSTALL NODE DEPENDENCIES
 echo [DEP] Installing Node dependencies...
 cd /d "%BASE_DIR%"
-if exist "package.json" (
-    echo Running NPM Install... Please wait.
-    :: We removed >nul completely. You will now see the installation happen!
-    call npm install
-) else (
-    echo [ERROR] package.json NOT FOUND in %BASE_DIR%
-    pause
-    goto monitor
-)
+if not exist "package.json" goto err_pkg
 
-:: 3. STRICT VERIFICATION - GUARANTEE NEXT.JS EXISTS
+echo Running NPM Install... Please wait.
+call npm install
+goto check_next
+
+:err_pkg
+echo [ERROR] package.json NOT FOUND in %BASE_DIR%
+pause
+goto monitor
+
+:check_next
+:: 3. STRICT VERIFICATION
 echo [CHECK] Verifying installation...
-if not exist "%BASE_DIR%node_modules\.bin\next.cmd" (
-    echo.
-    echo =======================================================
-    echo [FATAL ERROR] The 'next' executable is missing!
-    echo NPM failed to install your dependencies properly.
-    echo Please scroll up and look at the NPM error messages.
-    echo =======================================================
-    pause
-    goto monitor
-)
+if exist "%BASE_DIR%node_modules\.bin\next.cmd" goto do_cleanup
+echo.
+echo =======================================================
+echo [FATAL ERROR] The 'next' executable is missing!
+echo NPM failed to install your dependencies properly.
+echo Please scroll up and look at the NPM error messages.
+echo =======================================================
+pause
+goto monitor
 
+:do_cleanup
 :: 4. CLEANUP OLD PROCESSES
 echo [CLEAN] Clearing existing processes...
 taskkill /f /im python.exe >nul 2>&1
@@ -56,10 +56,10 @@ timeout /t 1 >nul
 
 :: 5. LAUNCH SERVICES
 echo [START] Launching Backend (Port 8000)...
-start /b "API" cmd /c "cd /d "%SERVER_DIR%" && python -m uvicorn main:app --host 0.0.0.0 --port 8000 >> "%LOG_DIR%\api.log" 2>&1"
+start /b "API" /D "%SERVER_DIR%" cmd /c "python -m uvicorn main:app --host 0.0.0.0 --port 8000 >> "%LOG_DIR%\api.log" 2>&1"
 
 echo [START] Launching Frontend (Port 3000)...
-start /b "Next" cmd /c "cd /d "%BASE_DIR%" && call npm run dev >> "%LOG_DIR%\frontend.log" 2>&1"
+start /b "Next" /D "%BASE_DIR%" cmd /c "call npm run dev >> "%LOG_DIR%\frontend.log" 2>&1"
 
 echo -------------------------------------------------------
 echo SERVICES ACTIVE. 
