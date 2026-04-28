@@ -61,3 +61,1472 @@ D:\Media\processing\b21f1748-7921-4dcc-9da1-8f8c3ded98d5.mp4: Invalid data found
 2026-04-24 11:56  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
 2026-04-24 11:56  INFO     Added job "auto_run_job" to job store "default"
 2026-04-24 11:56  INFO     Scheduler started
+2026-04-24 12:11  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 12:11:20 BST)" (scheduled at 2026-04-24 12:11:20.539001+01:00)
+2026-04-24 12:11  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 12:26:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 12:26  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 12:41:20 BST)" (scheduled at 2026-04-24 12:26:20.539001+01:00)
+2026-04-24 12:26  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 12:41:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 12:41  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 12:56:20 BST)" (scheduled at 2026-04-24 12:41:20.539001+01:00)
+2026-04-24 12:41  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 12:56:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 12:56  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 13:11:20 BST)" (scheduled at 2026-04-24 12:56:20.539001+01:00)
+2026-04-24 12:56  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 13:11:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 13:11  WARNING  Run time of job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 13:26:20 BST)" was missed by 0:00:01.152345
+2026-04-24 13:26  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 13:41:20 BST)" (scheduled at 2026-04-24 13:26:20.539001+01:00)
+2026-04-24 13:26  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 13:41:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 13:41  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 13:56:20 BST)" (scheduled at 2026-04-24 13:41:20.539001+01:00)
+2026-04-24 13:41  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 13:56:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 13:56  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:11:20 BST)" (scheduled at 2026-04-24 13:56:20.539001+01:00)
+2026-04-24 13:56  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:11:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 14:11  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:26:20 BST)" (scheduled at 2026-04-24 14:11:20.539001+01:00)
+2026-04-24 14:11  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:26:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 14:26  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:41:20 BST)" (scheduled at 2026-04-24 14:26:20.539001+01:00)
+2026-04-24 14:26  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:41:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 14:41  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:56:20 BST)" (scheduled at 2026-04-24 14:41:20.539001+01:00)
+2026-04-24 14:41  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 14:56:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 14:56  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 15:11:20 BST)" (scheduled at 2026-04-24 14:56:20.539001+01:00)
+2026-04-24 14:56  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 15:11:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-24 15:11  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 15:26:20 BST)" (scheduled at 2026-04-24 15:11:20.539001+01:00)
+2026-04-24 15:11  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-24 15:26:20 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 64, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 69, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 191, in run_batch
+    files          = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts)]
+                                 ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\0000 Tekuchi Media Processor\\VIEWS_TODO'
+2026-04-28 15:42  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-28 15:42  INFO     Added job "auto_run_job" to job store "default"
+2026-04-28 15:42  INFO     Scheduler started
+2026-04-28 15:44  INFO     Scheduler has been shut down
+2026-04-28 15:44  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-28 15:44  INFO     Added job "auto_run_job" to job store "default"
+2026-04-28 15:44  INFO     Scheduler started
+2026-04-28 15:44  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:44:33 BST)" (scheduled at 2026-04-28 15:44:33.607313+01:00)
+2026-04-28 15:44  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:44  INFO     Starting batch processing...
+2026-04-28 15:44  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:44  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:44:42 BST)" executed successfully
+2026-04-28 15:44  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:44:51 BST)" (scheduled at 2026-04-28 15:44:42.607313+01:00)
+2026-04-28 15:44  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:44  INFO     Starting batch processing...
+2026-04-28 15:44  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:44  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:44:51 BST)" executed successfully
+2026-04-28 15:44  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:00 BST)" (scheduled at 2026-04-28 15:44:51.607313+01:00)
+2026-04-28 15:44  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:44  INFO     Starting batch processing...
+2026-04-28 15:44  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:44  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:00 BST)" executed successfully
+2026-04-28 15:45  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:09 BST)" (scheduled at 2026-04-28 15:45:00.607313+01:00)
+2026-04-28 15:45  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:45  INFO     Starting batch processing...
+2026-04-28 15:45  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:45  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:09 BST)" executed successfully
+2026-04-28 15:45  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:18 BST)" (scheduled at 2026-04-28 15:45:09.607313+01:00)
+2026-04-28 15:45  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:45  INFO     Starting batch processing...
+2026-04-28 15:45  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:45  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:18 BST)" executed successfully
+2026-04-28 15:45  INFO     Manual Resize API: target=800x534, files=1
+2026-04-28 15:45  INFO       [Cropper API] unnamed (1).jpg compressed: 59KB -> 51KB
+2026-04-28 15:45  INFO       [Cropper API] unnamed (1).jpg compressed: 46KB -> 38KB
+2026-04-28 15:45  INFO     Successfully processed manual upload: unnamed (1).jpg -> 800x534
+2026-04-28 15:45  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:27 BST)" (scheduled at 2026-04-28 15:45:18.607313+01:00)
+2026-04-28 15:45  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:45  INFO     Starting batch processing...
+2026-04-28 15:45  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:45  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:27 BST)" executed successfully
+2026-04-28 15:45  INFO     Manual Resize API: target=1920x1080, files=1
+2026-04-28 15:45  INFO     Skipping unnamed (1).jpg: Image (1264x1832) smaller than target (1920x1080)
+2026-04-28 15:45  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:36 BST)" (scheduled at 2026-04-28 15:45:27.607313+01:00)
+2026-04-28 15:45  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:45  INFO     Starting batch processing...
+2026-04-28 15:45  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:45  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:36 BST)" executed successfully
+2026-04-28 15:45  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:45 BST)" (scheduled at 2026-04-28 15:45:36.607313+01:00)
+2026-04-28 15:45  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:45  INFO     Starting batch processing...
+2026-04-28 15:45  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:45  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:45 BST)" executed successfully
+2026-04-28 15:45  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:54 BST)" (scheduled at 2026-04-28 15:45:45.607313+01:00)
+2026-04-28 15:45  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:45  INFO     Starting batch processing...
+2026-04-28 15:45  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:45  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:45:54 BST)" executed successfully
+2026-04-28 15:45  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:03 BST)" (scheduled at 2026-04-28 15:45:54.607313+01:00)
+2026-04-28 15:45  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:45  INFO     Starting batch processing...
+2026-04-28 15:45  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:45  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:03 BST)" executed successfully
+2026-04-28 15:46  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:12 BST)" (scheduled at 2026-04-28 15:46:03.607313+01:00)
+2026-04-28 15:46  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:46  INFO     Starting batch processing...
+2026-04-28 15:46  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:46  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:12 BST)" executed successfully
+2026-04-28 15:46  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:21 BST)" (scheduled at 2026-04-28 15:46:12.607313+01:00)
+2026-04-28 15:46  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:46  INFO     Starting batch processing...
+2026-04-28 15:46  INFO     Processing folder: 3840x2160 (3 files)
+2026-04-28 15:46  INFO     Successfully processed 3001-A.jpg to 3840x2160
+2026-04-28 15:46  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Batch processing completed. Total processed: 1
+2026-04-28 15:46  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:21 BST)" executed successfully
+2026-04-28 15:46  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:30 BST)" (scheduled at 2026-04-28 15:46:21.607313+01:00)
+2026-04-28 15:46  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:46  INFO     Starting batch processing...
+2026-04-28 15:46  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:46  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:46  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:30 BST)" executed successfully
+2026-04-28 15:46  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:39 BST)" (scheduled at 2026-04-28 15:46:30.607313+01:00)
+2026-04-28 15:46  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:46  INFO     Starting batch processing...
+2026-04-28 15:46  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:46  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:46  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:39 BST)" executed successfully
+2026-04-28 15:46  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:48 BST)" (scheduled at 2026-04-28 15:46:39.607313+01:00)
+2026-04-28 15:46  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:46  INFO     Starting batch processing...
+2026-04-28 15:46  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:46  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:46  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:48 BST)" executed successfully
+2026-04-28 15:46  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:57 BST)" (scheduled at 2026-04-28 15:46:48.607313+01:00)
+2026-04-28 15:46  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:46  INFO     Starting batch processing...
+2026-04-28 15:46  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:46  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Processing folder: 800x534 (3 files)
+2026-04-28 15:46  INFO     Successfully processed 3001-A.jpg to 800x534
+2026-04-28 15:46  INFO     Successfully processed thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg to 800x534
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:46  INFO     Batch processing completed. Total processed: 2
+2026-04-28 15:46  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:46:57 BST)" executed successfully
+2026-04-28 15:46  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:06 BST)" (scheduled at 2026-04-28 15:46:57.607313+01:00)
+2026-04-28 15:46  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:46  INFO     Starting batch processing...
+2026-04-28 15:46  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:46  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:46  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:46  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:46  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:46  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:06 BST)" executed successfully
+2026-04-28 15:47  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:15 BST)" (scheduled at 2026-04-28 15:47:06.607313+01:00)
+2026-04-28 15:47  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:47  INFO     Starting batch processing...
+2026-04-28 15:47  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:47  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Processing folder: 800x450 (3 files)
+2026-04-28 15:47  INFO     Successfully processed 3001-A.jpg to 800x450
+2026-04-28 15:47  INFO     Successfully processed thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg to 800x450
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:47  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:47  INFO     Batch processing completed. Total processed: 2
+2026-04-28 15:47  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:15 BST)" executed successfully
+2026-04-28 15:47  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:24 BST)" (scheduled at 2026-04-28 15:47:15.607313+01:00)
+2026-04-28 15:47  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:47  INFO     Starting batch processing...
+2026-04-28 15:47  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:47  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:47  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:47  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:47  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:24 BST)" executed successfully
+2026-04-28 15:47  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:33 BST)" (scheduled at 2026-04-28 15:47:24.607313+01:00)
+2026-04-28 15:47  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:47  INFO     Starting batch processing...
+2026-04-28 15:47  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:47  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:47  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:47  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:47  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:33 BST)" executed successfully
+2026-04-28 15:47  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:42 BST)" (scheduled at 2026-04-28 15:47:33.607313+01:00)
+2026-04-28 15:47  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:47  INFO     Starting batch processing...
+2026-04-28 15:47  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:47  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:47  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:47  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:47  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:42 BST)" executed successfully
+2026-04-28 15:47  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:51 BST)" (scheduled at 2026-04-28 15:47:42.607313+01:00)
+2026-04-28 15:47  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:47  INFO     Starting batch processing...
+2026-04-28 15:47  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:47  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:47  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:47  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:47  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:47:51 BST)" executed successfully
+2026-04-28 15:47  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:00 BST)" (scheduled at 2026-04-28 15:47:51.607313+01:00)
+2026-04-28 15:47  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:47  INFO     Starting batch processing...
+2026-04-28 15:47  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:47  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:47  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:47  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:47  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:47  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:47  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:00 BST)" executed successfully
+2026-04-28 15:48  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:09 BST)" (scheduled at 2026-04-28 15:48:00.607313+01:00)
+2026-04-28 15:48  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:48  INFO     Starting batch processing...
+2026-04-28 15:48  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:48  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:48  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:48  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:09 BST)" executed successfully
+2026-04-28 15:48  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:18 BST)" (scheduled at 2026-04-28 15:48:09.607313+01:00)
+2026-04-28 15:48  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:48  INFO     Starting batch processing...
+2026-04-28 15:48  INFO     Processing folder: 1920x1080 (3 files)
+2026-04-28 15:48  INFO     Successfully processed 3001-A.jpg to 1920x1080
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:48  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:48  INFO     Batch processing completed. Total processed: 1
+2026-04-28 15:48  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:18 BST)" executed successfully
+2026-04-28 15:48  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:27 BST)" (scheduled at 2026-04-28 15:48:18.607313+01:00)
+2026-04-28 15:48  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:48  INFO     Starting batch processing...
+2026-04-28 15:48  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:48  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:48  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:48  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:27 BST)" executed successfully
+2026-04-28 15:48  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:36 BST)" (scheduled at 2026-04-28 15:48:27.607313+01:00)
+2026-04-28 15:48  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:48  INFO     Starting batch processing...
+2026-04-28 15:48  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:48  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:48  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:48  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:36 BST)" executed successfully
+2026-04-28 15:48  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:45 BST)" (scheduled at 2026-04-28 15:48:36.607313+01:00)
+2026-04-28 15:48  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:48  INFO     Starting batch processing...
+2026-04-28 15:48  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:48  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:48  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:48  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:45 BST)" executed successfully
+2026-04-28 15:48  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:54 BST)" (scheduled at 2026-04-28 15:48:45.607313+01:00)
+2026-04-28 15:48  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:48  INFO     Starting batch processing...
+2026-04-28 15:48  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:48  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:48  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:48  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:48:54 BST)" executed successfully
+2026-04-28 15:48  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:03 BST)" (scheduled at 2026-04-28 15:48:54.607313+01:00)
+2026-04-28 15:48  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:48  INFO     Starting batch processing...
+2026-04-28 15:48  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:48  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:48  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:48  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:48  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:48  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:48  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:48  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:03 BST)" executed successfully
+2026-04-28 15:49  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:12 BST)" (scheduled at 2026-04-28 15:49:03.607313+01:00)
+2026-04-28 15:49  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:49  INFO     Starting batch processing...
+2026-04-28 15:49  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:49  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:49  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:49  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:12 BST)" executed successfully
+2026-04-28 15:49  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:21 BST)" (scheduled at 2026-04-28 15:49:12.607313+01:00)
+2026-04-28 15:49  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:49  INFO     Starting batch processing...
+2026-04-28 15:49  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:49  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:49  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:49  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:21 BST)" executed successfully
+2026-04-28 15:49  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:30 BST)" (scheduled at 2026-04-28 15:49:21.607313+01:00)
+2026-04-28 15:49  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:49  INFO     Starting batch processing...
+2026-04-28 15:49  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:49  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:49  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:49  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:30 BST)" executed successfully
+2026-04-28 15:49  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:39 BST)" (scheduled at 2026-04-28 15:49:30.607313+01:00)
+2026-04-28 15:49  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:49  INFO     Starting batch processing...
+2026-04-28 15:49  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:49  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:49  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:49  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:39 BST)" executed successfully
+2026-04-28 15:49  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:48 BST)" (scheduled at 2026-04-28 15:49:39.607313+01:00)
+2026-04-28 15:49  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:49  INFO     Starting batch processing...
+2026-04-28 15:49  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:49  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:49  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:49  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:48 BST)" executed successfully
+2026-04-28 15:49  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:57 BST)" (scheduled at 2026-04-28 15:49:48.607313+01:00)
+2026-04-28 15:49  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:49  INFO     Starting batch processing...
+2026-04-28 15:49  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:49  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:49  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:49  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:49:57 BST)" executed successfully
+2026-04-28 15:49  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:06 BST)" (scheduled at 2026-04-28 15:49:57.607313+01:00)
+2026-04-28 15:49  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:49  INFO     Starting batch processing...
+2026-04-28 15:49  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:49  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:49  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:49  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:49  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:49  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:49  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:49  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:06 BST)" executed successfully
+2026-04-28 15:50  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:15 BST)" (scheduled at 2026-04-28 15:50:06.607313+01:00)
+2026-04-28 15:50  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:50  INFO     Starting batch processing...
+2026-04-28 15:50  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:50  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:50  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:50  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:15 BST)" executed successfully
+2026-04-28 15:50  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:24 BST)" (scheduled at 2026-04-28 15:50:15.607313+01:00)
+2026-04-28 15:50  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:50  INFO     Starting batch processing...
+2026-04-28 15:50  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:50  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:50  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:50  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:24 BST)" executed successfully
+2026-04-28 15:50  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:33 BST)" (scheduled at 2026-04-28 15:50:24.607313+01:00)
+2026-04-28 15:50  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:50  INFO     Starting batch processing...
+2026-04-28 15:50  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:50  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:50  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:50  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:33 BST)" executed successfully
+2026-04-28 15:50  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:42 BST)" (scheduled at 2026-04-28 15:50:33.607313+01:00)
+2026-04-28 15:50  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:50  INFO     Starting batch processing...
+2026-04-28 15:50  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:50  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:50  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:50  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:42 BST)" executed successfully
+2026-04-28 15:50  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:51 BST)" (scheduled at 2026-04-28 15:50:42.607313+01:00)
+2026-04-28 15:50  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:50  INFO     Starting batch processing...
+2026-04-28 15:50  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:50  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:50  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:50  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:50:51 BST)" executed successfully
+2026-04-28 15:50  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:00 BST)" (scheduled at 2026-04-28 15:50:51.607313+01:00)
+2026-04-28 15:50  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:50  INFO     Starting batch processing...
+2026-04-28 15:50  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:50  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:50  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:50  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:50  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:50  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:50  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:50  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:00 BST)" executed successfully
+2026-04-28 15:51  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:09 BST)" (scheduled at 2026-04-28 15:51:00.607313+01:00)
+2026-04-28 15:51  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:51  INFO     Starting batch processing...
+2026-04-28 15:51  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:51  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:51  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:51  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:09 BST)" executed successfully
+2026-04-28 15:51  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:18 BST)" (scheduled at 2026-04-28 15:51:09.607313+01:00)
+2026-04-28 15:51  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:51  INFO     Starting batch processing...
+2026-04-28 15:51  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:51  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:51  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:51  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:18 BST)" executed successfully
+2026-04-28 15:51  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:27 BST)" (scheduled at 2026-04-28 15:51:18.607313+01:00)
+2026-04-28 15:51  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:51  INFO     Starting batch processing...
+2026-04-28 15:51  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:51  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:51  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:51  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:27 BST)" executed successfully
+2026-04-28 15:51  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:36 BST)" (scheduled at 2026-04-28 15:51:27.607313+01:00)
+2026-04-28 15:51  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:51  INFO     Starting batch processing...
+2026-04-28 15:51  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:51  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:51  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:51  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:36 BST)" executed successfully
+2026-04-28 15:51  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:45 BST)" (scheduled at 2026-04-28 15:51:36.607313+01:00)
+2026-04-28 15:51  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:51  INFO     Starting batch processing...
+2026-04-28 15:51  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:51  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:51  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:51  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:45 BST)" executed successfully
+2026-04-28 15:51  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:54 BST)" (scheduled at 2026-04-28 15:51:45.607313+01:00)
+2026-04-28 15:51  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:51  INFO     Starting batch processing...
+2026-04-28 15:51  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:51  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:51  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:51  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:51:54 BST)" executed successfully
+2026-04-28 15:51  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:03 BST)" (scheduled at 2026-04-28 15:51:54.607313+01:00)
+2026-04-28 15:51  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:51  INFO     Starting batch processing...
+2026-04-28 15:51  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:51  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:51  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:51  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:51  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:51  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:51  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:51  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:03 BST)" executed successfully
+2026-04-28 15:52  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:12 BST)" (scheduled at 2026-04-28 15:52:03.607313+01:00)
+2026-04-28 15:52  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:52  INFO     Starting batch processing...
+2026-04-28 15:52  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:52  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:52  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:52  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:12 BST)" executed successfully
+2026-04-28 15:52  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:21 BST)" (scheduled at 2026-04-28 15:52:12.607313+01:00)
+2026-04-28 15:52  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:52  INFO     Starting batch processing...
+2026-04-28 15:52  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:52  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:52  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:52  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:21 BST)" executed successfully
+2026-04-28 15:52  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:30 BST)" (scheduled at 2026-04-28 15:52:21.607313+01:00)
+2026-04-28 15:52  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:52  INFO     Starting batch processing...
+2026-04-28 15:52  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:52  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:52  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:52  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:30 BST)" executed successfully
+2026-04-28 15:52  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:39 BST)" (scheduled at 2026-04-28 15:52:30.607313+01:00)
+2026-04-28 15:52  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:52  INFO     Starting batch processing...
+2026-04-28 15:52  INFO     Processing folder: 1920x1080 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 1920x1080: Image dimensions (1191x1684) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 1920x1080: Image dimensions (661x931) smaller than target (1920x1080)
+2026-04-28 15:52  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:52  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:52  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:52  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:39 BST)" executed successfully
+2026-04-28 15:52  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:48 BST)" (scheduled at 2026-04-28 15:52:39.607313+01:00)
+2026-04-28 15:52  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:52  INFO     Starting batch processing...
+2026-04-28 15:52  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:52  INFO     Skipping thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg in 3840x2160: Image dimensions (1191x1684) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 3840x2160: Image dimensions (661x931) smaller than target (3840x2160)
+2026-04-28 15:52  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x450: Image dimensions (661x931) smaller than target (800x450)
+2026-04-28 15:52  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:52  INFO     Skipping thumb_dataloft_dagenham_green_v1747757073.jpg in 800x534: Image dimensions (661x931) smaller than target (800x534)
+2026-04-28 15:52  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:52  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:48 BST)" executed successfully
+2026-04-28 15:52  INFO     Scheduler has been shut down
+2026-04-28 15:52  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-28 15:52  INFO     Added job "auto_run_job" to job store "default"
+2026-04-28 15:52  INFO     Scheduler started
+2026-04-28 15:52  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:52:53 BST)" (scheduled at 2026-04-28 15:52:53.749872+01:00)
+2026-04-28 15:53  WARNING  Execution of job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:53:02 BST)" skipped: maximum number of running instances reached (1)
+2026-04-28 15:53  WARNING  Execution of job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:53:11 BST)" skipped: maximum number of running instances reached (1)
+2026-04-28 15:53  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:53  INFO     Starting batch processing...
+2026-04-28 15:53  INFO     Processing folder: 1920x1080 (3 files)
+2026-04-28 15:53  INFO     Successfully processed 3001-A.jpg to 1920x1080
+2026-04-28 15:53  INFO     Image thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Processing folder: 3840x2160 (2 files)
+2026-04-28 15:53  INFO     Image thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg smaller than 3840x2160. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 3840x2160. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Processing folder: 800x450 (1 files)
+2026-04-28 15:53  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 800x450. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Processing folder: 800x534 (1 files)
+2026-04-28 15:53  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 800x534. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Batch processing completed. Total processed: 7
+2026-04-28 15:53  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:53:38 BST)" executed successfully
+2026-04-28 15:53  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:53:47 BST)" (scheduled at 2026-04-28 15:53:38.749872+01:00)
+2026-04-28 15:53  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:53  INFO     Starting batch processing...
+2026-04-28 15:53  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:53  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:53:47 BST)" executed successfully
+2026-04-28 15:53  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:53:56 BST)" (scheduled at 2026-04-28 15:53:47.749872+01:00)
+2026-04-28 15:53  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:53  INFO     Starting batch processing...
+2026-04-28 15:53  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:53  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:53:56 BST)" executed successfully
+2026-04-28 15:53  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:05 BST)" (scheduled at 2026-04-28 15:53:56.749872+01:00)
+2026-04-28 15:53  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:53  INFO     Starting batch processing...
+2026-04-28 15:53  INFO     Processing folder: 1920x1080 (3 files)
+2026-04-28 15:53  INFO     Successfully processed 3001-A.jpg to 1920x1080
+2026-04-28 15:53  INFO     Image thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 15:53  INFO     Batch processing completed. Total processed: 3
+2026-04-28 15:53  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:05 BST)" executed successfully
+2026-04-28 15:54  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:14 BST)" (scheduled at 2026-04-28 15:54:05.749872+01:00)
+2026-04-28 15:54  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:54  INFO     Starting batch processing...
+2026-04-28 15:54  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:54  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:14 BST)" executed successfully
+2026-04-28 15:54  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:23 BST)" (scheduled at 2026-04-28 15:54:14.749872+01:00)
+2026-04-28 15:54  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:54  INFO     Starting batch processing...
+2026-04-28 15:54  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:54  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:23 BST)" executed successfully
+2026-04-28 15:54  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:32 BST)" (scheduled at 2026-04-28 15:54:23.749872+01:00)
+2026-04-28 15:54  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:54  INFO     Starting batch processing...
+2026-04-28 15:54  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:54  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:32 BST)" executed successfully
+2026-04-28 15:54  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:41 BST)" (scheduled at 2026-04-28 15:54:32.749872+01:00)
+2026-04-28 15:54  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:54  INFO     Starting batch processing...
+2026-04-28 15:54  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:54  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:41 BST)" executed successfully
+2026-04-28 15:54  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:50 BST)" (scheduled at 2026-04-28 15:54:41.749872+01:00)
+2026-04-28 15:54  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:54  INFO     Starting batch processing...
+2026-04-28 15:54  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:54  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:50 BST)" executed successfully
+2026-04-28 15:54  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:59 BST)" (scheduled at 2026-04-28 15:54:50.749872+01:00)
+2026-04-28 15:54  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:54  INFO     Starting batch processing...
+2026-04-28 15:54  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:54  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:54:59 BST)" executed successfully
+2026-04-28 15:54  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:08 BST)" (scheduled at 2026-04-28 15:54:59.749872+01:00)
+2026-04-28 15:54  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:54  INFO     Starting batch processing...
+2026-04-28 15:54  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:54  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:08 BST)" executed successfully
+2026-04-28 15:55  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:17 BST)" (scheduled at 2026-04-28 15:55:08.749872+01:00)
+2026-04-28 15:55  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:55  INFO     Starting batch processing...
+2026-04-28 15:55  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:55  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:17 BST)" executed successfully
+2026-04-28 15:55  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:26 BST)" (scheduled at 2026-04-28 15:55:17.749872+01:00)
+2026-04-28 15:55  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:55  INFO     Starting batch processing...
+2026-04-28 15:55  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:55  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:26 BST)" executed successfully
+2026-04-28 15:55  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:35 BST)" (scheduled at 2026-04-28 15:55:26.749872+01:00)
+2026-04-28 15:55  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:55  INFO     Starting batch processing...
+2026-04-28 15:55  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:55  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:35 BST)" executed successfully
+2026-04-28 15:55  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:44 BST)" (scheduled at 2026-04-28 15:55:35.749872+01:00)
+2026-04-28 15:55  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:55  INFO     Starting batch processing...
+2026-04-28 15:55  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:55  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:44 BST)" executed successfully
+2026-04-28 15:55  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:53 BST)" (scheduled at 2026-04-28 15:55:44.749872+01:00)
+2026-04-28 15:55  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:55  INFO     Starting batch processing...
+2026-04-28 15:55  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:55  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:55:53 BST)" executed successfully
+2026-04-28 15:55  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:02 BST)" (scheduled at 2026-04-28 15:55:53.749872+01:00)
+2026-04-28 15:55  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:55  INFO     Starting batch processing...
+2026-04-28 15:55  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:55  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:02 BST)" executed successfully
+2026-04-28 15:56  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:11 BST)" (scheduled at 2026-04-28 15:56:02.749872+01:00)
+2026-04-28 15:56  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:56  INFO     Starting batch processing...
+2026-04-28 15:56  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:56  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:11 BST)" executed successfully
+2026-04-28 15:56  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:20 BST)" (scheduled at 2026-04-28 15:56:11.749872+01:00)
+2026-04-28 15:56  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:56  INFO     Starting batch processing...
+2026-04-28 15:56  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:56  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:20 BST)" executed successfully
+2026-04-28 15:56  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:29 BST)" (scheduled at 2026-04-28 15:56:20.749872+01:00)
+2026-04-28 15:56  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:56  INFO     Starting batch processing...
+2026-04-28 15:56  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:56  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:29 BST)" executed successfully
+2026-04-28 15:56  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:38 BST)" (scheduled at 2026-04-28 15:56:29.749872+01:00)
+2026-04-28 15:56  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:56  INFO     Starting batch processing...
+2026-04-28 15:56  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:56  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:38 BST)" executed successfully
+2026-04-28 15:56  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:47 BST)" (scheduled at 2026-04-28 15:56:38.749872+01:00)
+2026-04-28 15:56  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:56  INFO     Starting batch processing...
+2026-04-28 15:56  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:56  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:47 BST)" executed successfully
+2026-04-28 15:56  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:56 BST)" (scheduled at 2026-04-28 15:56:47.749872+01:00)
+2026-04-28 15:56  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:56  INFO     Starting batch processing...
+2026-04-28 15:56  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:56  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:56:56 BST)" executed successfully
+2026-04-28 15:56  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:05 BST)" (scheduled at 2026-04-28 15:56:56.749872+01:00)
+2026-04-28 15:56  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:56  INFO     Starting batch processing...
+2026-04-28 15:56  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:56  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:05 BST)" executed successfully
+2026-04-28 15:57  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:14 BST)" (scheduled at 2026-04-28 15:57:05.749872+01:00)
+2026-04-28 15:57  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:57  INFO     Starting batch processing...
+2026-04-28 15:57  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:57  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:14 BST)" executed successfully
+2026-04-28 15:57  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:23 BST)" (scheduled at 2026-04-28 15:57:14.749872+01:00)
+2026-04-28 15:57  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:57  INFO     Starting batch processing...
+2026-04-28 15:57  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:57  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:23 BST)" executed successfully
+2026-04-28 15:57  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:32 BST)" (scheduled at 2026-04-28 15:57:23.749872+01:00)
+2026-04-28 15:57  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:57  INFO     Starting batch processing...
+2026-04-28 15:57  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:57  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:32 BST)" executed successfully
+2026-04-28 15:57  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:41 BST)" (scheduled at 2026-04-28 15:57:32.749872+01:00)
+2026-04-28 15:57  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:57  INFO     Starting batch processing...
+2026-04-28 15:57  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:57  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:41 BST)" executed successfully
+2026-04-28 15:57  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:50 BST)" (scheduled at 2026-04-28 15:57:41.749872+01:00)
+2026-04-28 15:57  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:57  INFO     Starting batch processing...
+2026-04-28 15:57  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:57  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:50 BST)" executed successfully
+2026-04-28 15:57  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:59 BST)" (scheduled at 2026-04-28 15:57:50.749872+01:00)
+2026-04-28 15:57  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:57  INFO     Starting batch processing...
+2026-04-28 15:57  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:57  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:57:59 BST)" executed successfully
+2026-04-28 15:57  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:08 BST)" (scheduled at 2026-04-28 15:57:59.749872+01:00)
+2026-04-28 15:57  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:57  INFO     Starting batch processing...
+2026-04-28 15:57  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:57  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:08 BST)" executed successfully
+2026-04-28 15:58  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:17 BST)" (scheduled at 2026-04-28 15:58:08.749872+01:00)
+2026-04-28 15:58  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:58  INFO     Starting batch processing...
+2026-04-28 15:58  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:58  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:17 BST)" executed successfully
+2026-04-28 15:58  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:26 BST)" (scheduled at 2026-04-28 15:58:17.749872+01:00)
+2026-04-28 15:58  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:58  INFO     Starting batch processing...
+2026-04-28 15:58  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:58  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:26 BST)" executed successfully
+2026-04-28 15:58  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:35 BST)" (scheduled at 2026-04-28 15:58:26.749872+01:00)
+2026-04-28 15:58  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:58  INFO     Starting batch processing...
+2026-04-28 15:58  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:58  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:35 BST)" executed successfully
+2026-04-28 15:58  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:44 BST)" (scheduled at 2026-04-28 15:58:35.749872+01:00)
+2026-04-28 15:58  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:58  INFO     Starting batch processing...
+2026-04-28 15:58  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:58  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:44 BST)" executed successfully
+2026-04-28 15:58  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:53 BST)" (scheduled at 2026-04-28 15:58:44.749872+01:00)
+2026-04-28 15:58  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:58  INFO     Starting batch processing...
+2026-04-28 15:58  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:58  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:58:53 BST)" executed successfully
+2026-04-28 15:58  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:02 BST)" (scheduled at 2026-04-28 15:58:53.749872+01:00)
+2026-04-28 15:58  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:58  INFO     Starting batch processing...
+2026-04-28 15:58  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:58  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:02 BST)" executed successfully
+2026-04-28 15:58  INFO     Scheduler has been shut down
+2026-04-28 15:59  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-28 15:59  INFO     Added job "auto_run_job" to job store "default"
+2026-04-28 15:59  INFO     Scheduler started
+2026-04-28 15:59  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:09 BST)" (scheduled at 2026-04-28 15:59:09.341127+01:00)
+2026-04-28 15:59  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:59  INFO     Starting batch processing...
+2026-04-28 15:59  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:59  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:18 BST)" executed successfully
+2026-04-28 15:59  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:27 BST)" (scheduled at 2026-04-28 15:59:18.341127+01:00)
+2026-04-28 15:59  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:59  INFO     Starting batch processing...
+2026-04-28 15:59  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:59  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:27 BST)" executed successfully
+2026-04-28 15:59  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:36 BST)" (scheduled at 2026-04-28 15:59:27.341127+01:00)
+2026-04-28 15:59  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:59  INFO     Starting batch processing...
+2026-04-28 15:59  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:59  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:36 BST)" executed successfully
+2026-04-28 15:59  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:45 BST)" (scheduled at 2026-04-28 15:59:36.341127+01:00)
+2026-04-28 15:59  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:59  INFO     Starting batch processing...
+2026-04-28 15:59  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:59  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:45 BST)" executed successfully
+2026-04-28 15:59  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:54 BST)" (scheduled at 2026-04-28 15:59:45.341127+01:00)
+2026-04-28 15:59  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:59  INFO     Starting batch processing...
+2026-04-28 15:59  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:59  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 15:59:54 BST)" executed successfully
+2026-04-28 15:59  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:03 BST)" (scheduled at 2026-04-28 15:59:54.341127+01:00)
+2026-04-28 15:59  INFO     Auto-checking folders for media and cropper...
+2026-04-28 15:59  INFO     Starting batch processing...
+2026-04-28 15:59  INFO     Batch processing completed. Total processed: 0
+2026-04-28 15:59  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:03 BST)" executed successfully
+2026-04-28 16:00  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:12 BST)" (scheduled at 2026-04-28 16:00:03.341127+01:00)
+2026-04-28 16:00  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:00  INFO     Starting batch processing...
+2026-04-28 16:00  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:00  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:12 BST)" executed successfully
+2026-04-28 16:00  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:21 BST)" (scheduled at 2026-04-28 16:00:12.341127+01:00)
+2026-04-28 16:00  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:00  INFO     Starting batch processing...
+2026-04-28 16:00  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:00  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:21 BST)" executed successfully
+2026-04-28 16:00  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:30 BST)" (scheduled at 2026-04-28 16:00:21.341127+01:00)
+2026-04-28 16:00  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:00  INFO     Starting batch processing...
+2026-04-28 16:00  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:00  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:30 BST)" executed successfully
+2026-04-28 16:00  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:39 BST)" (scheduled at 2026-04-28 16:00:30.341127+01:00)
+2026-04-28 16:00  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:00  INFO     Starting batch processing...
+2026-04-28 16:00  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:00  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:39 BST)" executed successfully
+2026-04-28 16:00  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:48 BST)" (scheduled at 2026-04-28 16:00:39.341127+01:00)
+2026-04-28 16:00  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:00  INFO     Starting batch processing...
+2026-04-28 16:00  INFO     Processing folder: 1920x1080 (3 files)
+2026-04-28 16:00  INFO     Successfully processed 3001-A.jpg to 1920x1080
+2026-04-28 16:00  INFO     Image thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 16:00  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 16:00  INFO     Batch processing completed. Total processed: 3
+2026-04-28 16:00  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:48 BST)" executed successfully
+2026-04-28 16:00  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:57 BST)" (scheduled at 2026-04-28 16:00:48.341127+01:00)
+2026-04-28 16:00  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:00  INFO     Starting batch processing...
+2026-04-28 16:00  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:00  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:00:57 BST)" executed successfully
+2026-04-28 16:00  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:06 BST)" (scheduled at 2026-04-28 16:00:57.341127+01:00)
+2026-04-28 16:00  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:00  INFO     Starting batch processing...
+2026-04-28 16:00  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:00  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:06 BST)" executed successfully
+2026-04-28 16:01  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:15 BST)" (scheduled at 2026-04-28 16:01:06.341127+01:00)
+2026-04-28 16:01  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:01  INFO     Starting batch processing...
+2026-04-28 16:01  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:01  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:15 BST)" executed successfully
+2026-04-28 16:01  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:24 BST)" (scheduled at 2026-04-28 16:01:15.341127+01:00)
+2026-04-28 16:01  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:01  INFO     Starting batch processing...
+2026-04-28 16:01  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:01  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:24 BST)" executed successfully
+2026-04-28 16:01  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:33 BST)" (scheduled at 2026-04-28 16:01:24.341127+01:00)
+2026-04-28 16:01  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:01  INFO     Starting batch processing...
+2026-04-28 16:01  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:01  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:33 BST)" executed successfully
+2026-04-28 16:01  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:42 BST)" (scheduled at 2026-04-28 16:01:33.341127+01:00)
+2026-04-28 16:01  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:01  INFO     Starting batch processing...
+2026-04-28 16:01  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:01  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:42 BST)" executed successfully
+2026-04-28 16:01  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:51 BST)" (scheduled at 2026-04-28 16:01:42.341127+01:00)
+2026-04-28 16:01  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:01  INFO     Starting batch processing...
+2026-04-28 16:01  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:01  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:01:51 BST)" executed successfully
+2026-04-28 16:01  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:00 BST)" (scheduled at 2026-04-28 16:01:51.341127+01:00)
+2026-04-28 16:01  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:01  INFO     Starting batch processing...
+2026-04-28 16:01  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:01  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:00 BST)" executed successfully
+2026-04-28 16:02  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:09 BST)" (scheduled at 2026-04-28 16:02:00.341127+01:00)
+2026-04-28 16:02  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:02  INFO     Starting batch processing...
+2026-04-28 16:02  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:02  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:09 BST)" executed successfully
+2026-04-28 16:02  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:18 BST)" (scheduled at 2026-04-28 16:02:09.341127+01:00)
+2026-04-28 16:02  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:02  INFO     Starting batch processing...
+2026-04-28 16:02  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:02  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:18 BST)" executed successfully
+2026-04-28 16:02  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:27 BST)" (scheduled at 2026-04-28 16:02:18.341127+01:00)
+2026-04-28 16:02  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:02  INFO     Starting batch processing...
+2026-04-28 16:02  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:02  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:27 BST)" executed successfully
+2026-04-28 16:02  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:36 BST)" (scheduled at 2026-04-28 16:02:27.341127+01:00)
+2026-04-28 16:02  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:02  INFO     Starting batch processing...
+2026-04-28 16:02  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:02  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:36 BST)" executed successfully
+2026-04-28 16:02  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:45 BST)" (scheduled at 2026-04-28 16:02:36.341127+01:00)
+2026-04-28 16:02  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:02  INFO     Starting batch processing...
+2026-04-28 16:02  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:02  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:45 BST)" executed successfully
+2026-04-28 16:02  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:54 BST)" (scheduled at 2026-04-28 16:02:45.341127+01:00)
+2026-04-28 16:02  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:02  INFO     Starting batch processing...
+2026-04-28 16:02  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:02  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:02:54 BST)" executed successfully
+2026-04-28 16:02  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:03 BST)" (scheduled at 2026-04-28 16:02:54.341127+01:00)
+2026-04-28 16:02  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:02  INFO     Starting batch processing...
+2026-04-28 16:02  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:02  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:03 BST)" executed successfully
+2026-04-28 16:03  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:12 BST)" (scheduled at 2026-04-28 16:03:03.341127+01:00)
+2026-04-28 16:03  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:03  INFO     Starting batch processing...
+2026-04-28 16:03  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:03  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:12 BST)" executed successfully
+2026-04-28 16:03  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:21 BST)" (scheduled at 2026-04-28 16:03:12.341127+01:00)
+2026-04-28 16:03  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:03  INFO     Starting batch processing...
+2026-04-28 16:03  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:03  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:21 BST)" executed successfully
+2026-04-28 16:03  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:30 BST)" (scheduled at 2026-04-28 16:03:21.341127+01:00)
+2026-04-28 16:03  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:03  INFO     Starting batch processing...
+2026-04-28 16:03  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:03  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:30 BST)" executed successfully
+2026-04-28 16:03  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:39 BST)" (scheduled at 2026-04-28 16:03:30.341127+01:00)
+2026-04-28 16:03  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:03  INFO     Starting batch processing...
+2026-04-28 16:03  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:03  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:39 BST)" executed successfully
+2026-04-28 16:03  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:48 BST)" (scheduled at 2026-04-28 16:03:39.341127+01:00)
+2026-04-28 16:03  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:03  INFO     Starting batch processing...
+2026-04-28 16:03  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:03  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:48 BST)" executed successfully
+2026-04-28 16:03  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:57 BST)" (scheduled at 2026-04-28 16:03:48.341127+01:00)
+2026-04-28 16:03  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:03  INFO     Starting batch processing...
+2026-04-28 16:03  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:03  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:03:57 BST)" executed successfully
+2026-04-28 16:03  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:06 BST)" (scheduled at 2026-04-28 16:03:57.341127+01:00)
+2026-04-28 16:03  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:03  INFO     Starting batch processing...
+2026-04-28 16:03  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:03  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:06 BST)" executed successfully
+2026-04-28 16:04  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:15 BST)" (scheduled at 2026-04-28 16:04:06.341127+01:00)
+2026-04-28 16:04  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:04  INFO     Starting batch processing...
+2026-04-28 16:04  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:04  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:15 BST)" executed successfully
+2026-04-28 16:04  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:24 BST)" (scheduled at 2026-04-28 16:04:15.341127+01:00)
+2026-04-28 16:04  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:04  INFO     Starting batch processing...
+2026-04-28 16:04  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:04  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:24 BST)" executed successfully
+2026-04-28 16:04  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:33 BST)" (scheduled at 2026-04-28 16:04:24.341127+01:00)
+2026-04-28 16:04  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:04  INFO     Starting batch processing...
+2026-04-28 16:04  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:04  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:33 BST)" executed successfully
+2026-04-28 16:04  INFO     Scheduler has been shut down
+2026-04-28 16:04  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-28 16:04  INFO     Added job "auto_run_job" to job store "default"
+2026-04-28 16:04  INFO     Scheduler started
+2026-04-28 16:04  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:40 BST)" (scheduled at 2026-04-28 16:04:40.933675+01:00)
+2026-04-28 16:04  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:04  INFO     Starting batch processing...
+2026-04-28 16:04  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:04  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:49 BST)" executed successfully
+2026-04-28 16:04  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:58 BST)" (scheduled at 2026-04-28 16:04:49.933675+01:00)
+2026-04-28 16:04  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:04  INFO     Starting batch processing...
+2026-04-28 16:04  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:04  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:04:58 BST)" executed successfully
+2026-04-28 16:04  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:07 BST)" (scheduled at 2026-04-28 16:04:58.933675+01:00)
+2026-04-28 16:04  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:04  INFO     Starting batch processing...
+2026-04-28 16:04  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:04  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:07 BST)" executed successfully
+2026-04-28 16:05  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:16 BST)" (scheduled at 2026-04-28 16:05:07.933675+01:00)
+2026-04-28 16:05  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:05  INFO     Starting batch processing...
+2026-04-28 16:05  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:05  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:16 BST)" executed successfully
+2026-04-28 16:05  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:25 BST)" (scheduled at 2026-04-28 16:05:16.933675+01:00)
+2026-04-28 16:05  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:05  INFO     Starting batch processing...
+2026-04-28 16:05  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:05  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:25 BST)" executed successfully
+2026-04-28 16:05  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:34 BST)" (scheduled at 2026-04-28 16:05:25.933675+01:00)
+2026-04-28 16:05  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:05  INFO     Starting batch processing...
+2026-04-28 16:05  INFO     Processing folder: 1920x1080 (3 files)
+2026-04-28 16:05  INFO     Successfully processed 3001-A.jpg to 1920x1080
+2026-04-28 16:05  INFO     Image thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 16:05  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 1920x1080. Moving to processed without cropping.
+2026-04-28 16:05  INFO     Batch processing completed. Total processed: 3
+2026-04-28 16:05  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:34 BST)" executed successfully
+2026-04-28 16:05  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:43 BST)" (scheduled at 2026-04-28 16:05:34.933675+01:00)
+2026-04-28 16:05  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:05  INFO     Starting batch processing...
+2026-04-28 16:05  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:05  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:43 BST)" executed successfully
+2026-04-28 16:05  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:52 BST)" (scheduled at 2026-04-28 16:05:43.933675+01:00)
+2026-04-28 16:05  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:05  INFO     Starting batch processing...
+2026-04-28 16:05  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:05  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:05:52 BST)" executed successfully
+2026-04-28 16:05  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:01 BST)" (scheduled at 2026-04-28 16:05:52.933675+01:00)
+2026-04-28 16:05  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:05  INFO     Starting batch processing...
+2026-04-28 16:05  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:05  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:01 BST)" executed successfully
+2026-04-28 16:06  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:10 BST)" (scheduled at 2026-04-28 16:06:01.933675+01:00)
+2026-04-28 16:06  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:06  INFO     Starting batch processing...
+2026-04-28 16:06  INFO     Processing folder: 3840x2160 (3 files)
+2026-04-28 16:06  INFO     Successfully processed 3001-A.jpg to 3840x2160
+2026-04-28 16:06  INFO     Image thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg smaller than 3840x2160. Moving to processed without cropping.
+2026-04-28 16:06  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 3840x2160. Moving to processed without cropping.
+2026-04-28 16:06  INFO     Processing folder: 800x534 (3 files)
+2026-04-28 16:06  INFO     Successfully processed 3001-A.jpg to 800x534
+2026-04-28 16:06  INFO     Successfully processed thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg to 800x534
+2026-04-28 16:06  INFO     Image thumb_dataloft_dagenham_green_v1747757073.jpg smaller than 800x534. Moving to processed without cropping.
+2026-04-28 16:06  INFO     Batch processing completed. Total processed: 6
+2026-04-28 16:06  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:10 BST)" executed successfully
+2026-04-28 16:06  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:19 BST)" (scheduled at 2026-04-28 16:06:10.933675+01:00)
+2026-04-28 16:06  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:06  INFO     [IMAGE] 3001-A.jpg
+2026-04-28 16:06  INFO     [IMAGE] thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg
+2026-04-28 16:06  INFO     [IMAGE] thumb_dataloft_dagenham_green_v1747757073.jpg
+2026-04-28 16:06  INFO     Starting batch processing...
+2026-04-28 16:06  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:06  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:19 BST)" executed successfully
+2026-04-28 16:06  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:28 BST)" (scheduled at 2026-04-28 16:06:19.933675+01:00)
+2026-04-28 16:06  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:06  INFO     Starting batch processing...
+2026-04-28 16:06  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:06  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:28 BST)" executed successfully
+2026-04-28 16:06  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:37 BST)" (scheduled at 2026-04-28 16:06:28.933675+01:00)
+2026-04-28 16:06  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:06  INFO     Starting batch processing...
+2026-04-28 16:06  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:06  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:37 BST)" executed successfully
+2026-04-28 16:06  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:46 BST)" (scheduled at 2026-04-28 16:06:37.933675+01:00)
+2026-04-28 16:06  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:06  INFO     Starting batch processing...
+2026-04-28 16:06  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:06  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:46 BST)" executed successfully
+2026-04-28 16:06  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:55 BST)" (scheduled at 2026-04-28 16:06:46.933675+01:00)
+2026-04-28 16:06  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:06  INFO     Starting batch processing...
+2026-04-28 16:06  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:06  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:06:55 BST)" executed successfully
+2026-04-28 16:06  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:04 BST)" (scheduled at 2026-04-28 16:06:55.933675+01:00)
+2026-04-28 16:06  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:06  INFO     Starting batch processing...
+2026-04-28 16:06  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:06  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:04 BST)" executed successfully
+2026-04-28 16:07  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:13 BST)" (scheduled at 2026-04-28 16:07:04.933675+01:00)
+2026-04-28 16:07  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:07  INFO     Starting batch processing...
+2026-04-28 16:07  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:07  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:13 BST)" executed successfully
+2026-04-28 16:07  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:22 BST)" (scheduled at 2026-04-28 16:07:13.933675+01:00)
+2026-04-28 16:07  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:07  INFO     Starting batch processing...
+2026-04-28 16:07  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:07  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:22 BST)" executed successfully
+2026-04-28 16:07  INFO     Running job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:31 BST)" (scheduled at 2026-04-28 16:07:22.933675+01:00)
+2026-04-28 16:07  INFO     Auto-checking folders for media and cropper...
+2026-04-28 16:07  INFO     Starting batch processing...
+2026-04-28 16:07  INFO     Batch processing completed. Total processed: 0
+2026-04-28 16:07  INFO     Job "auto_run_job (trigger: interval[0:00:09], next run at: 2026-04-28 16:07:31 BST)" executed successfully
