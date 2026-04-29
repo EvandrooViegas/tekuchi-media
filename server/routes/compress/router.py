@@ -17,6 +17,7 @@ from functools import lru_cache
 from pathlib import Path
 from datetime import datetime, timedelta
 from typing import List, Optional
+from PIL import Image
 
 from fastapi import APIRouter, UploadFile, File, HTTPException, BackgroundTasks
 from fastapi.responses import StreamingResponse
@@ -349,7 +350,6 @@ def process_image(src: Path):
                 run_cmd([ffmpeg_bin(), "-y", "-i", str(src), "-vf", f"scale={new_w}:{IMAGE_TARGET_H}", "-q:v", "2", str(out_tmp)], job_name)
 
             try:
-                from PIL import Image
                 img = Image.open(str(out_tmp))
                 if is_png:
                     img.save(str(out_tmp), optimize=True, compress_level=9)
@@ -456,7 +456,6 @@ def compress_image_bytes(image_bytes: bytes, filename: str, quality: int = 92) -
     Falls back to returning the original bytes if Pillow is unavailable.
     """
     try:
-        from PIL import Image
         img    = Image.open(io.BytesIO(image_bytes))
         buf    = io.BytesIO()
         ext    = Path(filename).suffix.lower()

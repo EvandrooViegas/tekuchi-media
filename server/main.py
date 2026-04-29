@@ -1,4 +1,4 @@
-# pip install fastapi uvicorn pymupdf opencv-python numpy python-multipart pillow apscheduler
+# pip install -r requirements.txt
 #
 # Run with:
 #   cd server
@@ -21,15 +21,19 @@
 import os
 import shutil
 import uuid
+import json
+import asyncio
 import configparser
+import logging
 from contextlib import asynccontextmanager
 from datetime import datetime
 from pathlib import Path
 from typing import List
 
 import cv2
+import numpy as np
 from apscheduler.schedulers.background import BackgroundScheduler
-from fastapi import FastAPI, Response, UploadFile, File
+from fastapi import FastAPI, Response, UploadFile, File, Form
 from fastapi.responses import FileResponse
 
 # ── Route modules ──────────────────────────────────────────────────────────────
@@ -57,7 +61,6 @@ CROP_PROCESSED = config["paths"]["cropper_processed"]
 POLL_INTERVAL  = config.getint("general", "interval", fallback=5)
 
 # ── Logging ────────────────────────────────────────────────────────────────────
-import logging
 log_file = os.path.join(current_dir, "cropper.log")
 logger = logging.getLogger("cropper")
 logger.setLevel(logging.INFO)
@@ -76,7 +79,6 @@ if not logger.handlers:
 def auto_run_job():
     """Periodically check the inbox folder and compress any new files."""
     logger.info("Auto-checking folders for media and cropper...")
-    import asyncio
     asyncio.run(run_all_async())
 
 async def run_all_async():
@@ -108,8 +110,6 @@ app.include_router(thumbnail_router)
 app.include_router(cropper_router)
 app.include_router(compare_router)
 
-from fastapi import Form
-import numpy as np
 from routes.cropper.router import _encode_img
 
 @app.post("/manual-resize")
@@ -119,22 +119,18 @@ async def manual_resize_image(
     target_h: int = 1080
 ):
     """
-    Dedicated endpoint for manual uploads to avoid routing conflicts.
+    Transient manual resize (session persistent only). Returns base64 data.
     """
     all_results = []
-    print(f"DEBUG: /manual-resize called with {len(files)} files, target={target_w}x{target_h}")
-    logger.info(f"Manual Resize Request: {len(files)} files, target={target_w}x{target_h}")
+    logger.info(f"Manual Resize (Transient): {len(files)} files, target={target_w}x{target_h}")
 
     for file in files:
         try:
-            print(f"DEBUG: Processing file {file.filename}")
             contents = await file.read()
             nparr    = np.frombuffer(contents, np.uint8)
             img      = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
             if img is None:
-                print(f"DEBUG: Failed to decode {file.filename}")
-                logger.warning(f"Manual Resize: Failed to decode {file.filename}")
                 continue
 
             h, w = img.shape[:2]
@@ -179,7 +175,6 @@ async def manual_resize_image(
             })
             logger.info(f"Successfully processed manual upload: {file.filename}")
         except Exception as e:
-            print(f"DEBUG: Error processing {file.filename}: {e}")
             logger.error(f"Manual Resize Error: {e}")
             continue
 
@@ -267,7 +262,6 @@ async def get_processed_history():
                 stats = {}
                 stats_file = os.path.join(folder_path, "stats.json")
                 if os.path.exists(stats_file):
-                    import json
                     try:
                         with open(stats_file, "r") as f:
                             stats = json.load(f)
@@ -395,7 +389,6 @@ async def run_batch():
             with open(os.path.join(output_folder, f"top_{folder_name}.jpg"), "wb") as f:
                 f.write(t_bytes)
 
-            import json
             with open(os.path.join(output_folder, "stats.json"), "w") as f:
                 json.dump({
                     "centerStats": f"{len(c_raw)//1024}KB -> {len(c_bytes)//1024}KB",

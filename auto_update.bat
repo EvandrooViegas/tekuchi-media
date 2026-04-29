@@ -4,7 +4,7 @@ title Tekuchi Auto-Updater
 
 :: --- CONFIGURATION ---
 set "REPO_URL=https://github.com/EvandrooViegas/tekuchi-media"
-set "BRANCH=main"
+set "BRANCH=master"
 set "CHECK_INTERVAL=60"
 
 :check_loop

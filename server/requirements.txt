@@ -1,8 +1,8 @@
-fastapi
-uvicorn
-pymupdf
-opencv-python
-numpy
-python-multipart
-pillow
-apscheduler
+fastapi==0.135.2
+uvicorn==0.42.0
+PyMuPDF==1.27.2.2
+opencv-python==4.13.0.92
+numpy==2.4.3
+python-multipart==0.0.22
+pillow==12.1.1
+APScheduler==3.11.2

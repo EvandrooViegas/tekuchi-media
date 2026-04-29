@@ -179,11 +179,17 @@ export default function ResizerPage() {
                     targetRes: r.targetRes
                 }));
                 setDirectHistory(prev => [...newEntries, ...prev]);
+                
+                toast.success(`Processed ${newEntries.length} images!`);
+
                 if (newEntries.length < Array.from(pendingFiles).length) {
-                    toast.warning("Some images were skipped (smaller than target dimensions).");
+                    toast.warning("Some images were returned as originals (too small for target).");
                 }
             }
-        } catch (err) { alert("Upload failed."); }
+        } catch (err) { 
+            console.error(err);
+            toast.error("Upload failed."); 
+        }
         finally { 
             setIsUploading(false);
             setPendingFiles(null);
@@ -213,7 +219,8 @@ export default function ResizerPage() {
             </header>
 
             {tab === 'batch' ? (
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                <>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
 
                     {/* Left Column: Control Panel */}
                     <div className="lg:col-span-1 space-y-6">
@@ -245,65 +252,67 @@ export default function ResizerPage() {
                         <QueuePreview files={status.files} />
                     </div>
 
-                    {/* Bottom Section: Recently Processed History */}
-                    {processedHistory.length > 0 && (
-                        <div className="lg:col-span-3 pt-8 space-y-4">
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center gap-3">
-                                    <h2 className="text-xs font-black text-slate-400 uppercase tracking-widest">
-                                        Recently Processed Folders
-                                    </h2>
-                                    <div className="h-[1px] w-24 bg-slate-200" />
-                                </div>
-                                <span className="text-[10px] text-slate-400 font-bold italic">Shift + Scroll to pan</span>
-                            </div>
-
-                            {/* Scrollable Container */}
-                            <div className="flex gap-6 overflow-x-auto pb-6 pt-2 custom-scrollbar snap-x">
-                                {processedHistory.map((item, i) => (
-                                    <Card
-                                        key={i}
-                                        onClick={() => setActiveResult({
-                                            id: i.toString(),
-                                            name: item.folder,
-                                            center: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/center_" + item.folder + ".jpg")}&isProcessed=true`,
-                                            centerStats: item.centerStats,
-                                            top: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/top_" + item.folder + ".jpg")}&isProcessed=true`,
-                                            topStats: item.topStats,
-                                            original: item.original_file 
-                                                ? `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` 
-                                                : undefined
-                                        })}
-                                        className="flex-none w-64 group border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white hover:ring-blue-400 transition-all cursor-pointer snap-start"
-                                    >
-                                        <div className="aspect-video bg-slate-100 relative overflow-hidden">
-                                            <img
-                                                src={item.original_file ? `/api/resize/local-preview?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` : null}
-                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                alt="Folder Original"
-                                            />
-                                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                                <Maximize2 className="text-white" size={24} />
-                                            </div>
-                                        </div>
-                                        <div className="p-3 border-t bg-white">
-                                            <p className="text-[10px] font-black text-slate-800 truncate" title={item.folder}>
-                                                {item.folder}
-                                            </p>
-                                            <div className="flex items-center gap-1 mt-1">
-                                                <CheckCircle2 size={10} className="text-green-500" />
-                                                <span className="text-[9px] text-slate-400 font-bold uppercase">
-                                                    {item.targetRes ? `Organized (${item.targetRes})` : "Folder Organized"}
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </Card>
-                                ))}
-                            </div>
-                        </div>
-                    )}
                 </div>
-            ) : tab === 'upload' ? (
+
+                {/* Bottom Section: Recently Processed History - Now back on Automation tab */}
+                {processedHistory.length > 0 && (
+                    <div className="lg:col-span-3 pt-8 space-y-4">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                                <h2 className="text-xs font-black text-slate-400 uppercase tracking-widest">
+                                    Recently Processed Folders
+                                </h2>
+                                <div className="h-[1px] w-24 bg-slate-200" />
+                            </div>
+                            <span className="text-[10px] text-slate-400 font-bold italic">Shift + Scroll to pan</span>
+                        </div>
+
+                        {/* Scrollable Container */}
+                        <div className="flex gap-6 overflow-x-auto pb-6 pt-2 custom-scrollbar snap-x">
+                            {processedHistory.map((item, i) => (
+                                <Card
+                                    key={i}
+                                    onClick={() => setActiveResult({
+                                        id: i.toString(),
+                                        name: item.folder,
+                                        center: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/center_" + item.folder + ".jpg")}&isProcessed=true`,
+                                        centerStats: item.centerStats,
+                                        top: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/top_" + item.folder + ".jpg")}&isProcessed=true`,
+                                        topStats: item.topStats,
+                                        original: item.original_file 
+                                            ? `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` 
+                                            : undefined
+                                    })}
+                                    className="flex-none w-64 group border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white hover:ring-blue-400 transition-all cursor-pointer snap-start"
+                                >
+                                    <div className="aspect-video bg-slate-100 relative overflow-hidden">
+                                        <img
+                                            src={item.original_file ? `/api/resize/local-preview?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` : null}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            alt="Folder Original"
+                                        />
+                                        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                            <Maximize2 className="text-white" size={24} />
+                                        </div>
+                                    </div>
+                                    <div className="p-3 border-t bg-white">
+                                        <p className="text-[10px] font-black text-slate-800 truncate" title={item.folder}>
+                                            {item.folder}
+                                        </p>
+                                        <div className="flex items-center gap-1 mt-1">
+                                            <CheckCircle2 size={10} className="text-green-500" />
+                                            <span className="text-[9px] text-slate-400 font-bold uppercase">
+                                                {item.targetRes ? `Organized (${item.targetRes})` : "Folder Organized"}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </Card>
+                            ))}
+                        </div>
+                    </div>
+                )}
+            </>
+        ) : tab === 'upload' ? (
                 <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
                     <Card className="border-2 border-dashed border-slate-200 bg-white hover:border-blue-500 transition-colors group relative">
                         <input 
@@ -350,7 +359,7 @@ export default function ResizerPage() {
                                         ))}
                                     </div>
                                     <p className="text-[10px] text-center text-slate-400 font-medium px-4">
-                                        Images smaller than the selected resolution will be automatically skipped to preserve quality.
+                                        Images smaller than the selected resolution will be automatically returned as originals.
                                     </p>
                                 </CardContent>
                             </Card>
@@ -364,7 +373,10 @@ export default function ResizerPage() {
                                     <img src={item.center} className="w-24 h-14 object-cover rounded bg-slate-100" alt="thumb" />
                                     <div className="flex-grow min-w-0">
                                         <p className="font-bold text-slate-800 text-sm truncate">{item.name}</p>
-                                        <p className="text-[10px] text-green-600 font-bold uppercase">Ready</p>
+                                        <div className="flex items-center gap-1.5">
+                                            <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+                                            <p className="text-[10px] text-green-600 font-bold uppercase tracking-widest">Ready ({item.targetRes})</p>
+                                        </div>
                                     </div>
                                     <Maximize2 size={16} className="text-slate-300" />
                                 </div>
