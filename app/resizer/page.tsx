@@ -241,8 +241,8 @@ export default function ResizerPage() {
                         {/* Helpful Hint */}
                         <div className="p-4 bg-blue-50 border border-blue-100 rounded-2xl">
                             <p className="text-[11px] text-blue-700 leading-relaxed font-medium">
-                                <strong>Note:</strong> Running the batch will move files from the dimension-specific TODO folders
-                                into individual subfolders within CROPPER_PROCESSED.
+                                <strong>Note:</strong> Running the batch will process images from the root TODO folder
+                                into 4 dimensions (HD, 4K, Small) with center/top crops. Originals are moved to ORIGINALS.
                             </p>
                         </div>
                     </div>
@@ -274,20 +274,18 @@ export default function ResizerPage() {
                                     key={i}
                                     onClick={() => setActiveResult({
                                         id: i.toString(),
-                                        name: item.folder,
-                                        center: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/center_" + item.folder + ".jpg")}&isProcessed=true`,
+                                        name: item.original_file,
+                                        center: `/api/resize/full-resolution?filename=${encodeURIComponent("1920x1080/center/" + item.original_file)}&isProcessed=true`,
                                         centerStats: item.centerStats,
-                                        top: `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/top_" + item.folder + ".jpg")}&isProcessed=true`,
+                                        top: `/api/resize/full-resolution?filename=${encodeURIComponent("1920x1080/top/" + item.original_file)}&isProcessed=true`,
                                         topStats: item.topStats,
-                                        original: item.original_file 
-                                            ? `/api/resize/full-resolution?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` 
-                                            : undefined
+                                        original: `/api/resize/full-resolution?filename=${encodeURIComponent("ORIGINALS/" + item.original_file)}&isProcessed=true`
                                     })}
                                     className="flex-none w-64 group border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white hover:ring-blue-400 transition-all cursor-pointer snap-start"
                                 >
                                     <div className="aspect-video bg-slate-100 relative overflow-hidden">
                                         <img
-                                            src={item.original_file ? `/api/resize/local-preview?filename=${encodeURIComponent(item.folder + "/" + item.original_file)}&isProcessed=true` : null}
+                                            src={item.original_file ? `/api/resize/local-preview?filename=${encodeURIComponent("ORIGINALS/" + item.original_file)}&isProcessed=true` : null}
                                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                             alt="Folder Original"
                                         />

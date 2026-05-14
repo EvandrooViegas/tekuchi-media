@@ -1,43 +1,272 @@
 {
   "jobs": [
     {
-      "file": "3001-A.jpg",
-      "kind": "image",
+      "file": "3D Presentation Draft_6BDP.pdf",
+      "kind": "pdf",
       "status": "success",
-      "timestamp": "2026-04-28T16:06:12.549717",
+      "timestamp": "2026-05-14T16:19:02.509876",
       "outputs": [
-        "3001-A_20260428_160611.jpg"
+        "3D Presentation Draft_6BDP_20260514_161857.pdf"
       ],
       "error": null,
-      "duration_s": 1.5,
-      "orig_kb": 12294,
-      "final_kb": 434
+      "duration_s": 5.2,
+      "orig_kb": 7719,
+      "final_kb": 7546
     },
     {
-      "file": "thumb_6003 Ballymore CUBA individual plan test_V6.pdf.jpg",
+      "file": "dog.webp",
       "kind": "image",
-      "status": "success",
-      "timestamp": "2026-04-28T16:06:13.710736",
-      "outputs": [
-        "thumb_6003 Ballymore CUBA indi_20260428_160612.jpg"
-      ],
-      "error": null,
-      "duration_s": 1.1,
-      "orig_kb": 185,
-      "final_kb": 72
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:02.589743",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
     },
     {
-      "file": "thumb_dataloft_dagenham_green_v1747757073.jpg",
+      "file": "high-resolution-image-featuring-a-colorful-butterfly-with-intricate-patterns-and-vibrant-colors-photo.jpg",
       "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:02.677577",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "lion.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:02.719618",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "pdf.pdf",
+      "kind": "pdf",
       "status": "success",
-      "timestamp": "2026-04-28T16:06:13.849466",
+      "timestamp": "2026-05-14T16:19:03.743972",
       "outputs": [
-        "thumb_dataloft_dagenham_green__20260428_160613.jpg"
+        "pdf_20260514_161902.pdf"
       ],
       "error": null,
-      "duration_s": 0.1,
-      "orig_kb": 212,
-      "final_kb": 156
+      "duration_s": 1.0,
+      "orig_kb": 48,
+      "final_kb": 46
+    },
+    {
+      "file": "tree.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:03.778541",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "virus.mp4",
+      "kind": "video",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:03.817945",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\",
+      "duration_s": 0.0
+    },
+    {
+      "file": "3D Presentation Draft_6BDP.pdf",
+      "kind": "pdf",
+      "status": "success",
+      "timestamp": "2026-05-14T16:19:37.032237",
+      "outputs": [
+        "3D Presentation Draft_6BDP_20260514_161931.pdf"
+      ],
+      "error": null,
+      "duration_s": 5.0,
+      "orig_kb": 7719,
+      "final_kb": 7546
+    },
+    {
+      "file": "dog.webp",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:37.068543",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "high-resolution-image-featuring-a-colorful-butterfly-with-intricate-patterns-and-vibrant-colors-photo.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:37.103443",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "lion.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:37.142465",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "pdf.pdf",
+      "kind": "pdf",
+      "status": "success",
+      "timestamp": "2026-05-14T16:19:38.196700",
+      "outputs": [
+        "pdf_20260514_161937.pdf"
+      ],
+      "error": null,
+      "duration_s": 1.0,
+      "orig_kb": 48,
+      "final_kb": 46
+    },
+    {
+      "file": "tree.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:38.235715",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "virus.mp4",
+      "kind": "video",
+      "status": "error",
+      "timestamp": "2026-05-14T16:19:38.284030",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\",
+      "duration_s": 0.0
+    },
+    {
+      "file": "fish.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:20:54.450696",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "mydoc1.pdf",
+      "kind": "pdf",
+      "status": "success",
+      "timestamp": "2026-05-14T16:20:59.481102",
+      "outputs": [
+        "mydoc1_20260514_162054.pdf"
+      ],
+      "error": null,
+      "duration_s": 5.0,
+      "orig_kb": 7719,
+      "final_kb": 7546
+    },
+    {
+      "file": "mydoc2.webp",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:20:59.586630",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "pdf.pdf",
+      "kind": "pdf",
+      "status": "success",
+      "timestamp": "2026-05-14T16:21:00.637452",
+      "outputs": [
+        "pdf_20260514_162059.pdf"
+      ],
+      "error": null,
+      "duration_s": 1.0,
+      "orig_kb": 48,
+      "final_kb": 46
+    },
+    {
+      "file": "lion.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:22:37.864656",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "tree.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:22:37.900405",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "virus.mp4",
+      "kind": "video",
+      "status": "error",
+      "timestamp": "2026-05-14T16:22:37.938184",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\",
+      "duration_s": 0.0
+    },
+    {
+      "file": "fish.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:23:00.786687",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "lion.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:23:00.828241",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "mydoc1.pdf",
+      "kind": "pdf",
+      "status": "success",
+      "timestamp": "2026-05-14T16:23:05.860241",
+      "outputs": [
+        "23_00_mydoc1.pdf"
+      ],
+      "error": null,
+      "duration_s": 5.0,
+      "orig_kb": 7719,
+      "final_kb": 7546
+    },
+    {
+      "file": "mydoc2.webp",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:23:05.895894",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "pdf.pdf",
+      "kind": "pdf",
+      "status": "success",
+      "timestamp": "2026-05-14T16:23:06.916334",
+      "outputs": [
+        "23_05_pdf.pdf"
+      ],
+      "error": null,
+      "duration_s": 1.0,
+      "orig_kb": 48,
+      "final_kb": 46
+    },
+    {
+      "file": "tree.jpg",
+      "kind": "image",
+      "status": "error",
+      "timestamp": "2026-05-14T16:23:06.983021",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\"
+    },
+    {
+      "file": "virus.mp4",
+      "kind": "video",
+      "status": "error",
+      "timestamp": "2026-05-14T16:23:07.031446",
+      "outputs": [],
+      "error": "ffmpeg.exe not found. Check C:\\ffmpeg\\bin\\",
+      "duration_s": 0.0
     }
   ]
 }

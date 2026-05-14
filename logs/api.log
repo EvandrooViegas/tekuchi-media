@@ -472,4 +472,949 @@ INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
 INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
 INFO:     127.0.0.1:52377 - "GET /folder-status HTTP/1.1" 200 OK
 INFO:     127.0.0.1:52377 - "GET /processed-history HTTP/1.1" 200 OK
-^C
+^C2026-04-29 16:09  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:     Started server process [2056]
+INFO:     Waiting for application startup.
+2026-04-29 16:09  INFO     Added job "auto_run_job" to job store "default"
+2026-04-29 16:09  INFO     Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Automation started: checking inbox every 900s
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     ::1:0 - "POST /manual-resize?target_w=1920&target_h=1080 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54223 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54223 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54223 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54241 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54241 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54241 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54259 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54259 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54259 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54279 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54279 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54279 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54313 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54313 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54313 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54323 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54323 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54323 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54336 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54336 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54336 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54359 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54359 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54359 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54383 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54383 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54383 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54397 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54397 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54397 - "GET /cropper/logs HTTP/1.1" 200 OK
+2026-04-29 16:24  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-29 16:39:06 BST)" (scheduled at 2026-04-29 16:24:06.401743+01:00)
+2026-04-29 16:24:06,408 - INFO - Auto-checking folders for media and cropper...
+2026-04-29 16:24  INFO     Auto-checking folders for media and cropper...
+2026-04-29 16:24:06,735 - INFO - Starting batch processing...
+2026-04-29 16:24  INFO     Starting batch processing...
+2026-04-29 16:24  ERROR    Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-04-29 16:39:06 BST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Evandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 82, in auto_run_job
+    asyncio.run(run_all_async())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 87, in run_all_async
+    await run_batch()  # 2. Process Image Cropper Inbox
+    ^^^^^^^^^^^^^^^^^
+  File "D:\tekuchi-media (1)\tekuchi-media\server\main.py", line 316, in run_batch
+    os.makedirs(folder_path, exist_ok=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 218, in makedirs
+  File "<frozen os>", line 218, in makedirs
+  File "<frozen os>", line 218, in makedirs
+  File "<frozen os>", line 228, in makedirs
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\'
+INFO:     127.0.0.1:54410 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54410 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54410 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54425 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54425 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54425 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54459 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54459 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54459 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54503 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "POST /manual-resize?target_w=1920&target_h=1080 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /cropper/logs HTTP/1.1" 200 OK
+^C2026-05-14 16:09  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:     Started server process [14064]
+INFO:     Waiting for application startup.
+2026-05-14 16:09  INFO     Added job "auto_run_job" to job store "default"
+2026-05-14 16:09  INFO     Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Automation started: checking inbox every 900s
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /local-preview?filename=3001-A.jpg&isProcessed=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53576 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+2026-05-14 16:10:48,079 - INFO - Starting multi-dimension batch processing...
+2026-05-14 16:10  INFO     Starting multi-dimension batch processing...
+2026-05-14 16:10:48,430 - INFO - Processing image: 3001-A.jpg (5455x3634)
+2026-05-14 16:10  INFO     Processing image: 3001-A.jpg (5455x3634)
+2026-05-14 16:10:48,626 - INFO -   1920x1080: Processed center and top crops.
+2026-05-14 16:10  INFO       1920x1080: Processed center and top crops.
+2026-05-14 16:10:49,333 - INFO -   3840x2160: Processed center and top crops.
+2026-05-14 16:10  INFO       3840x2160: Processed center and top crops.
+2026-05-14 16:10:49,371 - INFO -   800x450: Processed center and top crops.
+2026-05-14 16:10  INFO       800x450: Processed center and top crops.
+2026-05-14 16:10:49,411 - INFO -   800x534: Processed center and top crops.
+2026-05-14 16:10  INFO       800x534: Processed center and top crops.
+2026-05-14 16:10:49,412 - INFO - Finished processing 3001-A.jpg. Moved to ORIGINALS.
+2026-05-14 16:10  INFO     Finished processing 3001-A.jpg. Moved to ORIGINALS.
+2026-05-14 16:10:49,412 - INFO - Batch processing completed. Total processed: 1
+2026-05-14 16:10  INFO     Batch processing completed. Total processed: 1
+INFO:     127.0.0.1:53564 - "POST /run-batch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53576 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53576 - "GET /local-preview?filename=ORIGINALS%2F3001-A.jpg&isProcessed=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53564 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53658 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53658 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53658 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53680 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53680 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53680 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /folder-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /processed-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /cropper/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "POST /compress/run HTTP/1.1" 200 OK
+2026-05-14 16:18  INFO     [PDF]   3D Presentation Draft_6BDP.pdf
+INFO:     127.0.0.1:53711 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+2026-05-14 16:19  INFO       Done in 5.2s (7719KB -> 7546KB)
+2026-05-14 16:19  INFO     [IMAGE] dog.webp
+2026-05-14 16:19  INFO     [IMAGE] high-resolution-image-featuring-a-colorful-butterfly-with-intricate-patterns-and-vibrant-colors-photo.jpg
+2026-05-14 16:19  INFO     [IMAGE] lion.jpg
+2026-05-14 16:19  INFO     [PDF]   pdf.pdf
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+2026-05-14 16:19  INFO       Done in 1.0s (48KB -> 46KB)
+2026-05-14 16:19  INFO     [IMAGE] tree.jpg
+2026-05-14 16:19  INFO     [VIDEO] virus.mp4
+2026-05-14 16:19  ERROR      FAILED: ffmpeg.exe not found. Check C:\ffmpeg\bin\
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "POST /compress/run HTTP/1.1" 200 OK
+2026-05-14 16:19  INFO     [PDF]   3D Presentation Draft_6BDP.pdf
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+2026-05-14 16:19  INFO       Done in 5.0s (7719KB -> 7546KB)
+2026-05-14 16:19  INFO     [IMAGE] dog.webp
+2026-05-14 16:19  INFO     [IMAGE] high-resolution-image-featuring-a-colorful-butterfly-with-intricate-patterns-and-vibrant-colors-photo.jpg
+2026-05-14 16:19  INFO     [IMAGE] lion.jpg
+2026-05-14 16:19  INFO     [PDF]   pdf.pdf
+2026-05-14 16:19  INFO       Done in 1.0s (48KB -> 46KB)
+2026-05-14 16:19  INFO     [IMAGE] tree.jpg
+2026-05-14 16:19  INFO     [VIDEO] virus.mp4
+2026-05-14 16:19  ERROR      FAILED: ffmpeg.exe not found. Check C:\ffmpeg\bin\
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "POST /compress/run HTTP/1.1" 200 OK
+2026-05-14 16:20  INFO     [IMAGE] fish.jpg
+2026-05-14 16:20  INFO     [PDF]   mydoc1.pdf
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+2026-05-14 16:20  INFO       Done in 5.0s (7719KB -> 7546KB)
+2026-05-14 16:20  INFO     [IMAGE] mydoc2.webp
+2026-05-14 16:20  INFO     [PDF]   pdf.pdf
+2026-05-14 16:21  INFO       Done in 1.0s (48KB -> 46KB)
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /compress/logs HTTP/1.1" 200 OK
+^C2026-05-14 16:21  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:     Started server process [15248]
+INFO:     Waiting for application startup.
+2026-05-14 16:21  INFO     Added job "auto_run_job" to job store "default"
+2026-05-14 16:21  INFO     Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Automation started: checking inbox every 900s
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "POST /compress/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "POST /compress/run HTTP/1.1" 200 OK
+2026-05-14 16:22  INFO     [IMAGE] lion.jpg
+2026-05-14 16:22  INFO     [IMAGE] tree.jpg
+2026-05-14 16:22  INFO     [VIDEO] virus.mp4
+2026-05-14 16:22  ERROR      FAILED: ffmpeg.exe not found. Check C:\ffmpeg\bin\
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "POST /compress/run HTTP/1.1" 200 OK
+2026-05-14 16:23  INFO     [IMAGE] fish.jpg
+2026-05-14 16:23  INFO     [IMAGE] lion.jpg
+2026-05-14 16:23  INFO     [PDF]   mydoc1.pdf
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+2026-05-14 16:23  INFO       Done in 5.0s (7719KB -> 7546KB)
+2026-05-14 16:23  INFO     [IMAGE] mydoc2.webp
+2026-05-14 16:23  INFO     [PDF]   pdf.pdf
+2026-05-14 16:23  INFO       Done in 1.0s (48KB -> 46KB)
+2026-05-14 16:23  INFO     [IMAGE] tree.jpg
+2026-05-14 16:23  INFO     [VIDEO] virus.mp4
+2026-05-14 16:23  ERROR      FAILED: ffmpeg.exe not found. Check C:\ffmpeg\bin\
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "POST /compress/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "POST /compress/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53825 - "GET /compress/logs HTTP/1.1" 200 OK

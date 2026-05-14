@@ -205,7 +205,7 @@ def ghostscript_bin():
 
 # ── Filesystem Helpers ────────────────────────────────────────────────────────
 def ts():
-    return datetime.now().strftime("%Y%m%d_%H%M%S")
+    return datetime.now().strftime("%M_%S")
 
 def relative_subdir(p, root):
     return p.parent.relative_to(root)
@@ -280,7 +280,7 @@ def extract_thumbnails(src, out_dir, stem):
 def process_video(src: Path):
     subdir   = relative_subdir(src, PROCESSING_DIR)
     stem     = src.stem
-    t        = datetime.now().strftime("%Y%m%d_%H%M%S")
+    t        = ts()
     job_name = str(subdir / src.name)
 
     log.info("[VIDEO] %s", src.name)
@@ -288,8 +288,8 @@ def process_video(src: Path):
     orig_kb = src.stat().st_size // 1024
 
     with TempWorkspace(src, subdir) as ws:
-        mp4_tmp  = ws.path / f"{stem}_{t}.mp4"
-        webm_tmp = ws.path / f"{stem}_{t}.webm"
+        mp4_tmp  = ws.path / f"{t}_{stem}.mp4"
+        webm_tmp = ws.path / f"{t}_{stem}.webm"
 
         try:
             append_job(job_name, "video", "Encoding MP4...")
@@ -326,7 +326,7 @@ def process_video(src: Path):
 def process_image(src: Path):
     subdir   = relative_subdir(src, PROCESSING_DIR)
     stem     = src.stem
-    t        = datetime.now().strftime("%Y%m%d_%H%M%S")
+    t        = ts()
     job_name = str(subdir / src.name)
     log.info("[IMAGE] %s", src.name)
     t0      = time.time()
@@ -339,7 +339,7 @@ def process_image(src: Path):
                            "-show_entries", "stream=width,height", "-of", "csv=p=0", str(src)])
             w, h    = map(int, dim.strip().split(","))
             is_png  = src.suffix.lower() == ".png"
-            out_tmp = ws.path / f"{stem[:30]}_{t}{'.png' if is_png else '.jpg'}"
+            out_tmp = ws.path / f"{t}_{stem[:30]}{'.png' if is_png else '.jpg'}"
 
             if h <= IMAGE_TARGET_H:
                 shutil.copy2(str(src), str(out_tmp))
@@ -387,7 +387,7 @@ def process_pdf(src: Path):
     orig_kb = src.stat().st_size // 1024
 
     with TempWorkspace(src, subdir) as ws:
-        out_tmp = ws.path / f"{stem}_{t}.pdf"
+        out_tmp = ws.path / f"{t}_{stem}.pdf"
         try:
             append_job(job_name, "pdf", "Optimizing...")
             run_cmd([

@@ -207,14 +207,8 @@ async def get_folder_status():
         return {"count": 0, "files": [], "error": f"Path {CROP_INBOX} not found"}
     
     valid_exts = (".png", ".jpg", ".jpeg", ".webp")
-    dimension_subfolders = ["1920x1080", "3840x2160", "800x450", "800x534"]
-    all_files = []
-    
-    for sub in dimension_subfolders:
-        sub_path = os.path.join(CROP_INBOX, sub)
-        if os.path.exists(sub_path):
-            files = [os.path.join(sub, f) for f in os.listdir(sub_path) if f.lower().endswith(valid_exts)]
-            all_files.extend(files)
+    # List files directly in the inbox root
+    all_files = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts) and os.path.isfile(os.path.join(CROP_INBOX, f))]
             
     return {"count": len(all_files), "files": all_files}
 
@@ -244,40 +238,33 @@ async def get_local_preview(filename: str, isProcessed: bool = False):
 
 @app.get("/processed-history")
 async def get_processed_history():
-    if not os.path.exists(CROP_PROCESSED):
+    """
+    Returns a list of recently processed images by looking at the ORIGINALS folder.
+    Each item includes URLs for the standard 1920x1080 crops.
+    """
+    originals_dir = os.path.join(CROP_PROCESSED, "ORIGINALS")
+    if not os.path.exists(originals_dir):
         return {"history": []}
 
     history = []
     try:
-        folders = sorted(
-            [d for d in os.listdir(CROP_PROCESSED) if os.path.isdir(os.path.join(CROP_PROCESSED, d))],
-            key=lambda d: os.path.getmtime(os.path.join(CROP_PROCESSED, d)),
+        files = sorted(
+            [f for f in os.listdir(originals_dir) if os.path.isfile(os.path.join(originals_dir, f))],
+            key=lambda f: os.path.getmtime(os.path.join(originals_dir, f)),
             reverse=True,
         )
-        for folder in folders[:15]:
-            folder_path   = os.path.join(CROP_PROCESSED, folder)
-            center_imgs   = [f for f in os.listdir(folder_path) if f.startswith("center_")]
-            original_imgs = [f for f in os.listdir(folder_path) if f.startswith("original_")]
-            if center_imgs:
-                stats = {}
-                stats_file = os.path.join(folder_path, "stats.json")
-                if os.path.exists(stats_file):
-                    try:
-                        with open(stats_file, "r") as f:
-                            stats = json.load(f)
-                    except Exception:
-                        pass
-
-                history.append({
-                    "folder":        folder,
-                    "preview":       center_imgs[0],
-                    "original_file": original_imgs[0] if original_imgs else None,
-                    "centerStats":   stats.get("centerStats"),
-                    "topStats":      stats.get("topStats"),
-                    "targetRes":     stats.get("targetResolution"),
-                })
+        
+        for filename in files[:20]:
+            # Default preview uses 1920x1080
+            history.append({
+                "folder": filename, # Using filename as identifier
+                "original_file": filename,
+                "targetRes": "Multi-Dimension",
+                "centerStats": "Processed",
+                "topStats": "Processed"
+            })
     except Exception as e:
-        print(f"History Error: {e}")
+        logger.error(f"History Error: {e}")
 
     return {"history": history}
 
@@ -297,70 +284,57 @@ async def get_full_resolution(filename: str, isProcessed: bool = False):
 
 @app.post("/run-batch")
 async def run_batch():
-    """Manually trigger a full batch crop of images in the inbox folders."""
+    """Manually trigger a full batch crop of images in the inbox folder."""
     valid_exts = (".png", ".jpg", ".jpeg", ".webp")
-    # Map subfolder names to target dimensions
-    dimension_map = {
-        "1920x1080": (1920, 1080),
-        "3840x2160": (3840, 2160),
-        "800x450":   (800, 450),
-        "800x534":   (800, 534)
-    }
+    dimensions = [
+        (1920, 1080),
+        (3840, 2160),
+        (800, 450),
+        (800, 534)
+    ]
     
     total_processed = 0
-    logger.info("Starting batch processing...")
+    logger.info("Starting multi-dimension batch processing...")
 
-    for subfolder, (tw, th) in dimension_map.items():
-        folder_path = os.path.join(CROP_INBOX, subfolder)
-        if not os.path.exists(folder_path):
-            os.makedirs(folder_path, exist_ok=True)
+    if not os.path.exists(CROP_INBOX):
+        return {"status": "error", "message": "Inbox not found"}
+
+    files = [f for f in os.listdir(CROP_INBOX) if f.lower().endswith(valid_exts) and os.path.isfile(os.path.join(CROP_INBOX, f))]
+    
+    if not files:
+        logger.info("No files found in inbox.")
+        return {"status": "success", "processed": 0}
+
+    # Ensure output base directories exist
+    os.makedirs(CROP_PROCESSED, exist_ok=True)
+    originals_dir = os.path.join(CROP_PROCESSED, "ORIGINALS")
+    os.makedirs(originals_dir, exist_ok=True)
+
+    for filename in files:
+        file_path = os.path.join(CROP_INBOX, filename)
+        img = cv2.imread(file_path)
+        if img is None:
+            logger.warning(f"Failed to read image: {file_path}")
             continue
+
+        h, w = img.shape[:2]
+        logger.info(f"Processing image: {filename} ({w}x{h})")
+
+        for (tw, th) in dimensions:
+            dim_str = f"{tw}x{th}"
             
-        files = [f for f in os.listdir(folder_path) if f.lower().endswith(valid_exts)]
-        if not files:
-            continue
+            # Create dimension-specific folders
+            center_dir = os.path.join(CROP_PROCESSED, dim_str, "center")
+            top_dir    = os.path.join(CROP_PROCESSED, dim_str, "top")
+            os.makedirs(center_dir, exist_ok=True)
+            os.makedirs(top_dir,    exist_ok=True)
 
-        logger.info(f"Processing folder: {subfolder} ({len(files)} files)")
-
-        for filename in files:
-            file_path = os.path.join(folder_path, filename)
-            img = cv2.imread(file_path)
-            if img is None:
-                logger.warning(f"Failed to read image: {file_path}")
-                continue
-
-            h, w = img.shape[:2]
-            
             # Check if image is smaller than target dimensions
             if w < tw or h < th:
-                logger.info(f"Image {filename} smaller than {tw}x{th}. Moving to processed without cropping.")
-                
-                base_name = os.path.splitext(filename)[0]
-                folder_name = f"{base_name}_{tw}x{th}_skipped"
-                output_folder = os.path.join(CROP_PROCESSED, folder_name)
-                os.makedirs(output_folder, exist_ok=True)
-                
-                with open(os.path.join(output_folder, "stats.json"), "w") as f:
-                    json.dump({
-                        "centerStats": "Skipped (too small)",
-                        "topStats": "Skipped (too small)",
-                        "targetResolution": f"{tw}x{th}",
-                        "note": "Image smaller than target resolution"
-                    }, f)
-                
-                shutil.move(file_path, os.path.join(output_folder, f"original_{filename}"))
-                total_processed += 1
+                logger.info(f"  {dim_str}: Image smaller than target. Saving original as is.")
+                shutil.copy2(file_path, os.path.join(center_dir, filename))
+                shutil.copy2(file_path, os.path.join(top_dir,    filename))
                 continue
-
-            base_name = os.path.splitext(filename)[0]
-            folder_name = f"{base_name}_{tw}x{th}"
-            counter = 1
-            while os.path.exists(os.path.join(CROP_PROCESSED, folder_name)):
-                folder_name = f"{base_name}_{tw}x{th}_{counter}"
-                counter += 1
-
-            output_folder = os.path.join(CROP_PROCESSED, folder_name)
-            os.makedirs(output_folder, exist_ok=True)
 
             aspect = tw / th
             if (w / h) > aspect:
@@ -375,30 +349,32 @@ async def run_batch():
             # Import the in-memory compressor
             from routes.compress.router import compress_image_bytes
 
-            # Compress and save Center Crop
-            _, c_buf = cv2.imencode(".jpg", center_crop, [int(cv2.IMWRITE_JPEG_QUALITY), 90])
+            # Save Center Crop
+            _, c_buf = cv2.imencode(".jpg", center_crop, [int(cv2.IMWRITE_JPEG_QUALITY), 92])
             c_raw = c_buf.tobytes()
-            c_bytes = compress_image_bytes(c_raw, f"center_{folder_name}.jpg", quality=85)
-            with open(os.path.join(output_folder, f"center_{folder_name}.jpg"), "wb") as f:
+            c_bytes = compress_image_bytes(c_raw, filename, quality=85)
+            with open(os.path.join(center_dir, filename), "wb") as f:
                 f.write(c_bytes)
 
-            # Compress and save Top Crop
-            _, t_buf = cv2.imencode(".jpg", top_crop, [int(cv2.IMWRITE_JPEG_QUALITY), 90])
+            # Save Top Crop
+            _, t_buf = cv2.imencode(".jpg", top_crop, [int(cv2.IMWRITE_JPEG_QUALITY), 92])
             t_raw = t_buf.tobytes()
-            t_bytes = compress_image_bytes(t_raw, f"top_{folder_name}.jpg", quality=85)
-            with open(os.path.join(output_folder, f"top_{folder_name}.jpg"), "wb") as f:
+            t_bytes = compress_image_bytes(t_raw, filename, quality=85)
+            with open(os.path.join(top_dir, filename), "wb") as f:
                 f.write(t_bytes)
 
-            with open(os.path.join(output_folder, "stats.json"), "w") as f:
-                json.dump({
-                    "centerStats": f"{len(c_raw)//1024}KB -> {len(c_bytes)//1024}KB",
-                    "topStats": f"{len(t_raw)//1024}KB -> {len(t_bytes)//1024}KB",
-                    "targetResolution": f"{tw}x{th}"
-                }, f)
+            logger.info(f"  {dim_str}: Processed center and top crops.")
 
-            shutil.move(file_path, os.path.join(output_folder, f"original_{filename}"))
-            logger.info(f"Successfully processed {filename} to {tw}x{th}")
-            total_processed += 1
+        # Move original file to archive
+        dest_original = os.path.join(originals_dir, filename)
+        if os.path.exists(dest_original):
+            # If file already exists in originals, add a timestamp
+            base, ext = os.path.splitext(filename)
+            dest_original = os.path.join(originals_dir, f"{base}_{int(time.time())}{ext}")
+            
+        shutil.move(file_path, dest_original)
+        total_processed += 1
+        logger.info(f"Finished processing {filename}. Moved to ORIGINALS.")
 
     logger.info(f"Batch processing completed. Total processed: {total_processed}")
     return {"status": "success", "processed": total_processed}
