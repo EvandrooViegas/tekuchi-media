@@ -17,6 +17,8 @@ interface ResizeResult {
     centerStats?: string;
     top: string;
     topStats?: string;
+    bottom: string;
+    bottomStats?: string;
     original?: string; // Optional for history view
     name: string;
     targetRes?: string;
@@ -176,6 +178,8 @@ export default function ResizerPage() {
                     centerStats: r.centerStats,
                     top: r.topCrop,
                     topStats: r.topStats,
+                    bottom: r.bottomCrop,
+                    bottomStats: r.bottomStats,
                     targetRes: r.targetRes
                 }));
                 setDirectHistory(prev => [...newEntries, ...prev]);
@@ -279,6 +283,8 @@ export default function ResizerPage() {
                                         centerStats: item.centerStats,
                                         top: `/api/resize/full-resolution?filename=${encodeURIComponent("1920x1080/top/" + item.original_file)}&isProcessed=true`,
                                         topStats: item.topStats,
+                                        bottom: `/api/resize/full-resolution?filename=${encodeURIComponent("1920x1080/bottom/" + item.original_file)}&isProcessed=true`,
+                                        bottomStats: item.bottomStats,
                                         original: `/api/resize/full-resolution?filename=${encodeURIComponent("ORIGINALS/" + item.original_file)}&isProcessed=true`
                                     })}
                                     className="flex-none w-64 group border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white hover:ring-blue-400 transition-all cursor-pointer snap-start"
@@ -427,9 +433,10 @@ export default function ResizerPage() {
                             )}
 
                             {/* Cropped Results Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-8">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-8">
                                 <ModalBlock title="Center Balanced Crop" img={activeResult.center} stats={activeResult.centerStats} onDownload={() => download(activeResult.center, 'center', activeResult.name)} />
                                 <ModalBlock title="Top Weighted Crop" img={activeResult.top} stats={activeResult.topStats} onDownload={() => download(activeResult.top, 'top', activeResult.name)} />
+                                <ModalBlock title="Bottom Weighted Crop" img={activeResult.bottom} stats={activeResult.bottomStats} onDownload={() => download(activeResult.bottom, 'bottom', activeResult.name)} />
                             </div>
                         </div>
                     </div>

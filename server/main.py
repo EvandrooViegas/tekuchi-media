@@ -29,6 +29,7 @@ from contextlib import asynccontextmanager
 from datetime import datetime
 from pathlib import Path
 from typing import List
+import time
 
 import cv2
 import numpy as np
@@ -145,6 +146,8 @@ async def manual_resize_image(
                     "centerStats": "Original (too small for crop)",
                     "topCrop":     img_data["url"],
                     "topStats":    "Original (too small for crop)",
+                    "bottomCrop":  img_data["url"],
+                    "bottomStats": "Original (too small for crop)",
                     "targetRes":   f"{target_w}x{target_h}"
                 })
                 continue
@@ -161,9 +164,11 @@ async def manual_resize_image(
 
             center_final = cv2.resize(img[cy:cy + new_h, cx:cx + new_w], (target_w, target_h))
             top_final    = cv2.resize(img[0:new_h, cx:cx + new_w],       (target_w, target_h))
+            bottom_final = cv2.resize(img[h-new_h:h, cx:cx + new_w],     (target_w, target_h))
 
             center_data = _encode_img(center_final, file.filename)
             top_data    = _encode_img(top_final,    file.filename)
+            bottom_data = _encode_img(bottom_final, file.filename)
 
             all_results.append({
                 "fileName":    file.filename,
@@ -171,6 +176,8 @@ async def manual_resize_image(
                 "centerStats": center_data["stats"],
                 "topCrop":     top_data["url"],
                 "topStats":    top_data["stats"],
+                "bottomCrop":  bottom_data["url"],
+                "bottomStats": bottom_data["stats"],
                 "targetRes":   f"{target_w}x{target_h}"
             })
             logger.info(f"Successfully processed manual upload: {file.filename}")
@@ -261,7 +268,8 @@ async def get_processed_history():
                 "original_file": filename,
                 "targetRes": "Multi-Dimension",
                 "centerStats": "Processed",
-                "topStats": "Processed"
+                "topStats": "Processed",
+                "bottomStats": "Processed"
             })
     except Exception as e:
         logger.error(f"History Error: {e}")
@@ -326,14 +334,17 @@ async def run_batch():
             # Create dimension-specific folders
             center_dir = os.path.join(CROP_PROCESSED, dim_str, "center")
             top_dir    = os.path.join(CROP_PROCESSED, dim_str, "top")
+            bottom_dir = os.path.join(CROP_PROCESSED, dim_str, "bottom")
             os.makedirs(center_dir, exist_ok=True)
             os.makedirs(top_dir,    exist_ok=True)
+            os.makedirs(bottom_dir, exist_ok=True)
 
             # Check if image is smaller than target dimensions
             if w < tw or h < th:
                 logger.info(f"  {dim_str}: Image smaller than target. Saving original as is.")
                 shutil.copy2(file_path, os.path.join(center_dir, filename))
                 shutil.copy2(file_path, os.path.join(top_dir,    filename))
+                shutil.copy2(file_path, os.path.join(bottom_dir, filename))
                 continue
 
             aspect = tw / th
@@ -345,6 +356,7 @@ async def run_batch():
             cx, cy = (w - new_w) // 2, (h - new_h) // 2
             center_crop = cv2.resize(img[cy:cy + new_h, cx:cx + new_w], (tw, th))
             top_crop    = cv2.resize(img[0:new_h, cx:cx + new_w],       (tw, th))
+            bottom_crop = cv2.resize(img[h-new_h:h, cx:cx + new_w],     (tw, th))
 
             # Import the in-memory compressor
             from routes.compress.router import compress_image_bytes
@@ -363,7 +375,14 @@ async def run_batch():
             with open(os.path.join(top_dir, filename), "wb") as f:
                 f.write(t_bytes)
 
-            logger.info(f"  {dim_str}: Processed center and top crops.")
+            # Save Bottom Crop
+            _, b_buf = cv2.imencode(".jpg", bottom_crop, [int(cv2.IMWRITE_JPEG_QUALITY), 92])
+            b_raw = b_buf.tobytes()
+            b_bytes = compress_image_bytes(b_raw, filename, quality=85)
+            with open(os.path.join(bottom_dir, filename), "wb") as f:
+                f.write(b_bytes)
+
+            logger.info(f"  {dim_str}: Processed center, top and bottom crops.")
 
         # Move original file to archive
         dest_original = os.path.join(originals_dir, filename)
