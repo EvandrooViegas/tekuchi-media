@@ -15513,3 +15513,7 @@ FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\
 2026-05-19 15:11  INFO       800x534: Processed center, top and bottom crops.
 2026-05-19 15:11  INFO     Finished processing 3001-A.jpg. Moved to ORIGINALS.
 2026-05-19 15:11  INFO     Batch processing completed. Total processed: 1
+2026-05-22 16:44  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-22 16:44  INFO     Added job "auto_run_job" to job store "default"
+2026-05-22 16:44  INFO     Scheduler started
+2026-05-22 16:48  INFO     Converted TheFuture-Light.otf → ttf, woff, woff2, svg, eot
