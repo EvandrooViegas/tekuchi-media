@@ -9,12 +9,12 @@ export default function Navbar() {
   const pathname = usePathname();
 
 const navItems = [
-  { name: 'PDF Comparer', href: '/comparer', icon: FileSearch },
-  { name: 'Thumbnailer', href: '/thumbnailer', icon: ImageIcon },
   { name: 'Media Compressor', href: '/compressor', icon: FileVideo },
   { name: 'Image Resizer', href: '/resizer', icon: Crop },
+  { name: 'Thumbnailer', href: '/thumbnailer', icon: ImageIcon },
   { name: 'Font Converter', href: '/font-converter', icon: Type },
   { name: 'Image Duplicator', href: '/image-duplicator', icon: Copy },
+  { name: 'PDF Comparer', href: '/comparer', icon: FileSearch },
 ];
 
   return (
