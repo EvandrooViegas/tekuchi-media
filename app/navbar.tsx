@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { Crop, FileSearch, FileVideo, Image as ImageIcon, Type } from "lucide-react";
+import { Crop, FileSearch, FileVideo, Image as ImageIcon, Type, FolderOpen } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -14,6 +14,7 @@ const navItems = [
   { name: 'Media Compressor', href: '/compressor', icon: FileVideo },
   { name: 'Image Resizer', href: '/resizer', icon: Crop },
   { name: 'Font Converter', href: '/font-converter', icon: Type },
+  { name: 'Apartment Organizer', href: '/apartment-organizer', icon: FolderOpen },
 ];
 
   return (
