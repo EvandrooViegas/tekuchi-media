@@ -9,25 +9,27 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "sonner";
 import { Upload, AlertCircle, CheckCircle2, XCircle, Loader2 } from "lucide-react";
 
-type ValidationResult = {
-	apartment: string;
-	imageFile: string;
-	exists: boolean;
+type DuplicationResult = {
+	originalId: string;
+	copyId: string;
+	originalFile: string;
+	status: "success" | "missing" | "error";
+	error?: string;
 };
 
 type ProcessingResult = {
 	success: boolean;
-	totalApartments: number;
-	totalImages: number;
-	warnings: string[];
+	totalMappings: number;
+	successfulCopies: number;
+	failedCopies: number;
+	results: DuplicationResult[];
 	downloadUrl?: string;
 };
 
-export default function ApartmentOrganizer() {
+export default function ImageDuplicator() {
 	const [csvFile, setCsvFile] = useState<File | null>(null);
 	const [imageFiles, setImageFiles] = useState<File[]>([]);
 	const [isProcessing, setIsProcessing] = useState(false);
-	const [validationResults, setValidationResults] = useState<ValidationResult[]>([]);
 	const [processingResult, setProcessingResult] = useState<ProcessingResult | null>(null);
 	const [isDraggingCsv, setIsDraggingCsv] = useState(false);
 	const [isDraggingImages, setIsDraggingImages] = useState(false);
@@ -53,15 +55,7 @@ export default function ApartmentOrganizer() {
 		e.preventDefault();
 		setIsDraggingImages(false);
 		if (e.dataTransfer.files) {
-			const files = Array.from(e.dataTransfer.files).filter(f => {
-				const ext = f.name.split(".").pop()?.toLowerCase();
-				return ext === "jpg" || ext === "jpeg" || ext === "png";
-			});
-
-			if (files.length !== Array.from(e.dataTransfer.files).length) {
-				toast.error("Some files were filtered out (only JPG/PNG allowed)");
-			}
-
+			const files = Array.from(e.dataTransfer.files);
 			setImageFiles(prev => [...prev, ...files]);
 			toast.success(`Added ${files.length} image(s)`);
 		}
@@ -81,15 +75,7 @@ export default function ApartmentOrganizer() {
 
 	const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		if (e.target.files) {
-			const files = Array.from(e.target.files).filter(f => {
-				const ext = f.name.split(".").pop()?.toLowerCase();
-				return ext === "jpg" || ext === "jpeg" || ext === "png";
-			});
-
-			if (files.length !== Array.from(e.target.files).length) {
-				toast.error("Some files were filtered out (only JPG/PNG allowed)");
-			}
-
+			const files = Array.from(e.target.files);
 			setImageFiles(prev => [...prev, ...files]);
 			toast.success(`Added ${files.length} image(s)`);
 		}
@@ -114,7 +100,7 @@ export default function ApartmentOrganizer() {
 				formData.append(`image_${index}`, file);
 			});
 
-			const response = await fetch("/api/apartment-organizer/process", {
+			const response = await fetch("/api/image-duplicator/process", {
 				method: "POST",
 				body: formData,
 			});
@@ -126,11 +112,10 @@ export default function ApartmentOrganizer() {
 				return;
 			}
 
-			setValidationResults(result.validationResults || []);
 			setProcessingResult(result);
 
-			if (result.warnings.length > 0) {
-				toast.warning(`Processing completed with ${result.warnings.length} warnings`);
+			if (result.failedCopies > 0) {
+				toast.warning(`Processing completed with ${result.failedCopies} failures`);
 			} else {
 				toast.success("Processing completed successfully!");
 			}
@@ -146,7 +131,7 @@ export default function ApartmentOrganizer() {
 		if (processingResult?.downloadUrl) {
 			const a = document.createElement("a");
 			a.href = processingResult.downloadUrl;
-			a.download = "apartments.zip";
+			a.download = "duplicated-images.zip";
 			document.body.appendChild(a);
 			a.click();
 			document.body.removeChild(a);
@@ -157,8 +142,8 @@ export default function ApartmentOrganizer() {
 		<div className="min-h-screen bg-slate-100 p-4 md:p-8">
 			<div className="max-w-6xl mx-auto space-y-6">
 				<div>
-					<h1 className="text-3xl font-bold text-slate-900">Apartment Image Organizer</h1>
-					<p className="text-slate-600 mt-2">Upload CSV with apartment-to-image mappings and organize images</p>
+					<h1 className="text-3xl font-bold text-slate-900">Image Duplicator</h1>
+					<p className="text-slate-600 mt-2">Upload CSV with image duplication mappings and create copies</p>
 				</div>
 
 				{!processingResult ? (
@@ -173,8 +158,9 @@ export default function ApartmentOrganizer() {
 								<CardContent className="space-y-4">
 									<div className="text-sm text-slate-600 bg-slate-50 p-3 rounded border border-slate-200">
 										<p className="font-semibold mb-2">Format:</p>
-										<p>apartment_number, image_file</p>
-										<p className="text-xs mt-2 text-slate-500">Example: 1, 7 (copies image 7 to apartment_1/)</p>
+										<p>original_id, copy_id</p>
+										<p className="text-xs mt-2 text-slate-500">Example:<br />1,7<br />2,4<br />3,5<br />3,6</p>
+										<p className="text-xs mt-2 text-slate-500">This will create 7.ext, 4.ext, 5.ext, 6.ext as copies of the original files, preserving the extension</p>
 									</div>
 
 									<div
@@ -202,7 +188,7 @@ export default function ApartmentOrganizer() {
 							{/* Image Upload */}
 							<Card>
 								<CardHeader>
-									<CardTitle>2. Upload Images</CardTitle>
+									<CardTitle>2. Upload Original Images</CardTitle>
 								</CardHeader>
 								<CardContent className="space-y-4">
 									<div
@@ -215,12 +201,11 @@ export default function ApartmentOrganizer() {
 										}`}
 									>
 										<Upload className="text-slate-400 mb-2" />
-										<p className="text-sm font-medium text-slate-600">Drag images here or click to select (JPG/PNG)</p>
+										<p className="text-sm font-medium text-slate-600">Drag images here or click to select (any format)</p>
 										<input
 											ref={imageInputRef}
 											type="file"
 											multiple
-											accept=".jpg,.jpeg,.png"
 											className="hidden"
 											onChange={handleImageChange}
 										/>
@@ -266,7 +251,7 @@ export default function ApartmentOrganizer() {
 												Processing...
 											</>
 										) : (
-											"Validate & Process"
+											"Process & Duplicate Images"
 										)}
 									</Button>
 								</CardContent>
@@ -308,42 +293,35 @@ export default function ApartmentOrganizer() {
 							<CardContent className="space-y-4">
 								<div className="grid grid-cols-3 gap-4">
 									<div className="p-3 bg-blue-50 rounded border border-blue-200">
-										<p className="text-sm text-slate-600">Total Apartments</p>
-										<p className="text-2xl font-bold text-blue-600">{processingResult.totalApartments}</p>
+										<p className="text-sm text-slate-600">Total Mappings</p>
+										<p className="text-2xl font-bold text-blue-600">{processingResult.totalMappings}</p>
 									</div>
-									<div className="p-3 bg-purple-50 rounded border border-purple-200">
-										<p className="text-sm text-slate-600">Total Images</p>
-										<p className="text-2xl font-bold text-purple-600">{processingResult.totalImages}</p>
+									<div className="p-3 bg-emerald-50 rounded border border-emerald-200">
+										<p className="text-sm text-slate-600">Successful</p>
+										<p className="text-2xl font-bold text-emerald-600">{processingResult.successfulCopies}</p>
 									</div>
-									<div className="p-3 bg-orange-50 rounded border border-orange-200">
-										<p className="text-sm text-slate-600">Warnings</p>
-										<p className="text-2xl font-bold text-orange-600">{processingResult.warnings.length}</p>
+									<div className="p-3 bg-red-50 rounded border border-red-200">
+										<p className="text-sm text-slate-600">Failed</p>
+										<p className="text-2xl font-bold text-red-600">{processingResult.failedCopies}</p>
 									</div>
 								</div>
 
-								{processingResult.warnings.length > 0 && (
-									<div className="p-4 bg-orange-50 border border-orange-200 rounded-lg">
-										<p className="font-semibold text-sm text-orange-900 mb-3 flex items-center">
+								{processingResult.failedCopies > 0 && (
+									<div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+										<p className="font-semibold text-sm text-red-900 mb-3 flex items-center">
 											<AlertCircle className="w-4 h-4 mr-2" />
-											Issues Found
+											Failed Copies
 										</p>
 										<ul className="space-y-2">
-											{processingResult.warnings.map((warning, idx) => (
-												<li key={idx} className="text-sm text-orange-800 flex items-start">
-													<span className="text-orange-600 mr-2">•</span>
-													<span>{warning}</span>
-												</li>
-											))}
+											{processingResult.results
+												.filter(r => r.status !== "success")
+												.map((result, idx) => (
+													<li key={idx} className="text-sm text-red-800">
+														<span className="text-red-600 mr-2">•</span>
+														{result.originalId} → {result.copyId}: {result.error}
+													</li>
+												))}
 										</ul>
-									</div>
-								)}
-
-								{!processingResult.success && (
-									<div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-										<p className="font-semibold text-sm text-red-900 flex items-center">
-											<XCircle className="w-4 h-4 mr-2" />
-											Processing failed due to errors. Please fix the issues above.
-										</p>
 									</div>
 								)}
 
@@ -364,7 +342,6 @@ export default function ApartmentOrganizer() {
 									onClick={() => {
 										setCsvFile(null);
 										setImageFiles([]);
-										setValidationResults([]);
 										setProcessingResult(null);
 									}}
 								>
@@ -373,32 +350,36 @@ export default function ApartmentOrganizer() {
 							</CardContent>
 						</Card>
 
-						{/* Validation Details */}
-						{validationResults.length > 0 && (
+						{/* Results Table */}
+						{processingResult.results.length > 0 && (
 							<Card>
 								<CardHeader>
-									<CardTitle className="text-base">Validation Details</CardTitle>
+									<CardTitle className="text-base">Duplication Results</CardTitle>
 								</CardHeader>
 								<CardContent>
 									<ScrollArea className="h-96">
 										<Table>
 											<TableHeader>
 												<TableRow>
-													<TableHead>Apartment</TableHead>
-													<TableHead>Image File</TableHead>
+													<TableHead>Original ID</TableHead>
+													<TableHead>Copy ID</TableHead>
+													<TableHead>Original File</TableHead>
 													<TableHead>Status</TableHead>
 												</TableRow>
 											</TableHeader>
 											<TableBody>
-												{validationResults.map((result, idx) => (
-													<TableRow key={idx} className={result.exists ? "" : "bg-red-50"}>
-														<TableCell className="font-medium">{result.apartment}</TableCell>
-														<TableCell>{result.imageFile}</TableCell>
+												{processingResult.results.map((result, idx) => (
+													<TableRow key={idx} className={result.status === "success" ? "" : "bg-red-50"}>
+														<TableCell className="font-medium">{result.originalId}</TableCell>
+														<TableCell className="font-medium">{result.copyId}</TableCell>
+														<TableCell className="text-sm">{result.originalFile}</TableCell>
 														<TableCell>
-															{result.exists ? (
-																<Badge className="bg-emerald-500 text-xs">Found</Badge>
-															) : (
+															{result.status === "success" ? (
+																<Badge className="bg-emerald-500 text-xs">Success</Badge>
+															) : result.status === "missing" ? (
 																<Badge variant="destructive" className="text-xs">Missing</Badge>
+															) : (
+																<Badge variant="destructive" className="text-xs">Error</Badge>
 															)}
 														</TableCell>
 													</TableRow>
