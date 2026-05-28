@@ -1,5 +1,12 @@
 "use client";
 
+// IMAGE DUPLICATOR
+// Duplicates images based on CSV mappings (original_id → copy_id)
+// INPUT: CSV file with duplication mappings + original image files
+// OUTPUT: ZIP file containing all duplicated images with original extension preserved
+// PROCESS: 1) Upload CSV → 2) Upload images → 3) Process → 4) Download ZIP
+// CSV FORMAT: original_id, copy_id (one mapping per line)
+
 import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,6 +15,7 @@ import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "sonner";
 import { Upload, AlertCircle, CheckCircle2, XCircle, Loader2 } from "lucide-react";
+import { DocsBanner } from "@/components/docs-banner";
 
 type DuplicationResult = {
 	originalId: string;
@@ -139,7 +147,7 @@ export default function ImageDuplicator() {
 	};
 
 	return (
-		<div className="min-h-screen bg-slate-100 p-4 md:p-8">
+		<div className="min-h-screen bg-slate-50/50 p-4 md:p-8">
 			<div className="max-w-6xl mx-auto space-y-6">
 				<div>
 					<h1 className="text-3xl font-bold text-slate-900">Image Duplicator</h1>
@@ -169,7 +177,7 @@ export default function ImageDuplicator() {
 										onDrop={handleCsvDrop}
 										onClick={() => csvInputRef.current?.click()}
 										className={`h-32 border-2 border-dashed rounded-lg flex flex-col items-center justify-center cursor-pointer transition-colors ${
-											isDraggingCsv ? "border-blue-500 bg-blue-50" : "border-slate-300 hover:bg-slate-50"
+											isDraggingCsv ? "border-slate-800 bg-slate-50" : "border-slate-200 hover:bg-slate-50/80"
 										}`}
 									>
 										<Upload className="text-slate-400 mb-2" />
@@ -197,7 +205,7 @@ export default function ImageDuplicator() {
 										onDrop={handleImagesDrop}
 										onClick={() => imageInputRef.current?.click()}
 										className={`h-32 border-2 border-dashed rounded-lg flex flex-col items-center justify-center cursor-pointer transition-colors ${
-											isDraggingImages ? "border-blue-500 bg-blue-50" : "border-slate-300 hover:bg-slate-50"
+											isDraggingImages ? "border-slate-800 bg-slate-50" : "border-slate-200 hover:bg-slate-50/80"
 										}`}
 									>
 										<Upload className="text-slate-400 mb-2" />
@@ -392,6 +400,11 @@ export default function ImageDuplicator() {
 						)}
 					</div>
 				)}
+
+				<DocsBanner 
+					docFile="04_IMAGE_DUPLICATOR"
+					explanation="Bulk duplicate images based on CSV mappings (original_id to copy_id), preserving original file extensions."
+				/>
 			</div>
 		</div>
 	);

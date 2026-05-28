@@ -1,16 +1,23 @@
 'use client';
 
+// PDF THUMBNAILER
+// Extracts the first page of PDF documents and converts them to high-resolution JPEG thumbnails
+// INPUT: PDF files (one or multiple)
+// OUTPUT: JPEG thumbnails (3:4 aspect ratio) with automatic naming
+// USE CASE: Create book covers, document previews, PDF thumbnails for galleries
+
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Loader2, 
-  UploadCloud, 
-  Download, 
-  FileText, 
-  Trash2, 
-  CheckCircle2 
+import {
+  Loader2,
+  UploadCloud,
+  Download,
+  FileText,
+  Trash2,
+  CheckCircle2
 } from "lucide-react";
+import { DocsBanner } from '@/components/docs-banner';
 
 interface ThumbnailJob {
   id: string;
@@ -110,10 +117,10 @@ export default function Thumbnailer() {
         </div>
 
         {/* Upload Card */}
-        <Card className="border-2 border-dashed border-slate-200 shadow-none bg-white hover:border-blue-400 transition-colors">
+        <Card className="border-2 border-dashed border-slate-200 shadow-none bg-white hover:border-slate-800 transition-colors">
           <CardContent className="p-10 flex flex-col items-center">
             <div className="relative group cursor-pointer flex flex-col items-center w-full">
-              <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-slate-50 border border-slate-200/60 rounded-full flex items-center justify-center text-slate-800 mb-4 group-hover:scale-110 transition-transform">
                 {loading ? <Loader2 className="animate-spin" /> : <UploadCloud size={32} />}
               </div>
               <h3 className="font-bold text-slate-800 text-lg">
@@ -186,6 +193,11 @@ export default function Thumbnailer() {
               </div>
             )}
           </div>
+
+          <DocsBanner 
+            docFile="06_THUMBNAILER"
+            explanation="Extract covers from PDF files and convert them into high-resolution JPEG thumbnails."
+          />
         </div>
       </div>
     </div>

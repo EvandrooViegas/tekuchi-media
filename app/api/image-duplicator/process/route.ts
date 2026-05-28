@@ -41,11 +41,11 @@ async function createZipFromFolder(folderPath: string): Promise<Buffer> {
 		archive.glob("**/*", {
 			cwd: folderPath,
 			ignore: ["**/*.csv"],
-			filter: (filepath) => {
+			filter: (filepath: string) => {
 				const ext = filepath.toLowerCase().substring(filepath.lastIndexOf("."));
 				return imageExtensions.includes(ext);
 			},
-		});
+		} as any);
 
 		archive.finalize();
 	});

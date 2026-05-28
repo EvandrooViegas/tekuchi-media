@@ -1,5 +1,11 @@
 "use client";
 
+// MEDIA COMPRESSOR
+// Compresses images and videos to optimize file size while maintaining quality
+// INPUT: Images (JPG, PNG, WebP) or Videos (MP4, MOV, AVI, MKV) or PDFs
+// OUTPUT: Compressed media files with compression statistics (KB reduction %)
+// PROCESS: 1) Upload files → 2) Run Converter → 3) Download compressed outputs
+
 import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -11,6 +17,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "sonner";
 import { UploadCloud, File as FileIcon, X, CheckCircle2, XCircle, Loader2, Play, Image as ImageIcon } from "lucide-react";
 import { MediaPreview } from "./components/MediaPreview";
+import { DocsBanner } from "@/components/docs-banner";
 
 const ALLOWED_EXTS = [".jpg", ".jpeg", ".png", ".webp", ".mp4", ".mov", ".avi", ".mkv", ".pdf"];
 
@@ -139,7 +146,7 @@ export default function Home() {
     };
 
     return (
-        <div className="min-h-screen bg-slate-100 p-4 md:p-8">
+        <div className="min-h-screen bg-slate-50/50 p-4 md:p-8">
             <div className="max-w-7xl mx-auto space-y-6">
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -152,7 +159,7 @@ export default function Home() {
                                     onDragLeave={() => setIsDragging(false)}
                                     onDrop={handleDrop}
                                     onClick={() => !isRunning && fileInputRef.current?.click()}
-                                    className={`h-32 border-2 border-dashed rounded-lg flex flex-col items-center justify-center transition-all cursor-pointer ${isDragging ? "border-blue-500 bg-blue-50" : "border-slate-300 bg-white hover:bg-slate-50"}`}
+                                    className={`h-32 border-2 border-dashed rounded-lg flex flex-col items-center justify-center transition-all cursor-pointer ${isDragging ? "border-slate-800 bg-slate-50" : "border-slate-200 bg-white hover:bg-slate-50/80"}`}
                                 >
                                     <UploadCloud className="text-slate-400 mb-2" />
                                     <p className="text-xs font-medium text-slate-600">Click or drag files here</p>
@@ -354,6 +361,13 @@ export default function Home() {
                     </Card>
                 </div>
             )}
+
+            <div className="max-w-7xl mx-auto px-4 pb-8">
+                <DocsBanner 
+                    docFile="02_COMPRESSOR"
+                    explanation="Batch media compressor to optimize image and video file sizes while retaining original quality."
+                />
+            </div>
         </div>
     );
 }

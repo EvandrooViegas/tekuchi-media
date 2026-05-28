@@ -1,5 +1,12 @@
 'use client';
 
+// IMAGE RESIZER & CROPPER
+// Resizes and crops images into multiple HD dimensions with different crop strategies
+// INPUT: Images (any size) + Target dimensions (HD, 4K, Small)
+// OUTPUT: Multiple cropped versions (center, top, bottom crop) in selected resolution
+// AUTOMATION: Monitor folder and batch process images automatically
+// MANUAL: Direct upload with dimension selection
+
 import { useState, useEffect } from 'react';
 import {
     Play, FolderOpen, RefreshCcw, HardDrive,
@@ -9,6 +16,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { toast } from 'sonner';
+import { DocsBanner } from '@/components/docs-banner';
 
 // --- TYPES ---
 interface ResizeResult {
@@ -29,18 +37,22 @@ interface ResizeResult {
 const TabBtn = ({ active, onClick, icon, label }: any) => (
     <button
         onClick={onClick}
-        className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${active ? 'bg-white shadow-md text-blue-600' : 'text-slate-500 hover:text-slate-800'
-            }`}
+        className={`flex items-center gap-2 px-4 py-1.5 rounded-md text-xs font-bold transition-all ${
+            active 
+                ? 'bg-white text-slate-900 border border-slate-200/60 shadow-sm font-extrabold' 
+                : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50/50'
+        }`}
     >
-        {icon} {label}
+        {icon}
+        <span>{label}</span>
     </button>
 );
 
 const FolderStatusCard = ({ count, isProcessing, onRun }: any) => (
-    <Card className="border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white">
+    <Card className="border border-slate-200/60 shadow-sm bg-white">
         <CardContent className="p-6 space-y-6">
             <div className="flex justify-between items-center">
-                <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-slate-50 border border-slate-200/60 text-slate-800 rounded-lg flex items-center justify-center">
                     <FolderOpen size={24} />
                 </div>
                 <div className="text-right">
@@ -52,7 +64,7 @@ const FolderStatusCard = ({ count, isProcessing, onRun }: any) => (
                 <Button
                     onClick={onRun}
                     disabled={count === 0 || isProcessing}
-                    className="w-full h-14 bg-slate-900 hover:bg-blue-600 text-white font-bold rounded-xl transition-all"
+                    className="w-full h-14 bg-slate-900 hover:bg-slate-700 text-white font-bold rounded-xl transition-all"
                 >
                     {isProcessing ? <Loader2 className="animate-spin mr-2" /> : <Play size={18} className="mr-2" fill="currentColor" />}
                     {isProcessing ? "Processing..." : "Run Batch Processor"}
@@ -63,8 +75,8 @@ const FolderStatusCard = ({ count, isProcessing, onRun }: any) => (
 );
 
 const QueuePreview = ({ files }: { files: string[] }) => (
-    <Card className="border-none shadow-sm ring-1 ring-slate-200 bg-white h-full flex flex-col">
-        <div className="p-4 border-b flex items-center justify-between">
+    <Card className="border border-slate-200/60 shadow-sm bg-white h-full flex flex-col">
+        <div className="p-4 border-b border-slate-100 flex items-center justify-between">
             <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest">In Queue ({files.length})</h3>
             <HardDrive size={14} className="text-slate-300" />
         </div>
@@ -72,19 +84,18 @@ const QueuePreview = ({ files }: { files: string[] }) => (
             {files.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {files.map((f, i) => (
-                        <div key={i} className="flex items-center gap-3 p-2 rounded-xl border border-slate-100 hover:bg-slate-50 transition-colors">
-                            {/* Thumbnail using our new preview proxy */}
-                            <div className="w-20 h-12 bg-slate-200 rounded overflow-hidden flex-none">
+                        <div key={i} className="flex items-center gap-3 p-2 rounded-lg border border-slate-100 hover:bg-slate-50 transition-colors">
+                            <div className="w-20 h-12 bg-slate-100 rounded overflow-hidden flex-none">
                                 <img
                                     src={`/api/resize/local-preview?filename=${encodeURIComponent(f)}`}
                                     className="w-full h-full object-cover"
                                     alt="preview"
-                                    onError={(e) => (e.currentTarget.src = "")} // Fallback
+                                    onError={(e) => (e.currentTarget.src = "")}
                                 />
                             </div>
                             <div className="min-w-0">
                                 <p className="text-xs font-bold text-slate-700 truncate">{f}</p>
-                                <span className="text-[9px] text-blue-500 font-black uppercase">TODO</span>
+                                <span className="text-[9px] text-slate-400 font-black uppercase">TODO</span>
                             </div>
                         </div>
                     ))}
@@ -215,10 +226,10 @@ export default function ResizerPage() {
                     <h1 className="text-3xl font-black text-slate-800 tracking-tight">Tekuchi Resizer</h1>
                     <p className="text-slate-500 font-medium">Multi-Dimension HD Image Processor</p>
                 </div>
-                <div className="bg-slate-200 p-1 rounded-2xl flex gap-1">
-                    <TabBtn active={tab === 'batch'} onClick={() => setTab('batch')} icon={<LayoutGrid size={16} />} label="Automation" />
-                    <TabBtn active={tab === 'upload'} onClick={() => setTab('upload')} icon={<Upload size={16} />} label="Manual" />
-                    <TabBtn active={tab === 'logs'} onClick={() => setTab('logs')} icon={<Terminal size={16} />} label="Server Logs" />
+                <div className="bg-slate-50 p-0.5 rounded-lg border border-slate-200/50 flex gap-0.5">
+                    <TabBtn active={tab === 'batch'} onClick={() => setTab('batch')} icon={<LayoutGrid size={14} />} label="Automation" />
+                    <TabBtn active={tab === 'upload'} onClick={() => setTab('upload')} icon={<Upload size={14} />} label="Manual" />
+                    <TabBtn active={tab === 'logs'} onClick={() => setTab('logs')} icon={<Terminal size={14} />} label="Server Logs" />
                 </div>
             </header>
 
@@ -235,17 +246,17 @@ export default function ResizerPage() {
                         />
 
                         {/* Real-time Status Indicator */}
-                        <div className="p-4 bg-green-50 border border-green-100 rounded-2xl flex items-center gap-3">
-                            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                            <span className="text-[11px] font-bold text-green-700 uppercase tracking-widest leading-none">
+                        <div className="p-4 bg-slate-50 border border-slate-200/60 rounded-lg flex items-center gap-3">
+                            <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
+                            <span className="text-[11px] font-bold text-slate-600 uppercase tracking-widest leading-none">
                                 Watcher Active: Live
                             </span>
                         </div>
 
                         {/* Helpful Hint */}
-                        <div className="p-4 bg-blue-50 border border-blue-100 rounded-2xl">
-                            <p className="text-[11px] text-blue-700 leading-relaxed font-medium">
-                                <strong>Note:</strong> Running the batch will process images from the root TODO folder
+                        <div className="p-4 bg-slate-50 border border-slate-200/60 rounded-lg">
+                            <p className="text-[11px] text-slate-500 leading-relaxed font-medium">
+                                <strong className="text-slate-700">Note:</strong> Running the batch will process images from the root TODO folder
                                 into 4 dimensions (HD, 4K, Small) with center/top crops. Originals are moved to ORIGINALS.
                             </p>
                         </div>
@@ -287,11 +298,11 @@ export default function ResizerPage() {
                                         bottomStats: item.bottomStats,
                                         original: `/api/resize/full-resolution?filename=${encodeURIComponent("ORIGINALS/" + item.original_file)}&isProcessed=true`
                                     })}
-                                    className="flex-none w-64 group border-none shadow-sm ring-1 ring-slate-200 overflow-hidden bg-white hover:ring-blue-400 transition-all cursor-pointer snap-start"
+                                    className="flex-none w-64 group border border-slate-200/60 shadow-sm overflow-hidden bg-white hover:border-slate-800 hover:shadow-md transition-all cursor-pointer snap-start rounded-lg"
                                 >
                                     <div className="aspect-video bg-slate-100 relative overflow-hidden">
                                         <img
-                                            src={item.original_file ? `/api/resize/local-preview?filename=${encodeURIComponent("ORIGINALS/" + item.original_file)}&isProcessed=true` : null}
+                                            src={item.original_file ? `/api/resize/local-preview?filename=${encodeURIComponent("ORIGINALS/" + item.original_file)}&isProcessed=true` : undefined}
                                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                             alt="Folder Original"
                                         />
@@ -318,7 +329,7 @@ export default function ResizerPage() {
             </>
         ) : tab === 'upload' ? (
                 <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <Card className="border-2 border-dashed border-slate-200 bg-white hover:border-blue-500 transition-colors group relative">
+                    <Card className="border-2 border-dashed border-slate-200 bg-white hover:border-slate-800 transition-colors group relative">
                         <input 
                             id="file-upload-input"
                             type="file" 
@@ -329,7 +340,7 @@ export default function ResizerPage() {
                             disabled={isUploading} 
                         />
                         <div className="p-12 flex flex-col items-center">
-                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
+                            <div className="w-16 h-16 bg-slate-50 border border-slate-200/60 rounded-full flex items-center justify-center text-slate-800 mb-4 group-hover:scale-110 transition-transform">
                                 {isUploading ? <Loader2 className="animate-spin" /> : <UploadCloud size={32} />}
                             </div>
                             <span className="text-lg font-bold text-slate-700">{isUploading ? "Uploading..." : "Click or Drag Images"}</span>
@@ -355,7 +366,7 @@ export default function ResizerPage() {
                                             <Button 
                                                 key={dim.label}
                                                 onClick={() => confirmUpload(dim.w, dim.h)}
-                                                className="h-14 bg-slate-50 hover:bg-blue-50 border border-slate-100 hover:border-blue-200 text-slate-700 hover:text-blue-700 font-bold justify-start px-6 rounded-xl transition-all"
+                                                className="h-14 bg-slate-50 hover:bg-slate-100 border border-slate-200 hover:border-slate-300 text-slate-700 hover:text-slate-900 font-bold justify-start px-6 rounded-lg transition-all"
                                             >
                                                 <Maximize2 size={18} className="mr-3 opacity-50" />
                                                 {dim.label}
@@ -372,14 +383,14 @@ export default function ResizerPage() {
 
                     <div className="grid grid-cols-1 gap-3">
                         {directHistory.map((item) => (
-                            <Card key={item.id} className="hover:shadow-md transition-all cursor-pointer border-none ring-1 ring-slate-200 overflow-hidden" onClick={() => setActiveResult(item)}>
+                            <Card key={item.id} className="cursor-pointer border border-slate-200/60 shadow-sm hover:shadow-md hover:border-slate-800 transition-all overflow-hidden" onClick={() => setActiveResult(item)}>
                                 <div className="flex items-center p-4 gap-4 bg-white">
                                     <img src={item.center} className="w-24 h-14 object-cover rounded bg-slate-100" alt="thumb" />
                                     <div className="flex-grow min-w-0">
                                         <p className="font-bold text-slate-800 text-sm truncate">{item.name}</p>
                                         <div className="flex items-center gap-1.5">
-                                            <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-                                            <p className="text-[10px] text-green-600 font-bold uppercase tracking-widest">Ready ({item.targetRes})</p>
+                                            <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
+                                            <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Ready ({item.targetRes})</p>
                                         </div>
                                     </div>
                                     <Maximize2 size={16} className="text-slate-300" />
@@ -390,18 +401,19 @@ export default function ResizerPage() {
                 </div>
             ) : (
                 <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <Card className="bg-slate-900 border-none shadow-2xl rounded-3xl overflow-hidden ring-1 ring-slate-800">
-                        <div className="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/50">
-                            <div className="flex gap-2">
-                                <div className="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/40" />
-                                <div className="w-3 h-3 rounded-full bg-amber-500/20 border border-amber-500/40" />
-                                <div className="w-3 h-3 rounded-full bg-emerald-500/20 border border-emerald-500/40" />
+                    <Card className="bg-white border border-slate-200/60 shadow-sm overflow-hidden">
+                        <div className="p-4 border-b border-slate-100 flex items-center justify-between">
+                            <div className="flex items-center gap-2">
+                                <Terminal size={14} className="text-slate-400" />
+                                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Server Log Output</span>
                             </div>
-                            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Crop Server Log Output</span>
-                            <Terminal size={14} className="text-slate-600" />
+                            <div className="flex items-center gap-1.5">
+                                <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
+                                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Live</span>
+                            </div>
                         </div>
                         <CardContent className="p-0">
-                            <pre className="p-6 text-slate-300 font-mono text-xs leading-relaxed overflow-y-auto max-h-[600px] whitespace-pre-wrap">
+                            <pre className="p-6 text-slate-600 font-mono text-xs leading-relaxed overflow-y-auto max-h-[600px] whitespace-pre-wrap bg-slate-50">
                                 {logs || "Waiting for log data..."}
                             </pre>
                         </CardContent>
@@ -442,6 +454,11 @@ export default function ResizerPage() {
                     </div>
                 </div>
             )}
+
+            <DocsBanner 
+                docFile="05_RESIZER"
+                explanation="Multi-dimension image resizer and cropper supporting automated watch folders and manual batch uploads."
+            />
         </div>
     );
 }

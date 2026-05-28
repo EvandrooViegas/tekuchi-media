@@ -15,6 +15,7 @@ import {
   X,
 } from 'lucide-react';
 import { toast } from 'sonner';
+import { DocsBanner } from '@/components/docs-banner';
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -223,7 +224,7 @@ export default function FontConverterPage() {
         {/* Drop Zone */}
         <Card
           className={`border-2 border-dashed shadow-none bg-white transition-colors ${
-            isDragging ? 'border-blue-500 bg-blue-50' : 'border-slate-200 hover:border-blue-400'
+            isDragging ? 'border-slate-800 bg-slate-50' : 'border-slate-200 hover:border-slate-800'
           }`}
           onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }}
           onDragLeave={() => setIsDragging(false)}
@@ -231,7 +232,7 @@ export default function FontConverterPage() {
           onClick={() => inputRef.current?.click()}
         >
           <CardContent className="p-10 flex flex-col items-center cursor-pointer select-none">
-            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-16 h-16 bg-slate-50 border border-slate-200/60 rounded-full flex items-center justify-center text-slate-800 mb-4 group-hover:scale-110 transition-transform">
               <Type size={32} />
             </div>
             <h3 className="font-bold text-slate-800 text-lg">Drop fonts here</h3>
@@ -393,6 +394,10 @@ export default function FontConverterPage() {
           ))}
         </div>
 
+        <DocsBanner 
+          docFile="03_FONT_CONVERTER"
+          explanation="Convert font files (.OTF, .TTF) into a single optimized web bundle containing TTF, WOFF, WOFF2, SVG, and EOT formats."
+        />
       </div>
     </div>
   );

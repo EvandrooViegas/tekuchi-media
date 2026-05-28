@@ -1,19 +1,25 @@
 'use client';
 
+// PDF COMPARATOR
+// Compares two PDF documents and highlights differences
+// INPUT: Two PDF files (Original A, Revised B)
+// OUTPUT: List of changes (text/image differences) with side-by-side viewer and direct navigation
+
 import { useState, useMemo } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Loader2, 
-  UploadCloud, 
-  FileEdit, 
-  RefreshCcw, 
-  ImageIcon, 
-  Type, 
-  MousePointer2, 
+import {
+  Loader2,
+  UploadCloud,
+  FileEdit,
+  RefreshCcw,
+  ImageIcon,
+  Type,
+  MousePointer2,
   FileSearch,
   FileVideo
 } from "lucide-react";
+import { DocsBanner } from "@/components/docs-banner";
 
 // PDF Viewer Imports
 import { Worker, Viewer } from '@react-pdf-viewer/core';
@@ -99,27 +105,26 @@ const pathname = usePathname();
     <main className="h-screen bg-slate-50 overflow-hidden flex flex-col p-6 font-sans">
       <div className="max-w-[1700px] w-full mx-auto flex flex-col h-full space-y-4">
         
-  
         {!result ? (
           <div className="flex-grow flex items-center justify-center">
-            <Card className="w-full max-w-4xl border-none shadow-md">
+            <Card className="w-full max-w-4xl border border-slate-200/60 shadow-sm">
               <CardContent className="p-10">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-2 gap-6">
-                    <div className="border-2 border-dashed p-10 rounded-xl flex flex-col items-center bg-slate-50 relative group hover:border-blue-400 transition-colors">
+                    <div className="border-2 border-dashed p-10 rounded-xl flex flex-col items-center bg-slate-50 relative group hover:border-slate-800 transition-colors">
                       <UploadCloud className="text-slate-400 mb-2" />
                       <span className="text-xs font-bold uppercase text-slate-500">Original (A)</span>
                       <span className="text-xs mt-2 truncate max-w-full italic">{file1?.name || "Select PDF"}</span>
                       <input type="file" accept="application/pdf" className="absolute inset-0 opacity-0 cursor-pointer" onChange={e => setFiles(e.target.files?.[0], setFile1)} />
                     </div>
-                    <div className="border-2 border-dashed p-10 rounded-xl flex flex-col items-center bg-slate-50 relative group hover:border-blue-400 transition-colors">
+                    <div className="border-2 border-dashed p-10 rounded-xl flex flex-col items-center bg-slate-50 relative group hover:border-slate-800 transition-colors">
                       <UploadCloud className="text-slate-400 mb-2" />
                       <span className="text-xs font-bold uppercase text-slate-500">Revised (B)</span>
                       <span className="text-xs mt-2 truncate max-w-full italic">{file2?.name || "Select PDF"}</span>
                       <input type="file" accept="application/pdf" className="absolute inset-0 opacity-0 cursor-pointer" onChange={e => setFiles(e.target.files?.[0], setFile2)} />
                     </div>
                   </div>
-                  <Button className="w-full h-14 text-lg bg-blue-600 hover:bg-blue-700" disabled={loading}>
+                  <Button className="w-full h-14 text-lg bg-slate-900 hover:bg-slate-800 text-white font-bold" disabled={loading}>
                     {loading ? <Loader2 className="animate-spin mr-2" /> : "Compare & Navigate"}
                   </Button>
                 </form>
@@ -132,7 +137,7 @@ const pathname = usePathname();
             
             {/* SIDEBAR - Fixed Width, Internal Scroll */}
             <aside className="w-80 flex-none flex flex-col gap-3 min-h-0">
-              <div className="bg-blue-600 text-white p-3 rounded-lg text-xs font-bold flex justify-between items-center shadow-md">
+              <div className="bg-slate-900 text-white p-3 rounded-lg text-xs font-bold flex justify-between items-center shadow-sm">
                 <span>{result?.changes?.length || 0} CHANGES FOUND</span>
                 <MousePointer2 className="w-3 h-3" />
               </div>
@@ -144,7 +149,7 @@ const pathname = usePathname();
                     onClick={() => handleJumpToChange(change, i)}
                     className={`w-full text-left p-4 rounded-xl border transition-all flex flex-col gap-2 ${
                       activeIndex === i 
-                        ? 'border-blue-500 bg-blue-50 ring-2 ring-blue-100' 
+                        ? 'border-slate-800 bg-slate-50 ring-2 ring-slate-100' 
                         : 'bg-white border-slate-200 hover:border-slate-300 shadow-sm'
                     }`}
                   >
@@ -185,6 +190,11 @@ const pathname = usePathname();
 
           </div>
         )}
+
+        <DocsBanner 
+          docFile="01_COMPARER"
+          explanation="Side-by-side comparison of two PDF documents highlighting text edits, additions, and layout changes."
+        />
       </div>
     </main>
   );
