@@ -29,26 +29,34 @@ All data is fetched remotely from the docgen service using the apartment number 
 
 > Maximum of **500 apartments** per run.
 
-### Step 2: Run the Jobs
-1. Click **"Start (N PDFs)"** in the **"2. Run"** panel
-2. Jobs are processed **3 at a time** (concurrent)
-3. The job queue table updates live with per-apartment status
-4. Click **"Stop Jobs"** at any time to cancel in-flight requests
+### Step 2: Set Concurrency
+In the **"2. Run"** panel, choose how many apartments to process simultaneously using the **Concurrent Jobs** selector: `1 / 3 / 5 / 10 / 20 / 50`.
 
-### Step 3: Monitor Progress
+- Higher values finish faster but may trigger rate-limiting on the docgen service
+- Default is **3** — a safe starting point
+- If you see many failures, reduce concurrency and retry
+
+### Step 3: Run the Jobs
+1. Click **"Start (N PDFs)"**
+2. The job queue table updates live with per-apartment status
+3. Click **"Stop Jobs"** at any time to cancel in-flight requests
+
+### Step 4: Monitor Progress
 The stats panel shows:
 - **Done** — successfully downloaded PDFs
 - **Running** — apartments currently being processed
 - **Failed** — apartments that encountered an error
 - An overall progress bar (done + failed / total)
 
-### Step 4: Handle Failures
+### Step 5: Handle Failures
 If any jobs fail, the **"Retry N Failed"** button appears.  
 Click it to requeue only the failed apartments and process them again.
 
-### Step 5: Download
-- **Individual PDF**: click the **"PDF"** button on any completed row in the job table
-- **All at once**: click **"Download ZIP (N PDFs)"** in the **"3. Download ZIP"** panel — this bundles all successful PDFs into a single ZIP file named `apartments-{from}-{to}.zip`
+### Step 6: Download
+- **Individual PDF**: click the **"PDF"** button on any completed row in the job table — available as soon as that job finishes, even while other jobs are still running
+- **All at once**: click **"Download ZIP (N PDFs)"** in the **"3. Download ZIP"** panel — available as soon as at least one job is done, no need to wait for the full run to complete
+
+The ZIP is named `apartments-{from}-{to}.zip` and only includes jobs that have the **Done** status at the time you click.
 
 ## Job Statuses
 
@@ -88,15 +96,17 @@ Each apartment job goes through these steps server-side via `/api/pdf-proxy?apt=
 3. **PDF fetch** — once a download link is found, the proxy fetches the raw PDF bytes and streams them back to the browser
 4. **Timeout** — if no PDF link appears within **10 minutes**, the job fails with a timeout error
 
-The browser processes up to **3 apartments concurrently** to balance speed against server load.
+The browser runs the chosen number of concurrent workers. Each worker picks the next queued apartment, waits for the server to return the PDF, then moves on to the next one.
+
+The ZIP is built using `STORE` mode (no recompression) — since PDFs are already compressed internally, this makes ZIP generation near-instant regardless of how many files are included.
 
 ## Tips & Tricks
 
 1. **Start small** — run "First 10" before committing to the full range, to confirm everything is working
-2. **Retry failures** — transient network errors are common; use "Retry Failed" before assuming a PDF is unavailable
-3. **Don't close the tab** — PDFs are held in browser memory; closing or refreshing the page loses all downloaded blobs before you ZIP them
-4. **Large ranges take time** — 172 apartments (the full range) can take 10–20 minutes depending on docgen response times
-5. **ZIP after all jobs finish** — the ZIP only includes jobs that completed successfully at the time you click the button
+2. **Download the ZIP mid-run** — you don't have to wait for all jobs to finish; click "Download ZIP" any time to grab the PDFs that are already done
+3. **Retry failures** — transient network errors are common; use "Retry Failed" before assuming a PDF is unavailable
+4. **Don't close the tab** — PDFs are held in browser memory; closing or refreshing the page loses all downloaded blobs
+5. **Tune concurrency** — start at 3–5 and increase if jobs are completing without errors; back off if you see a spike in failures
 
 ## Limitations
 
@@ -131,9 +141,8 @@ The browser processes up to **3 apartments concurrently** to balance speed again
 ### Jobs stuck on "Generating PDF" for a long time
 - The docgen service may be slow or temporarily unavailable
 - Wait for the 10-minute timeout, then retry
-- Check your network connection
+- Try reducing concurrency to avoid overwhelming the service
 
 ### ZIP is empty or missing apartments
 - Only **Done** jobs are included in the ZIP
-- Ensure all jobs have completed before downloading
-- Retry any failed jobs first
+- Retry any failed jobs first, then download the ZIP again

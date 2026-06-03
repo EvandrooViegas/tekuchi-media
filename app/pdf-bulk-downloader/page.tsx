@@ -43,7 +43,8 @@ const APT_MIN = 45169;
 const APT_MAX = 45340;
 
 // How many apartments to process at the same time
-const CONCURRENCY = 3;
+const CONCURRENCY_OPTIONS = [1, 3, 5, 10, 20, 50] as const;
+const DEFAULT_CONCURRENCY = 3;
 
 // ---------------------------------------------------------------------------
 // Types
@@ -147,6 +148,10 @@ export default function PdfBulkDownloaderPage() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [isRunning, setIsRunning] = useState(false);
   const [isZipping, setIsZipping] = useState(false);
+  const [concurrency, setConcurrency] = useState<number>(DEFAULT_CONCURRENCY);
+
+  // Keep a ref in sync with jobs state so ZIP handler always sees current blobs
+  const jobsRef = useRef<Job[]>([]);
 
   // Abort controller so we can cancel in-flight requests
   const abortRef = useRef<AbortController | null>(null);
@@ -174,9 +179,11 @@ export default function PdfBulkDownloaderPage() {
 
   const patchJob = useCallback(
     (apt: number, patch: Partial<Job>) => {
-      setJobs((prev) =>
-        prev.map((j) => (j.apt === apt ? { ...j, ...patch } : j))
-      );
+      setJobs((prev) => {
+        const next = prev.map((j) => (j.apt === apt ? { ...j, ...patch } : j));
+        jobsRef.current = next;
+        return next;
+      });
     },
     []
   );
@@ -279,9 +286,10 @@ export default function PdfBulkDownloaderPage() {
       newJobs.push({ apt, status: "queued", label: "Waiting…" });
     }
     setJobs(newJobs);
+    jobsRef.current = newJobs;
     setIsRunning(true);
 
-    toast.info(`Starting ${newJobs.length} jobs (${CONCURRENCY} concurrent)…`);
+    toast.info(`Starting ${newJobs.length} jobs (${concurrency} concurrent)…`);
 
     const queue = newJobs.map((j) => j.apt);
     let idx = 0;
@@ -296,7 +304,7 @@ export default function PdfBulkDownloaderPage() {
 
     // Spawn CONCURRENCY workers
     const workers: Promise<void>[] = [];
-    for (let i = 0; i < CONCURRENCY && i < queue.length; i++) {
+    for (let i = 0; i < concurrency && i < queue.length; i++) {
       workers.push(worker());
     }
 
@@ -336,7 +344,7 @@ export default function PdfBulkDownloaderPage() {
   // -------------------------------------------------------------------------
 
   async function handleDownloadZip() {
-    const completedJobs = jobs.filter((j) => j.status === "done" && j.pdfBlob);
+    const completedJobs = jobsRef.current.filter((j) => j.status === "done" && j.pdfBlob);
     if (completedJobs.length === 0) {
       toast.error("No completed PDFs to zip.");
       return;
@@ -346,19 +354,15 @@ export default function PdfBulkDownloaderPage() {
     toast.info(`Building ZIP with ${completedJobs.length} PDFs…`);
 
     try {
-      // Dynamically import jszip so it doesn't bloat the initial bundle
       const JSZip = (await import("jszip")).default;
       const zip = new JSZip();
 
       for (const job of completedJobs) {
-        zip.file(`apartment-${job.apt}.pdf`, job.pdfBlob!);
+        // PDFs are already compressed internally — STORE avoids wasting CPU re-compressing them
+        zip.file(`apartment-${job.apt}.pdf`, job.pdfBlob!, { compression: "STORE" });
       }
 
-      const zipBlob = await zip.generateAsync({
-        type: "blob",
-        compression: "DEFLATE",
-        compressionOptions: { level: 6 },
-      });
+      const zipBlob = await zip.generateAsync({ type: "blob" });
 
       const url = URL.createObjectURL(zipBlob);
       const a = document.createElement("a");
@@ -412,7 +416,7 @@ export default function PdfBulkDownloaderPage() {
     }
 
     const workers: Promise<void>[] = [];
-    for (let i = 0; i < CONCURRENCY && i < queue.length; i++) {
+    for (let i = 0; i < concurrency && i < queue.length; i++) {
       workers.push(worker());
     }
 
@@ -544,6 +548,31 @@ export default function PdfBulkDownloaderPage() {
                 <CardTitle>2. Run</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
+                {/* Concurrency selector */}
+                <div className="space-y-1">
+                  <label className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
+                    Concurrent Jobs
+                  </label>
+                  <div className="flex gap-1 flex-wrap">
+                    {CONCURRENCY_OPTIONS.map((n) => (
+                      <button
+                        key={n}
+                        disabled={isRunning}
+                        onClick={() => setConcurrency(n)}
+                        className={`text-[11px] px-2.5 py-1 rounded border transition-colors disabled:opacity-40 ${
+                          concurrency === n
+                            ? "bg-blue-600 border-blue-600 text-white font-semibold"
+                            : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
+                        }`}
+                      >
+                        {n}
+                      </button>
+                    ))}
+                  </div>
+                  <p className="text-[10px] text-slate-400 leading-relaxed pt-0.5">
+                    Higher values are faster but may cause docgen to rate-limit requests.
+                  </p>
+                </div>
                 {!isRunning ? (
                   <Button
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white"
