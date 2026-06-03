@@ -10,6 +10,7 @@ Complete guide to all tools and features in Tekuchi Media.
 4. **[Image Duplicator](./04_IMAGE_DUPLICATOR.md)** - Duplicate images based on CSV mappings
 5. **[Image Resizer](./05_RESIZER.md)** - Resize and crop images into multiple HD dimensions
 6. **[PDF Thumbnailer](./06_THUMBNAILER.md)** - Extract PDF covers as JPEG thumbnails
+7. **[PDF Bulk Downloader](./07_PDF_BULK_DOWNLOADER.md)** - Bulk download apartment PDFs from docgen and export as ZIP
 
 ## Quick Links
 
@@ -19,6 +20,7 @@ Complete guide to all tools and features in Tekuchi Media.
 - **Image Duplicator**: `/image-duplicator` - Bulk duplicate images with CSV
 - **Resizer**: `/resizer` - Automated and manual image resizing/cropping
 - **Thumbnailer**: `/thumbnailer` - PDF to JPEG conversion
+- **PDF Bulk Downloader**: `/pdf-bulk-downloader` - Bulk apartment PDF generation and ZIP export
 
 ## Features Overview
 
@@ -26,6 +28,7 @@ Complete guide to all tools and features in Tekuchi Media.
 - **Compressor**: Upload multiple files, run batch compression
 - **Resizer**: Folder watching with automatic batch processing
 - **Font Converter**: Convert multiple fonts at once
+- **PDF Bulk Downloader**: Range-based batch PDF generation with concurrent processing
 
 ### Manual Processing
 - **Comparer**: Upload any two PDFs to compare

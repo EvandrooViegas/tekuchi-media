@@ -33,6 +33,7 @@ import {
   RefreshCw,
   AlertTriangle,
 } from "lucide-react";
+import { DocsBanner } from "@/components/docs-banner";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -716,6 +717,12 @@ export default function PdfBulkDownloaderPage() {
             </Card>
           </div>
         </div>
+
+        <DocsBanner
+          docFile="07_PDF_BULK_DOWNLOADER"
+          explanation="Bulk download apartment PDFs via docgen — select a range, run the queue, and export everything as a single ZIP archive."
+        />
+
       </div>
     </div>
   );
