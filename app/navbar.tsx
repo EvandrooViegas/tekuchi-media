@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { Crop, FileSearch, FileVideo, Image as ImageIcon, Type, Copy, BookOpen, FileDown } from "lucide-react";
+import { Crop, FileSearch, FileVideo, Image as ImageIcon, Type, Copy, BookOpen, FileDown, FlipHorizontal2 } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -16,6 +16,7 @@ const navItems = [
   { name: 'Image Duplicator', href: '/image-duplicator', icon: Copy },
   { name: 'PDF Comparer', href: '/comparer', icon: FileSearch },
       { name: 'PDF Bulk Downloader', href: '/pdf-bulk-downloader', icon: FileDown },
+  { name: 'Blueprint Mirror', href: '/blueprint-mirror', icon: FlipHorizontal2 },
 ];
 
   return (

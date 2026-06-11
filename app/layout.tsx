@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Figtree, Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "./navbar";
+import { Toaster } from "@/components/ui/sonner";
 
 const notoSansHeading = Noto_Sans({subsets:['latin'],variable:'--font-heading'});
 
@@ -49,6 +50,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+        <Toaster />
       </body>
     </html>
   );
