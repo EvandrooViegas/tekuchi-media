@@ -256,14 +256,38 @@ export default function Home() {
                                                         <TableCell>
                                                             <div className="flex flex-wrap gap-2">
                                                                 {job.outputs.filter((f: string) => !f.includes("_thumb_")).map((out: string, idx: number) => {
-                                                                    const fileName = out.split(/[\\/]/).pop()!;
-                                                                    const ext = fileName.split('.').pop()?.toUpperCase();
+                                                                    // `out` is a relative path like "42_12_1.jpg/42_12_1_1080p.jpg"
+                                                                    // We must pass the FULL relative path to the API so it can locate
+                                                                    // the file inside its subfolder. Only the display label uses basename.
+                                                                    const relPath   = out.replace(/\\/g, '/');   // normalise to forward slashes
+                                                                    const fileName  = relPath.split('/').pop()!; // basename for display only
+                                                                    const encodedPath = encodeURIComponent(relPath);
+
+                                                                    // Derive a human-readable resolution label from the filename suffix
+                                                                    const resLabel = fileName.includes('_4k.')
+                                                                        ? '4K'
+                                                                        : fileName.includes('_1080p.')
+                                                                            ? '1080p'
+                                                                            : fileName.split('.').pop()?.toUpperCase() ?? 'FILE';
+
+                                                                    const is4k = resLabel === '4K';
+
                                                                     return (
-                                                                        <div key={idx} className="flex flex-col items-center bg-white p-1 border rounded shadow-sm min-w-[65px]">
-                                                                            <span className="text-[8px] font-bold text-slate-400 mb-1 tracking-tighter">{ext}</span>
+                                                                        <div key={idx} className="flex flex-col items-center bg-white p-1.5 border rounded-lg shadow-sm min-w-[72px] gap-1">
+                                                                            <span className={`text-[8px] font-black tracking-tight px-1.5 py-0.5 rounded-full ${
+                                                                                is4k
+                                                                                    ? 'bg-violet-100 text-violet-700'
+                                                                                    : 'bg-slate-100 text-slate-500'
+                                                                            }`}>
+                                                                                {resLabel}
+                                                                            </span>
                                                                             <div className="flex items-center gap-1">
-                                                                                <MediaPreview filename={fileName} />
-                                                                                <a href={`/api/media?file=${fileName}`} className="text-[9px] font-bold bg-slate-100 hover:bg-slate-200 px-1.5 py-0.5 rounded transition-colors">
+                                                                                <MediaPreview filename={relPath} />
+                                                                                <a
+                                                                                    href={`/api/media?file=${encodedPath}`}
+                                                                                    download={fileName}
+                                                                                    className="text-[9px] font-bold bg-slate-100 hover:bg-slate-200 px-1.5 py-0.5 rounded transition-colors"
+                                                                                >
                                                                                     DL
                                                                                 </a>
                                                                             </div>
@@ -346,12 +370,13 @@ export default function Home() {
                         <CardContent className="flex-1 overflow-y-auto p-6">
                             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
                                 {viewingGallery.outputs.filter((f: string) => f.includes("_thumb_")).map((thumb: string, i: number) => {
-                                    const thumbName = thumb.split(/[\\/]/).pop();
+                                    const relPath  = thumb.replace(/\\/g, '/');
+                                    const thumbName = relPath.split('/').pop();
                                     return (
                                         <div key={i} className="border rounded-lg overflow-hidden bg-slate-50 flex flex-col">
-                                            <img src={`/api/media?file=${thumbName}`} className="w-full aspect-video object-cover" alt="thumb" />
+                                            <img src={`/api/media?file=${encodeURIComponent(relPath)}`} className="w-full aspect-video object-cover" alt="thumb" />
                                             <div className="p-2 border-t flex justify-center">
-                                                <a href={`/api/media?file=${thumbName}`} download className="text-[10px] font-bold text-blue-600 hover:underline">DOWNLOAD</a>
+                                                <a href={`/api/media?file=${encodeURIComponent(relPath)}`} download={thumbName} className="text-[10px] font-bold text-blue-600 hover:underline">DOWNLOAD</a>
                                             </div>
                                         </div>
                                     );
