@@ -323,6 +323,34 @@ def process_video(src: Path):
             append_job(job_name, "video", "error", error=str(e), duration_s=dur)
             log.error("  FAILED: %s", e)
 
+_4K_W = 3840
+_4K_H = 2160
+
+
+def _scale_image(src_path: Path, out_path: Path, target_h: int, src_w: int, src_h: int, job_name: str):
+    """Scale src_path to target_h, keeping aspect ratio, and Pillow-optimise the result."""
+    is_png = src_path.suffix.lower() == ".png"
+    if src_h <= target_h:
+        shutil.copy2(str(src_path), str(out_path))
+    else:
+        scale = target_h / src_h
+        new_w = int(src_w * scale)
+        new_w -= new_w % 2
+        run_cmd(
+            [ffmpeg_bin(), "-y", "-i", str(src_path),
+             "-vf", f"scale={new_w}:{target_h}", "-q:v", "2", str(out_path)],
+            job_name,
+        )
+    try:
+        img = Image.open(str(out_path))
+        if is_png:
+            img.save(str(out_path), optimize=True, compress_level=9)
+        else:
+            img.convert("RGB").save(str(out_path), quality=92, optimize=True)
+    except Exception:
+        pass
+
+
 def process_image(src: Path):
     subdir   = relative_subdir(src, PROCESSING_DIR)
     stem     = src.stem
@@ -332,48 +360,59 @@ def process_image(src: Path):
     t0      = time.time()
     orig_kb = src.stat().st_size // 1024
 
-    with TempWorkspace(src, subdir) as ws:
+    # Each image gets its own named subfolder inside CONVERTED_DIR so the
+    # two resolution variants (1080p + 4K) are kept together and easy to find.
+    # e.g.  PROCESSED/1.png/  contains  _1080p.jpg  and  _4k.jpg
+    image_subdir = subdir / src.name
+
+    with TempWorkspace(src, image_subdir) as ws:
         try:
             append_job(job_name, "image", "Processing...")
             dim = run_cmd([ffprobe_bin(), "-v", "error", "-select_streams", "v:0",
                            "-show_entries", "stream=width,height", "-of", "csv=p=0", str(src)])
             w, h    = map(int, dim.strip().split(","))
             is_png  = src.suffix.lower() == ".png"
-            out_tmp = ws.path / f"{t}_{stem[:30]}{'.png' if is_png else '.jpg'}"
+            ext     = '.png' if is_png else '.jpg'
 
-            if h <= IMAGE_TARGET_H:
-                shutil.copy2(str(src), str(out_tmp))
-            else:
-                scale = IMAGE_TARGET_H / h
-                new_w = int(w * scale)
-                new_w -= new_w % 2
-                run_cmd([ffmpeg_bin(), "-y", "-i", str(src), "-vf", f"scale={new_w}:{IMAGE_TARGET_H}", "-q:v", "2", str(out_tmp)], job_name)
+            # ── Always produce a 1080p version ──────────────────────────────
+            out_1080 = ws.path / f"{stem}_1080p{ext}"
+            _scale_image(src, out_1080, IMAGE_TARGET_H, w, h, job_name)
 
-            try:
-                img = Image.open(str(out_tmp))
-                if is_png:
-                    img.save(str(out_tmp), optimize=True, compress_level=9)
-                else:
-                    img.convert("RGB").save(str(out_tmp), quality=92, optimize=True)
-            except Exception:
-                pass
+            # ── Also produce a 4K version when the source is large enough ───
+            # Threshold: source must be at least 3840×2160 (either axis >= 4K)
+            out_files = [out_1080]
+            is_4k_source = (w >= _4K_W or h >= _4K_H)
+            if is_4k_source:
+                log.info("  Source is 4K-capable (%dx%d) — generating 4K output", w, h)
+                out_4k = ws.path / f"{stem}_4k{ext}"
+                _scale_image(src, out_4k, _4K_H, w, h, job_name)
+                out_files.append(out_4k)
 
-            final_size = out_tmp.stat().st_size
+            # ── Keep-original guard: only applies to the 1080p file ─────────
             status_msg = "success"
-            if final_size >= src.stat().st_size:
-                out_tmp.unlink()
-                shutil.copy2(str(src), str(out_tmp))
+            final_kb   = 0
+
+            hd_size = out_1080.stat().st_size
+            if hd_size >= src.stat().st_size and not is_4k_source:
+                # Image was already small/optimal — replace with the original copy
+                out_1080.unlink()
+                shutil.copy2(str(src), str(out_1080))
                 final_kb   = orig_kb
                 status_msg = "Original kept (optimal)"
             else:
-                final_kb = final_size // 1024
+                for f in out_files:
+                    final_kb += f.stat().st_size // 1024
 
-            final = ws.commit([out_tmp])
+            final = ws.commit(out_files)
             _archive(src)
             dur = time.time() - t0
-            append_job(job_name, "image", status_msg,
-                       outputs=[str(f.relative_to(CONVERTED_DIR)) for f in final],
-                       duration_s=dur, extra={"orig_kb": orig_kb, "final_kb": final_kb})
+            append_job(
+                job_name, "image", status_msg,
+                outputs=[str(f.relative_to(CONVERTED_DIR)) for f in final],
+                duration_s=dur,
+                extra={"orig_kb": orig_kb, "final_kb": final_kb},
+            )
+            log.info("  Done in %.1fs (%dKB → %dKB, %d output(s))", dur, orig_kb, final_kb, len(final))
         except Exception as e:
             append_job(job_name, "image", "error", error=str(e))
 

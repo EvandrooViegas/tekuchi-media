@@ -11,6 +11,8 @@ Complete guide to all tools and features in Tekuchi Media.
 5. **[Image Resizer](./05_RESIZER.md)** - Resize and crop images into multiple HD dimensions
 6. **[PDF Thumbnailer](./06_THUMBNAILER.md)** - Extract PDF covers as JPEG thumbnails
 7. **[PDF Bulk Downloader](./07_PDF_BULK_DOWNLOADER.md)** - Bulk download apartment PDFs from docgen and export as ZIP
+8. **[Blueprint Mirror](./08_BLUEPRINT_MIRROR.md)** - Mirror blueprint images while preserving text and labels
+9. **[Compressor 4K Output](./09_COMPRESSOR_4K.md)** - Dual-resolution 1080p + 4K export for large images
 
 ## Quick Links
 

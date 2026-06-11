@@ -3,7 +3,7 @@ import path from 'path';
 import Link from 'next/link';
 import { 
   FileSearch, FileVideo, Type, Copy, Crop, 
-  ImageIcon, BookOpen, Home, ArrowLeft 
+  ImageIcon, BookOpen, Home, ArrowLeft, FileDown, FlipHorizontal2
 } from 'lucide-react';
 
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
@@ -14,23 +14,30 @@ const DOC_CATEGORIES = [
     items: ['README'],
   },
   {
-    name: 'Media Suite Tools',
-    items: ['02_COMPRESSOR', '05_RESIZER', '06_THUMBNAILER'],
+    name: 'Media Processing',
+    items: ['02_COMPRESSOR', '09_COMPRESSOR_4K', '05_RESIZER', '06_THUMBNAILER'],
+  },
+  {
+    name: 'Image Tools',
+    items: ['04_IMAGE_DUPLICATOR', '08_BLUEPRINT_MIRROR'],
   },
   {
     name: 'Utilities & PDF',
-    items: ['01_COMPARER', '03_FONT_CONVERTER', '04_IMAGE_DUPLICATOR'],
+    items: ['01_COMPARER', '03_FONT_CONVERTER', '07_PDF_BULK_DOWNLOADER'],
   }
 ];
 
 const DOC_METADATA: Record<string, { title: string; desc: string; icon: any }> = {
-  'README': { title: 'Suite Overview', desc: 'Introduction & quick links', icon: Home },
-  '01_COMPARER': { title: 'PDF Comparer', desc: 'Compare PDF edits side-by-side', icon: FileSearch },
-  '02_COMPRESSOR': { title: 'Media Compressor', desc: 'Batch compress videos/images', icon: FileVideo },
-  '03_FONT_CONVERTER': { title: 'Font Converter', desc: 'Convert TTF/OTF web packages', icon: Type },
-  '04_IMAGE_DUPLICATOR': { title: 'Image Duplicator', desc: 'CSV bulk image copier', icon: Copy },
-  '05_RESIZER': { title: 'Image Resizer', desc: 'Auto and manual image scaling', icon: Crop },
-  '06_THUMBNAILER': { title: 'PDF Thumbnailer', desc: 'Convert PDF covers to JPEG', icon: ImageIcon },
+  'README':              { title: 'Suite Overview',       desc: 'Introduction & quick links',        icon: Home },
+  '01_COMPARER':         { title: 'PDF Comparer',         desc: 'Compare PDF edits side-by-side',    icon: FileSearch },
+  '02_COMPRESSOR':       { title: 'Media Compressor',     desc: 'Batch compress videos/images',      icon: FileVideo },
+  '09_COMPRESSOR_4K':    { title: '4K Output',            desc: 'Dual-resolution 1080p + 4K export', icon: FileVideo },
+  '03_FONT_CONVERTER':   { title: 'Font Converter',       desc: 'Convert TTF/OTF web packages',      icon: Type },
+  '04_IMAGE_DUPLICATOR': { title: 'Image Duplicator',     desc: 'CSV bulk image copier',             icon: Copy },
+  '05_RESIZER':          { title: 'Image Resizer',        desc: 'Auto and manual image scaling',     icon: Crop },
+  '06_THUMBNAILER':      { title: 'PDF Thumbnailer',      desc: 'Convert PDF covers to JPEG',        icon: ImageIcon },
+  '07_PDF_BULK_DOWNLOADER': { title: 'PDF Bulk Downloader', desc: 'Batch apartment PDF export',     icon: FileDown },
+  '08_BLUEPRINT_MIRROR': { title: 'Blueprint Mirror',     desc: 'Flip blueprints, preserve labels',  icon: FlipHorizontal2 },
 };
 
 function parseInline(text: string): string {
