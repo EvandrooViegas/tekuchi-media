@@ -3279,3 +3279,56 @@ CPU doesn't support the bmi2 instructions
 [blueprint-mirror] parsed 0 word box(es) from TSV
 [blueprint-mirror] found 0 word(s)
  POST /api/blueprint-mirror 200 in 2.6s (next.js: 774ms, application-code: 1837ms)
+ GET /blueprint-mirror 200 in 203ms (next.js: 6ms, application-code: 197ms)
+✓ Compiled in 585ms
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames {
+  page: '/blueprint-mirror'
+}
+⚠ Fast Refresh had to perform a full reload when ./app/blueprint-mirror/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames {
+  page: '/blueprint-mirror'
+}
+ GET /blueprint-mirror 500 in 3.4s (next.js: 3.1s, application-code: 280ms)
+ GET /blueprint-mirror 500 in 1897ms (next.js: 1843ms, application-code: 54ms)
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames {
+  page: '/blueprint-mirror'
+}
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames {
+  page: '/blueprint-mirror'
+}
+ GET /blueprint-mirror 500 in 1654ms (next.js: 1577ms, application-code: 76ms)
+ GET /blueprint-mirror 500 in 1681ms (next.js: 1598ms, application-code: 83ms)
+[browser] Uncaught Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at async doRender (file://D:\tekuchi-media (1)\.next\dev\server\chunks\ssr\node_modules_0ahfih.._.js:5150:28)
+    at async handleResponse (file://D:\tekuchi-media (1)\.next\dev\server\chunks\ssr\node_modules_0ahfih.._.js:5425:32)
+    at async Module.handler (file://D:\tekuchi-media (1)\.next\dev\server\chunks\ssr\node_modules_0ahfih.._.js:5828:20)
+✓ Compiled in 861ms
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames
+⨯ Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at ignore-listed frames {
+  page: '/blueprint-mirror'
+}
+ GET /blueprint-mirror 500 in 4.4s (next.js: 4.3s, application-code: 64ms)
+[browser] Uncaught Error: The default export is not a React Component in "/blueprint-mirror/page"
+    at async doRender (file://D:\tekuchi-media (1)\.next\dev\server\chunks\ssr\node_modules_0ahfih.._.js:5150:28)
+    at async handleResponse (file://D:\tekuchi-media (1)\.next\dev\server\chunks\ssr\node_modules_0ahfih.._.js:5425:32)
+    at async Module.handler (file://D:\tekuchi-media (1)\.next\dev\server\chunks\ssr\node_modules_0ahfih.._.js:5828:20)
+✓ Compiled in 559ms
+ GET /blueprint-mirror 200 in 720ms (next.js: 166ms, application-code: 554ms)
+ GET /blueprint-mirror 200 in 129ms (next.js: 21ms, application-code: 108ms)
+ GET / 307 in 897ms (next.js: 778ms, application-code: 119ms)
+ GET /compressor 200 in 1588ms (next.js: 1306ms, application-code: 281ms)
+ GET /api/logs 200 in 658ms (next.js: 261ms, application-code: 398ms)
