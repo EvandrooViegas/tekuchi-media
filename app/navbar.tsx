@@ -26,6 +26,7 @@ const NAV_GROUPS = [
         items: [
             { name: 'Image Duplicator',    href: '/image-duplicator',   icon: Copy,            desc: 'Bulk duplicate via CSV mapping' },
             { name: 'Blueprint Mirror',    href: '/blueprint-mirror',   icon: FlipHorizontal2, desc: 'Flip blueprints, preserve labels' },
+            { name: 'Floorplan Extractor', href: '/floorplan-extractor',icon: Layers,          desc: 'Extract floor-plans from PDFs' },
         ],
     },
     {

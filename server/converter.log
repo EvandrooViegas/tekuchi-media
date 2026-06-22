@@ -15528,3 +15528,1472 @@ FileNotFoundError: [WinError 3] The system cannot find the path specified: 'V:\\
 2026-06-16 17:32  INFO     Auto-checking folders for media and cropper...
 2026-06-16 17:32  INFO     Starting multi-dimension batch processing...
 2026-06-16 17:32  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-16 17:47:07 BST)" executed successfully
+2026-06-19 15:26  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-19 15:26  INFO     Added job "auto_run_job" to job store "default"
+2026-06-19 15:26  INFO     Scheduler started
+2026-06-19 15:27  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-19 15:27  INFO       [1/65] 1_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 1_202_The_Broadway  643x1271px
+2026-06-19 15:27  INFO       [2/65] 3_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 3_202_The_Broadway  848x1181px
+2026-06-19 15:27  INFO       [3/65] 4-5-6_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 4-5-6_202_The_Broadway  484x1383px
+2026-06-19 15:27  INFO       [4/65] 8_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 8_202_The_Broadway  862x673px
+2026-06-19 15:27  INFO       [5/65] 12_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 12_202_The_Broadway  825x1387px
+2026-06-19 15:27  INFO       [6/65] 17_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 17_202_The_Broadway  664x1206px
+2026-06-19 15:27  INFO       [7/65] 18_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 18_202_The_Broadway  609x1071px
+2026-06-19 15:27  INFO       [8/65] 19_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 19_202_The_Broadway  622x1110px
+2026-06-19 15:27  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 20-34-48-62-76_202_The_Broadway  674x1034px
+2026-06-19 15:27  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 21-35-49-63-77-88_202_The_Broadway  596x1079px
+2026-06-19 15:27  INFO       [11/65] 32-46-60_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 32-46-60_202_The_Broadway  609x1132px
+2026-06-19 15:27  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 33-47-61-75_202_The_Broadway  623x1171px
+2026-06-19 15:27  INFO       [13/65] 81-92_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 81-92_202_The_Broadway  785x970px
+2026-06-19 15:27  INFO       [14/65] 82-93_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 82-93_202_The_Broadway  856x1388px
+2026-06-19 15:27  INFO       [15/65] 98_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 98_202_The_Broadway  847x877px
+2026-06-19 15:27  INFO       [16/65] 99_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 99_202_The_Broadway  1013x666px
+2026-06-19 15:27  INFO       [17/65] 101_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 101_202_The_Broadway  1031x744px
+2026-06-19 15:27  INFO       [18/65] 102_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 102_202_The_Broadway  814x760px
+2026-06-19 15:27  INFO       [19/65] 7_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 7_2_Trinity_Road  649x1124px
+2026-06-19 15:27  INFO       [20/65] 8-11_Handed_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 8-11_Handed_2_Trinity_Road  603x1048px
+2026-06-19 15:27  INFO       [21/65] 9_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 9_2_Trinity_Road  662x1370px
+2026-06-19 15:27  INFO       [22/65] 10_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 10_2_Trinity_Road  682x1137px
+2026-06-19 15:27  INFO       [23/65] 12-17_Handed_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 12-17_Handed_2_Trinity_Road  648x1125px
+2026-06-19 15:27  INFO       [24/65] 13-19-25_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 13-19-25_2_Trinity_Road  603x1054px
+2026-06-19 15:27  INFO       [25/65] 14-20_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 14-20_2_Trinity_Road  661x1370px
+2026-06-19 15:27  INFO       [26/65] 15-21_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 15-21_2_Trinity_Road  682x1137px
+2026-06-19 15:27  INFO       [27/65] 26_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 26_2_Trinity_Road  649x1314px
+2026-06-19 15:27  INFO       [28/65] 27_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 27_2_Trinity_Road  673x1083px
+2026-06-19 15:27  INFO       [29/65] 31_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 31_2_Trinity_Road  1020x927px
+2026-06-19 15:27  INFO       [30/65] 32_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 32_2_Trinity_Road  1023x1015px
+2026-06-19 15:27  INFO       [31/65] 2_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 2_202_The_Broadway  1081x980px
+2026-06-19 15:27  INFO       [32/65] 7-16_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 7-16_202_The_Broadway  1088x803px
+2026-06-19 15:27  INFO       [33/65] 9_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 9_202_The_Broadway  749x1094px
+2026-06-19 15:27  INFO       [34/65] 13-14-15-27-28-29-_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 13-14-15-27-28-29-_202_The_Broadway  521x1511px
+2026-06-19 15:27  INFO       [35/65] 23-37-51-65-79-90_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 23-37-51-65-79-90_202_The_Broadway  746x1106px
+2026-06-19 15:27  INFO       [36/65] 24-38-52-66-80-91_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 24-38-52-66-80-91_202_The_Broadway  881x816px
+2026-06-19 15:27  INFO       [37/65] 39-53-67_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 39-53-67_202_The_Broadway  1058x1137px
+2026-06-19 15:27  INFO       [38/65] 25_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 25_202_The_Broadway  1058x1220px
+2026-06-19 15:27  INFO       [39/65] 26-40-54-68_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 26-40-54-68_202_The_Broadway  856x1387px
+2026-06-19 15:27  INFO       [40/65] 45-59_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 45-59_202_The_Broadway  664x1185px
+2026-06-19 15:27  INFO       [41/65] 31_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 31_202_The_Broadway  688x1326px
+2026-06-19 15:27  INFO       [42/65] 73_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 73_202_The_Broadway  939x1513px
+2026-06-19 15:27  INFO       [43/65] 74_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 74_202_The_Broadway  694x1132px
+2026-06-19 15:27  INFO       [44/65] 97_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 97_202_The_Broadway  1063x869px
+2026-06-19 15:27  INFO       [45/65] 22-36-50-64-78-89_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 22-36-50-64-78-89_202_The_Broadway  1095x894px
+2026-06-19 15:27  INFO       [46/65] 44-58_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 44-58_202_The_Broadway  826x1175px
+2026-06-19 15:27  INFO       [47/65] 30_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 30_202_The_Broadway  826x1309px
+2026-06-19 15:27  INFO       [48/65] 87_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 87_202_The_Broadway  1035x960px
+2026-06-19 15:27  INFO       [49/65] 100_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 100_202_The_Broadway  1100x1116px
+2026-06-19 15:27  INFO       [50/65] 18_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 18_2_Trinity_Road  840x1530px
+2026-06-19 15:27  INFO       [51/65] 23_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 23_2_Trinity_Road  840x1543px
+2026-06-19 15:27  INFO       [52/65] 24_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 24_2_Trinity_Road  676x1506px
+2026-06-19 15:27  INFO       [53/65] 29_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 29_2_Trinity_Road  670x1543px
+2026-06-19 15:27  INFO       [54/65] 30_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 30_2_Trinity_Road  676x1506px
+2026-06-19 15:27  INFO       [55/65] 33_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 33_2_Trinity_Road  670x1543px
+2026-06-19 15:27  INFO       [56/65] 6_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 6_2_Trinity_Road  1041x1106px
+2026-06-19 15:27  INFO       [57/65] 10_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 10_202_The_Broadway  789x1212px
+2026-06-19 15:27  INFO       [58/65] 72_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 72_202_The_Broadway  892x1575px
+2026-06-19 15:27  INFO       [59/65] 86_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 86_202_The_Broadway  1040x1516px
+2026-06-19 15:27  INFO       [60/65] 2_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 15:27  INFO         → 2_2_Trinity_Road_0  901x564px
+2026-06-19 15:27  INFO         → 2_2_Trinity_Road_1  1103x570px
+2026-06-19 15:27  INFO       [61/65] 3_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 15:27  INFO         → 3_2_Trinity_Road_0  866x552px
+2026-06-19 15:27  INFO         → 3_2_Trinity_Road_1  1067x561px
+2026-06-19 15:27  INFO       [62/65] 1_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 15:27  INFO         → 1_2_Trinity_Road_0  802x610px
+2026-06-19 15:27  INFO         → 1_2_Trinity_Road_1  1113x625px
+2026-06-19 15:27  INFO       [63/65] 4_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 15:27  INFO         → 4_2_Trinity_Road_0  865x602px
+2026-06-19 15:27  INFO         → 4_2_Trinity_Road_1  1106x602px
+2026-06-19 15:27  INFO       [64/65] 5_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 15:27  INFO         → 5_2_Trinity_Road_0  974x589px
+2026-06-19 15:27  INFO         → 5_2_Trinity_Road_1  1138x846px
+2026-06-19 15:27  INFO       [65/65] 11_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:27  INFO         → 11_202_The_Broadway  1075x1088px
+2026-06-19 15:41  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 15:41:55 BST)" (scheduled at 2026-06-19 15:41:55.154275+01:00)
+2026-06-19 15:41  INFO     Auto-checking folders for media and cropper...
+2026-06-19 15:41  INFO     Starting multi-dimension batch processing...
+2026-06-19 15:41  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 15:56:55 BST)" executed successfully
+2026-06-19 15:44  INFO     [floorplan] (FINAL) Powerhouse_A4_Plans_Sheets_Batch_2.pdf — 42 page(s)
+2026-06-19 15:44  INFO       [1/42] page_1 | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → page_1  2336x1982px
+2026-06-19 15:44  INFO       [2/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:44  INFO       [3/42] page_3 | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → page_3  2336x1982px
+2026-06-19 15:44  INFO       [4/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:44  INFO       [5/42] page_5 | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → page_5  2336x1982px
+2026-06-19 15:44  INFO       [6/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:44  INFO       [7/42] page_7 | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → page_7  2336x1982px
+2026-06-19 15:44  INFO       [8/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:44  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [9/42] page_9 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_9  2336x1982px
+2026-06-19 15:45  INFO       [10/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [11/42] page_11 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_11  2336x1982px
+2026-06-19 15:45  INFO       [12/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [13/42] page_13 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_13  2336x1982px
+2026-06-19 15:45  INFO       [14/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [15/42] page_15 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_15  2336x1982px
+2026-06-19 15:45  INFO       [16/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [17/42] page_17 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_17  2336x1982px
+2026-06-19 15:45  INFO       [18/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [19/42] page_19 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_19  2336x1982px
+2026-06-19 15:45  INFO       [20/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [21/42] page_21 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_21  2336x1982px
+2026-06-19 15:45  INFO       [22/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [23/42] page_23 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_23  2336x1982px
+2026-06-19 15:45  INFO       [24/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [25/42] page_25 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_25  2336x1982px
+2026-06-19 15:45  INFO       [26/42] page_26 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_26  2336x1982px
+2026-06-19 15:45  INFO       [27/42] page_27 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_27  2336x1982px
+2026-06-19 15:45  INFO       [28/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [29/42] page_29 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_29  2336x1982px
+2026-06-19 15:45  INFO       [30/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [31/42] page_31 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_31  2336x1982px
+2026-06-19 15:45  INFO       [32/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [33/42] page_33 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_33  2336x1982px
+2026-06-19 15:45  INFO       [34/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [35/42] page_35 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_35  2336x1982px
+2026-06-19 15:45  INFO       [36/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:45  INFO       [37/42] page_37 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_37  2336x1982px
+2026-06-19 15:45  INFO       [38/42] page_38 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_38  2336x1982px
+2026-06-19 15:45  INFO       [39/42] page_39 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_39  2336x1982px
+2026-06-19 15:45  INFO       [40/42] page_40 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_40  2336x1982px
+2026-06-19 15:45  INFO       [41/42] page_41 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_41  2336x1982px
+2026-06-19 15:45  INFO       [42/42] page_42 | 1 region(s) | duplex=False
+2026-06-19 15:45  INFO         → page_42  2336x1982px
+2026-06-19 15:46  INFO     Scheduler has been shut down
+2026-06-19 15:46  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-19 15:46  INFO     Added job "auto_run_job" to job store "default"
+2026-06-19 15:46  INFO     Scheduler started
+2026-06-19 15:46  INFO     [floorplan] (FINAL) Powerhouse_A4_Plans_Sheets_Batch_2.pdf — 42 page(s)
+2026-06-19 15:46  INFO       [1/42] page_1 | 1 region(s) | duplex=False
+2026-06-19 15:46  INFO         → page_1  2336x1982px
+2026-06-19 15:46  INFO       [2/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:46  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:46  INFO       [3/42] page_3 | 1 region(s) | duplex=False
+2026-06-19 15:46  INFO         → page_3  2336x1982px
+2026-06-19 15:46  INFO       [4/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:46  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:46  INFO       [5/42] page_5 | 1 region(s) | duplex=False
+2026-06-19 15:46  INFO         → page_5  2336x1982px
+2026-06-19 15:46  INFO       [6/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:46  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:46  INFO       [7/42] page_7 | 1 region(s) | duplex=False
+2026-06-19 15:46  INFO         → page_7  2336x1982px
+2026-06-19 15:47  INFO       [8/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [9/42] page_9 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_9  2336x1982px
+2026-06-19 15:47  INFO       [10/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [11/42] page_11 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_11  2336x1982px
+2026-06-19 15:47  INFO       [12/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [13/42] page_13 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_13  2336x1982px
+2026-06-19 15:47  INFO       [14/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [15/42] page_15 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_15  2336x1982px
+2026-06-19 15:47  INFO       [16/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [17/42] page_17 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_17  2336x1982px
+2026-06-19 15:47  INFO       [18/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [19/42] page_19 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_19  2336x1982px
+2026-06-19 15:47  INFO       [20/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [21/42] page_21 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_21  2336x1982px
+2026-06-19 15:47  INFO       [22/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [23/42] page_23 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_23  2336x1982px
+2026-06-19 15:47  INFO       [24/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [25/42] page_25 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_25  2336x1982px
+2026-06-19 15:47  INFO       [26/42] page_26 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_26  2336x1982px
+2026-06-19 15:47  INFO       [27/42] page_27 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_27  2336x1982px
+2026-06-19 15:47  INFO       [28/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [29/42] page_29 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_29  2336x1982px
+2026-06-19 15:47  INFO       [30/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [31/42] page_31 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_31  2336x1982px
+2026-06-19 15:47  INFO       [32/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [33/42] page_33 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_33  2336x1982px
+2026-06-19 15:47  INFO       [34/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [35/42] page_35 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_35  2336x1982px
+2026-06-19 15:47  INFO       [36/42] Lots_Road | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → Lots_Road  2336x1982px
+2026-06-19 15:47  INFO       [37/42] page_37 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_37  2336x1982px
+2026-06-19 15:47  INFO       [38/42] page_38 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_38  2336x1982px
+2026-06-19 15:47  INFO       [39/42] page_39 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_39  2336x1982px
+2026-06-19 15:47  INFO       [40/42] page_40 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_40  2336x1982px
+2026-06-19 15:47  INFO       [41/42] page_41 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_41  2336x1982px
+2026-06-19 15:47  INFO       [42/42] page_42 | 1 region(s) | duplex=False
+2026-06-19 15:47  INFO         → page_42  2336x1982px
+2026-06-19 15:56  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-19 15:56  INFO       [1/65] 1_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:56  INFO         → 1_202_The_Broadway  643x1271px
+2026-06-19 15:56  INFO       [2/65] 3_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:56  INFO         → 3_202_The_Broadway  848x1181px
+2026-06-19 15:56  INFO       [3/65] 4-5-6_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:56  INFO         → 4-5-6_202_The_Broadway  484x1383px
+2026-06-19 15:56  INFO       [4/65] 8_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:56  INFO         → 8_202_The_Broadway  862x673px
+2026-06-19 15:56  INFO       [5/65] 12_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:56  INFO         → 12_202_The_Broadway  825x1387px
+2026-06-19 15:57  INFO       [6/65] 17_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 17_202_The_Broadway  664x1206px
+2026-06-19 15:57  INFO       [7/65] 18_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 18_202_The_Broadway  609x1071px
+2026-06-19 15:57  INFO       [8/65] 19_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 19_202_The_Broadway  622x1110px
+2026-06-19 15:57  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 20-34-48-62-76_202_The_Broadway  674x1034px
+2026-06-19 15:57  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 21-35-49-63-77-88_202_The_Broadway  596x1079px
+2026-06-19 15:57  INFO       [11/65] 32-46-60_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 32-46-60_202_The_Broadway  609x1132px
+2026-06-19 15:57  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 33-47-61-75_202_The_Broadway  623x1171px
+2026-06-19 15:57  INFO       [13/65] 81-92_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 81-92_202_The_Broadway  785x970px
+2026-06-19 15:57  INFO       [14/65] 82-93_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 82-93_202_The_Broadway  856x1388px
+2026-06-19 15:57  INFO       [15/65] 98_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 98_202_The_Broadway  847x877px
+2026-06-19 15:57  INFO       [16/65] 99_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 99_202_The_Broadway  1013x666px
+2026-06-19 15:57  INFO       [17/65] 101_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 101_202_The_Broadway  1031x744px
+2026-06-19 15:57  INFO       [18/65] 102_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → 102_202_The_Broadway  814x760px
+2026-06-19 15:57  INFO     [floorplan] S155260_CNH The Waldens Houses Brochure_DRAFT5_010724 [3-5].pdf — 3 page(s)
+2026-06-19 15:57  INFO       [1/3] access_to_Mount_Pleasant_Road | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → access_to_Mount_Pleasant_Road  2887x2131px
+2026-06-19 15:57  INFO       [2/3] page_2 | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → page_2  2887x2131px
+2026-06-19 15:57  INFO       [3/3] page_3 | 1 region(s) | duplex=False
+2026-06-19 15:57  INFO         → page_3  2887x2131px
+2026-06-19 16:01  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 16:01:40 BST)" (scheduled at 2026-06-19 16:01:40.511062+01:00)
+2026-06-19 16:01  INFO     Auto-checking folders for media and cropper...
+2026-06-19 16:01  INFO     Starting multi-dimension batch processing...
+2026-06-19 16:01  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 16:16:40 BST)" executed successfully
+2026-06-19 16:06  INFO     [floorplan] DGxPagani_DaVinci Tower_Brochure_EN Extract[30-56].pdf — 27 page(s)
+2026-06-19 16:06  INFO       [1/27] page_1 | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → page_1  3754x2530px
+2026-06-19 16:06  INFO       [2/27] page_2 | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → page_2  3754x2530px
+2026-06-19 16:06  INFO       [3/27] page_3 | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → page_3  3754x2530px
+2026-06-19 16:06  INFO       [4/27] page_4 | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → page_4  3754x2530px
+2026-06-19 16:06  INFO       [5/27] page_5 | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → page_5  3754x2530px
+2026-06-19 16:06  INFO       [6/27] page_6 | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → page_6  3754x2530px
+2026-06-19 16:06  INFO     Scheduler has been shut down
+2026-06-19 16:06  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-19 16:06  INFO     Added job "auto_run_job" to job store "default"
+2026-06-19 16:06  INFO     Scheduler started
+2026-06-19 16:06  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-19 16:06  INFO       [1/65] 1_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 1_202_The_Broadway  647x1274px
+2026-06-19 16:06  INFO       [2/65] 3_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 3_202_The_Broadway  852x1185px
+2026-06-19 16:06  INFO       [3/65] 4-5-6_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 4-5-6_202_The_Broadway  488x1387px
+2026-06-19 16:06  INFO       [4/65] 8_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 8_202_The_Broadway  866x676px
+2026-06-19 16:06  INFO       [5/65] 12_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 12_202_The_Broadway  829x1391px
+2026-06-19 16:06  INFO       [6/65] 17_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 17_202_The_Broadway  668x1210px
+2026-06-19 16:06  INFO       [7/65] 18_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 18_202_The_Broadway  613x1075px
+2026-06-19 16:06  INFO       [8/65] 19_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 19_202_The_Broadway  626x1114px
+2026-06-19 16:06  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 20-34-48-62-76_202_The_Broadway  678x1038px
+2026-06-19 16:06  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 21-35-49-63-77-88_202_The_Broadway  600x1082px
+2026-06-19 16:06  INFO       [11/65] 32-46-60_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 32-46-60_202_The_Broadway  613x1136px
+2026-06-19 16:06  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 33-47-61-75_202_The_Broadway  627x1174px
+2026-06-19 16:06  INFO       [13/65] 81-92_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 81-92_202_The_Broadway  789x974px
+2026-06-19 16:06  INFO       [14/65] 82-93_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 82-93_202_The_Broadway  860x1391px
+2026-06-19 16:06  INFO       [15/65] 98_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 98_202_The_Broadway  850x880px
+2026-06-19 16:06  INFO       [16/65] 99_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 99_202_The_Broadway  1016x670px
+2026-06-19 16:06  INFO       [17/65] 101_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 101_202_The_Broadway  1035x748px
+2026-06-19 16:06  INFO       [18/65] 102_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 102_202_The_Broadway  818x764px
+2026-06-19 16:06  INFO       [19/65] 7_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:06  INFO         → 7_2_Trinity_Road  653x1128px
+2026-06-19 16:07  INFO       [20/65] 8-11_Handed_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 8-11_Handed_2_Trinity_Road  607x1052px
+2026-06-19 16:07  INFO       [21/65] 9_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 9_2_Trinity_Road  666x1374px
+2026-06-19 16:07  INFO       [22/65] 10_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 10_2_Trinity_Road  685x1140px
+2026-06-19 16:07  INFO       [23/65] 12-17_Handed_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 12-17_Handed_2_Trinity_Road  652x1128px
+2026-06-19 16:07  INFO       [24/65] 13-19-25_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 13-19-25_2_Trinity_Road  606x1057px
+2026-06-19 16:07  INFO       [25/65] 14-20_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 14-20_2_Trinity_Road  665x1374px
+2026-06-19 16:07  INFO       [26/65] 15-21_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 15-21_2_Trinity_Road  685x1141px
+2026-06-19 16:07  INFO       [27/65] 26_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 26_2_Trinity_Road  653x1317px
+2026-06-19 16:07  INFO       [28/65] 27_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 27_2_Trinity_Road  676x1087px
+2026-06-19 16:07  INFO       [29/65] 31_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 31_2_Trinity_Road  1023x931px
+2026-06-19 16:07  INFO       [30/65] 32_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 32_2_Trinity_Road  1027x1019px
+2026-06-19 16:07  INFO       [31/65] 2_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 2_202_The_Broadway  1085x983px
+2026-06-19 16:07  INFO       [32/65] 7-16_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 7-16_202_The_Broadway  1120x807px
+2026-06-19 16:07  INFO       [33/65] 9_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 9_202_The_Broadway  753x1097px
+2026-06-19 16:07  INFO       [34/65] 13-14-15-27-28-29-_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 13-14-15-27-28-29-_202_The_Broadway  525x1515px
+2026-06-19 16:07  INFO       [35/65] 23-37-51-65-79-90_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 23-37-51-65-79-90_202_The_Broadway  750x1108px
+2026-06-19 16:07  INFO       [36/65] 24-38-52-66-80-91_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 24-38-52-66-80-91_202_The_Broadway  885x820px
+2026-06-19 16:07  INFO       [37/65] 39-53-67_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 39-53-67_202_The_Broadway  1062x1141px
+2026-06-19 16:07  INFO       [38/65] 25_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 25_202_The_Broadway  1062x1224px
+2026-06-19 16:07  INFO       [39/65] 26-40-54-68_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 26-40-54-68_202_The_Broadway  860x1391px
+2026-06-19 16:07  INFO       [40/65] 45-59_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 45-59_202_The_Broadway  668x1189px
+2026-06-19 16:07  INFO       [41/65] 31_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 31_202_The_Broadway  692x1330px
+2026-06-19 16:07  INFO       [42/65] 73_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 73_202_The_Broadway  943x1516px
+2026-06-19 16:07  INFO       [43/65] 74_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 74_202_The_Broadway  698x1136px
+2026-06-19 16:07  INFO       [44/65] 97_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 97_202_The_Broadway  1067x873px
+2026-06-19 16:07  INFO       [45/65] 22-36-50-64-78-89_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 22-36-50-64-78-89_202_The_Broadway  1099x898px
+2026-06-19 16:07  INFO       [46/65] 44-58_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 44-58_202_The_Broadway  830x1179px
+2026-06-19 16:07  INFO       [47/65] 30_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 30_202_The_Broadway  830x1313px
+2026-06-19 16:07  INFO       [48/65] 87_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 87_202_The_Broadway  1038x963px
+2026-06-19 16:07  INFO       [49/65] 100_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 100_202_The_Broadway  1104x1120px
+2026-06-19 16:07  INFO       [50/65] 18_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 18_2_Trinity_Road  844x1534px
+2026-06-19 16:07  INFO       [51/65] 23_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 23_2_Trinity_Road  844x1547px
+2026-06-19 16:07  INFO       [52/65] 24_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 24_2_Trinity_Road  680x1510px
+2026-06-19 16:07  INFO       [53/65] 29_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 29_2_Trinity_Road  674x1547px
+2026-06-19 16:07  INFO       [54/65] 30_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 30_2_Trinity_Road  680x1510px
+2026-06-19 16:07  INFO       [55/65] 33_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 33_2_Trinity_Road  674x1547px
+2026-06-19 16:07  INFO       [56/65] 6_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 6_2_Trinity_Road  1045x1110px
+2026-06-19 16:07  INFO       [57/65] 10_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 10_202_The_Broadway  793x1216px
+2026-06-19 16:07  INFO       [58/65] 72_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 72_202_The_Broadway  896x1579px
+2026-06-19 16:07  INFO       [59/65] 86_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 86_202_The_Broadway  1044x1520px
+2026-06-19 16:07  INFO       [60/65] 2_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:07  INFO         → 2_2_Trinity_Road_0  905x568px
+2026-06-19 16:07  INFO         → 2_2_Trinity_Road_1  1107x574px
+2026-06-19 16:07  INFO       [61/65] 3_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:07  INFO         → 3_2_Trinity_Road_0  870x555px
+2026-06-19 16:07  INFO         → 3_2_Trinity_Road_1  1071x565px
+2026-06-19 16:07  INFO       [62/65] 1_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:07  INFO         → 1_2_Trinity_Road_0  805x614px
+2026-06-19 16:07  INFO         → 1_2_Trinity_Road_1  1156x628px
+2026-06-19 16:07  INFO       [63/65] 4_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:07  INFO         → 4_2_Trinity_Road_0  869x606px
+2026-06-19 16:07  INFO         → 4_2_Trinity_Road_1  1110x606px
+2026-06-19 16:07  INFO       [64/65] 5_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:07  INFO         → 5_2_Trinity_Road_0  1052x593px
+2026-06-19 16:07  INFO         → 5_2_Trinity_Road_1  1154x850px
+2026-06-19 16:07  INFO       [65/65] 11_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:07  INFO         → 11_202_The_Broadway  1079x1092px
+2026-06-19 16:07  INFO     [floorplan] S155260_CNH The Waldens Houses Brochure_DRAFT5_010724 [3-5].pdf — 3 page(s)
+2026-06-19 16:07  INFO       [1/3] access_to_Mount_Pleasant_Road | 4 region(s) | duplex=False
+2026-06-19 16:07  INFO         → access_to_Mount_Pleasant_Road  1856x1265px
+2026-06-19 16:07  INFO       [2/3] page_2 | 5 region(s) | duplex=False
+2026-06-19 16:07  INFO         → page_2  1856x1265px
+2026-06-19 16:07  INFO       [3/3] page_3 | 5 region(s) | duplex=False
+2026-06-19 16:07  INFO         → page_3  1856x1265px
+2026-06-19 16:07  INFO     [floorplan] FEC1007_Floorplans_Tower 3_1920x1080px_v3.pdf — 26 page(s)
+2026-06-19 16:07  INFO       [1/26] page_1 | 2 region(s) | duplex=False
+2026-06-19 16:07  INFO         → page_1  1260x1538px
+2026-06-19 16:07  INFO       [2/26] A_view_from_Dulwich_Street | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → A_view_from_Dulwich_Street  2689x3000px
+2026-06-19 16:08  INFO       [3/26] page_3 | 3 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_3  4122x2201px
+2026-06-19 16:08  INFO       [4/26] page_4 | 3 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_4  5334x2083px
+2026-06-19 16:08  INFO       [5/26] page_5 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_5  3091x1380px
+2026-06-19 16:08  INFO       [6/26] page_6 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_6  2879x1274px
+2026-06-19 16:08  INFO       [7/26] page_7 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_7  2890x1286px
+2026-06-19 16:08  INFO       [8/26] page_8 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_8  2231x1912px
+2026-06-19 16:08  INFO       [9/26] page_9 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_9  2254x1917px
+2026-06-19 16:08  INFO       [10/26] page_10 | 3 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_10  3339x2553px
+2026-06-19 16:08  INFO       [11/26] page_11 | 2 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_11  3436x1954px
+2026-06-19 16:08  INFO       [12/26] page_12 | 0 region(s) | duplex=False
+2026-06-19 16:08  INFO       [13/26] page_13 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_13  1288x1052px
+2026-06-19 16:08  INFO       [14/26] page_14 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_14  1289x1107px
+2026-06-19 16:08  INFO       [15/26] page_15 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_15  1900x1151px
+2026-06-19 16:08  INFO       [16/26] page_16 | 0 region(s) | duplex=False
+2026-06-19 16:08  INFO       [17/26] page_17 | 0 region(s) | duplex=False
+2026-06-19 16:08  INFO       [18/26] page_18 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_18  1703x1130px
+2026-06-19 16:08  INFO       [19/26] page_19 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_19  1189x2044px
+2026-06-19 16:08  INFO       [20/26] page_20 | 2 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_20  1407x1112px
+2026-06-19 16:08  INFO       [21/26] page_21 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_21  1189x1079px
+2026-06-19 16:08  INFO       [22/26] page_22 | 2 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_22  1282x2044px
+2026-06-19 16:08  INFO       [23/26] page_23 | 2 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_23  1079x1261px
+2026-06-19 16:08  INFO       [24/26] page_24 | 2 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_24  1402x1261px
+2026-06-19 16:08  INFO       [25/26] page_25 | 1 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_25  2689x3000px
+2026-06-19 16:08  INFO       [26/26] page_26 | 4 region(s) | duplex=False
+2026-06-19 16:08  INFO         → page_26  1271x2032px
+2026-06-19 16:16  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-19 16:16  INFO       [1/65] 1_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 1_202_The_Broadway  647x1274px
+2026-06-19 16:16  INFO       [2/65] 3_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 3_202_The_Broadway  852x1185px
+2026-06-19 16:16  INFO       [3/65] 4-5-6_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 4-5-6_202_The_Broadway  488x1387px
+2026-06-19 16:16  INFO       [4/65] 8_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 8_202_The_Broadway  866x676px
+2026-06-19 16:16  INFO       [5/65] 12_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 12_202_The_Broadway  829x1391px
+2026-06-19 16:16  INFO       [6/65] 17_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 17_202_The_Broadway  668x1210px
+2026-06-19 16:16  INFO       [7/65] 18_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 18_202_The_Broadway  613x1075px
+2026-06-19 16:16  INFO       [8/65] 19_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 19_202_The_Broadway  626x1114px
+2026-06-19 16:16  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 20-34-48-62-76_202_The_Broadway  678x1038px
+2026-06-19 16:16  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 21-35-49-63-77-88_202_The_Broadway  600x1082px
+2026-06-19 16:16  INFO       [11/65] 32-46-60_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 32-46-60_202_The_Broadway  613x1136px
+2026-06-19 16:16  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 33-47-61-75_202_The_Broadway  627x1174px
+2026-06-19 16:16  INFO       [13/65] 81-92_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 81-92_202_The_Broadway  789x974px
+2026-06-19 16:16  INFO       [14/65] 82-93_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 82-93_202_The_Broadway  860x1391px
+2026-06-19 16:16  INFO       [15/65] 98_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 98_202_The_Broadway  850x880px
+2026-06-19 16:16  INFO       [16/65] 99_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 99_202_The_Broadway  1016x670px
+2026-06-19 16:16  INFO       [17/65] 101_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 101_202_The_Broadway  1035x748px
+2026-06-19 16:16  INFO       [18/65] 102_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 102_202_The_Broadway  818x764px
+2026-06-19 16:16  INFO       [19/65] 7_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 7_2_Trinity_Road  653x1128px
+2026-06-19 16:16  INFO       [20/65] 8-11_Handed_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 8-11_Handed_2_Trinity_Road  607x1052px
+2026-06-19 16:16  INFO       [21/65] 9_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 9_2_Trinity_Road  666x1374px
+2026-06-19 16:16  INFO       [22/65] 10_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 10_2_Trinity_Road  685x1140px
+2026-06-19 16:16  INFO       [23/65] 12-17_Handed_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 12-17_Handed_2_Trinity_Road  652x1128px
+2026-06-19 16:16  INFO       [24/65] 13-19-25_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 13-19-25_2_Trinity_Road  606x1057px
+2026-06-19 16:16  INFO       [25/65] 14-20_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 14-20_2_Trinity_Road  665x1374px
+2026-06-19 16:16  INFO       [26/65] 15-21_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 15-21_2_Trinity_Road  685x1141px
+2026-06-19 16:16  INFO       [27/65] 26_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 26_2_Trinity_Road  653x1317px
+2026-06-19 16:16  INFO       [28/65] 27_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 27_2_Trinity_Road  676x1087px
+2026-06-19 16:16  INFO       [29/65] 31_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 31_2_Trinity_Road  1023x931px
+2026-06-19 16:16  INFO       [30/65] 32_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 32_2_Trinity_Road  1027x1019px
+2026-06-19 16:16  INFO       [31/65] 2_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 2_202_The_Broadway  1085x983px
+2026-06-19 16:16  INFO       [32/65] 7-16_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 7-16_202_The_Broadway  1120x807px
+2026-06-19 16:16  INFO       [33/65] 9_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 9_202_The_Broadway  753x1097px
+2026-06-19 16:16  INFO       [34/65] 13-14-15-27-28-29-_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 13-14-15-27-28-29-_202_The_Broadway  525x1515px
+2026-06-19 16:16  INFO       [35/65] 23-37-51-65-79-90_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 23-37-51-65-79-90_202_The_Broadway  750x1108px
+2026-06-19 16:16  INFO       [36/65] 24-38-52-66-80-91_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 24-38-52-66-80-91_202_The_Broadway  885x820px
+2026-06-19 16:16  INFO       [37/65] 39-53-67_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 39-53-67_202_The_Broadway  1062x1141px
+2026-06-19 16:16  INFO       [38/65] 25_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 25_202_The_Broadway  1062x1224px
+2026-06-19 16:16  INFO       [39/65] 26-40-54-68_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 26-40-54-68_202_The_Broadway  860x1391px
+2026-06-19 16:16  INFO       [40/65] 45-59_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 45-59_202_The_Broadway  668x1189px
+2026-06-19 16:16  INFO       [41/65] 31_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 31_202_The_Broadway  692x1330px
+2026-06-19 16:16  INFO       [42/65] 73_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 73_202_The_Broadway  943x1516px
+2026-06-19 16:16  INFO       [43/65] 74_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 74_202_The_Broadway  698x1136px
+2026-06-19 16:16  INFO       [44/65] 97_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 97_202_The_Broadway  1067x873px
+2026-06-19 16:16  INFO       [45/65] 22-36-50-64-78-89_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 22-36-50-64-78-89_202_The_Broadway  1099x898px
+2026-06-19 16:16  INFO       [46/65] 44-58_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 44-58_202_The_Broadway  830x1179px
+2026-06-19 16:16  INFO       [47/65] 30_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 30_202_The_Broadway  830x1313px
+2026-06-19 16:16  INFO       [48/65] 87_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 87_202_The_Broadway  1038x963px
+2026-06-19 16:16  INFO       [49/65] 100_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 100_202_The_Broadway  1104x1120px
+2026-06-19 16:16  INFO       [50/65] 18_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 18_2_Trinity_Road  844x1534px
+2026-06-19 16:16  INFO       [51/65] 23_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 23_2_Trinity_Road  844x1547px
+2026-06-19 16:16  INFO       [52/65] 24_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 24_2_Trinity_Road  680x1510px
+2026-06-19 16:16  INFO       [53/65] 29_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 29_2_Trinity_Road  674x1547px
+2026-06-19 16:16  INFO       [54/65] 30_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 30_2_Trinity_Road  680x1510px
+2026-06-19 16:16  INFO       [55/65] 33_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 33_2_Trinity_Road  674x1547px
+2026-06-19 16:16  INFO       [56/65] 6_2_Trinity_Road | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 6_2_Trinity_Road  1045x1110px
+2026-06-19 16:16  INFO       [57/65] 10_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 10_202_The_Broadway  793x1216px
+2026-06-19 16:16  INFO       [58/65] 72_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 72_202_The_Broadway  896x1579px
+2026-06-19 16:16  INFO       [59/65] 86_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 86_202_The_Broadway  1044x1520px
+2026-06-19 16:16  INFO       [60/65] 2_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:16  INFO         → 2_2_Trinity_Road_0  905x568px
+2026-06-19 16:16  INFO         → 2_2_Trinity_Road_1  1107x574px
+2026-06-19 16:16  INFO       [61/65] 3_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:16  INFO         → 3_2_Trinity_Road_0  870x555px
+2026-06-19 16:16  INFO         → 3_2_Trinity_Road_1  1071x565px
+2026-06-19 16:16  INFO       [62/65] 1_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:16  INFO         → 1_2_Trinity_Road_0  805x614px
+2026-06-19 16:16  INFO         → 1_2_Trinity_Road_1  1156x628px
+2026-06-19 16:16  INFO       [63/65] 4_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:16  INFO         → 4_2_Trinity_Road_0  869x606px
+2026-06-19 16:16  INFO         → 4_2_Trinity_Road_1  1110x606px
+2026-06-19 16:16  INFO       [64/65] 5_2_Trinity_Road | 2 region(s) | duplex=True
+2026-06-19 16:16  INFO         → 5_2_Trinity_Road_0  1052x593px
+2026-06-19 16:16  INFO         → 5_2_Trinity_Road_1  1154x850px
+2026-06-19 16:16  INFO       [65/65] 11_202_The_Broadway | 1 region(s) | duplex=False
+2026-06-19 16:16  INFO         → 11_202_The_Broadway  1079x1092px
+2026-06-19 16:17  INFO     [floorplan] S155260_CNH The Waldens Houses Brochure_DRAFT5_010724 [3-5].pdf — 3 page(s)
+2026-06-19 16:17  INFO       [1/3] access_to_Mount_Pleasant_Road | 4 region(s) | duplex=False
+2026-06-19 16:17  INFO         → access_to_Mount_Pleasant_Road  1856x1265px
+2026-06-19 16:17  INFO       [2/3] page_2 | 5 region(s) | duplex=False
+2026-06-19 16:17  INFO         → page_2  1856x1265px
+2026-06-19 16:17  INFO       [3/3] page_3 | 5 region(s) | duplex=False
+2026-06-19 16:17  INFO         → page_3  1856x1265px
+2026-06-19 16:17  INFO     Scheduler has been shut down
+2026-06-19 16:18  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-19 16:18  INFO     Added job "auto_run_job" to job store "default"
+2026-06-19 16:18  INFO     Scheduler started
+2026-06-19 16:18  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-19 16:18  INFO         → 1_202_The_Broadway  1833x2396px
+2026-06-19 16:18  INFO       [1/65] 1_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 3_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [2/65] 3_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 4-5-6_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [3/65] 4-5-6_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 8_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [4/65] 8_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 12_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [5/65] 12_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 17_202_The_Broadway  1807x2396px
+2026-06-19 16:18  INFO       [6/65] 17_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 18_202_The_Broadway  1807x2396px
+2026-06-19 16:18  INFO       [7/65] 18_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 19_202_The_Broadway  1807x2396px
+2026-06-19 16:18  INFO       [8/65] 19_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 20-34-48-62-76_202_The_Broadway  1807x2396px
+2026-06-19 16:18  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 21-35-49-63-77-88_202_The_Broadway  1807x2396px
+2026-06-19 16:18  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 32-46-60_202_The_Broadway  1807x2396px
+2026-06-19 16:18  INFO       [11/65] 32-46-60_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 33-47-61-75_202_The_Broadway  1807x2396px
+2026-06-19 16:18  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 81-92_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [13/65] 81-92_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 82-93_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [14/65] 82-93_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 98_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [15/65] 98_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 99_202_The_Broadway  1814x2401px
+2026-06-19 16:18  INFO       [16/65] 99_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 101_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [17/65] 101_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 102_202_The_Broadway  1807x2401px
+2026-06-19 16:18  INFO       [18/65] 102_202_The_Broadway | 1 plan(s)
+2026-06-19 16:18  INFO         → 7_2_Trinity_Road  1833x2396px
+2026-06-19 16:18  INFO       [19/65] 7_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:18  INFO         → 8-11_Handed_2_Trinity_Road  1833x2402px
+2026-06-19 16:18  INFO       [20/65] 8-11_Handed_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:18  INFO         → 9_2_Trinity_Road  1833x2396px
+2026-06-19 16:18  INFO       [21/65] 9_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:18  INFO         → 10_2_Trinity_Road  1807x2396px
+2026-06-19 16:18  INFO       [22/65] 10_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:18  INFO         → 12-17_Handed_2_Trinity_Road  1833x2402px
+2026-06-19 16:18  INFO       [23/65] 12-17_Handed_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:18  INFO         → 13-19-25_2_Trinity_Road  1833x2396px
+2026-06-19 16:18  INFO       [24/65] 13-19-25_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:18  INFO         → 14-20_2_Trinity_Road  1833x2396px
+2026-06-19 16:18  INFO       [25/65] 14-20_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:18  INFO         → 15-21_2_Trinity_Road  1807x2396px
+2026-06-19 16:18  INFO       [26/65] 15-21_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 26_2_Trinity_Road  1833x2396px
+2026-06-19 16:19  INFO       [27/65] 26_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 27_2_Trinity_Road  1807x2396px
+2026-06-19 16:19  INFO       [28/65] 27_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 31_2_Trinity_Road  1807x2401px
+2026-06-19 16:19  INFO       [29/65] 31_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 32_2_Trinity_Road  1807x2401px
+2026-06-19 16:19  INFO       [30/65] 32_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 2_202_The_Broadway  1818x2401px
+2026-06-19 16:19  INFO       [31/65] 2_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 7-16_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [32/65] 7-16_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 9_202_The_Broadway  1807x2396px
+2026-06-19 16:19  INFO       [33/65] 9_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 13-14-15-27-28-29-_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [34/65] 13-14-15-27-28-29-_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 23-37-51-65-79-90_202_The_Broadway  1833x2396px
+2026-06-19 16:19  INFO       [35/65] 23-37-51-65-79-90_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 24-38-52-66-80-91_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [36/65] 24-38-52-66-80-91_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 39-53-67_202_The_Broadway  1808x2401px
+2026-06-19 16:19  INFO       [37/65] 39-53-67_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 25_202_The_Broadway  1808x2401px
+2026-06-19 16:19  INFO       [38/65] 25_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 26-40-54-68_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [39/65] 26-40-54-68_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 45-59_202_The_Broadway  1833x2396px
+2026-06-19 16:19  INFO       [40/65] 45-59_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 31_202_The_Broadway  1833x2396px
+2026-06-19 16:19  INFO       [41/65] 31_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 73_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [42/65] 73_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 74_202_The_Broadway  1807x2396px
+2026-06-19 16:19  INFO       [43/65] 74_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 97_202_The_Broadway  1834x2401px
+2026-06-19 16:19  INFO       [44/65] 97_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 22-36-50-64-78-89_202_The_Broadway  1841x2401px
+2026-06-19 16:19  INFO       [45/65] 22-36-50-64-78-89_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 44-58_202_The_Broadway  1807x2396px
+2026-06-19 16:19  INFO       [46/65] 44-58_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 30_202_The_Broadway  1807x2396px
+2026-06-19 16:19  INFO       [47/65] 30_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 87_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [48/65] 87_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 100_202_The_Broadway  1837x2401px
+2026-06-19 16:19  INFO       [49/65] 100_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 18_2_Trinity_Road  1807x2396px
+2026-06-19 16:19  INFO       [50/65] 18_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 23_2_Trinity_Road  1807x2396px
+2026-06-19 16:19  INFO       [51/65] 23_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 24_2_Trinity_Road  1807x2396px
+2026-06-19 16:19  INFO       [52/65] 24_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 29_2_Trinity_Road  1807x2396px
+2026-06-19 16:19  INFO       [53/65] 29_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 30_2_Trinity_Road  1807x2396px
+2026-06-19 16:19  INFO       [54/65] 30_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 33_2_Trinity_Road  1807x2396px
+2026-06-19 16:19  INFO       [55/65] 33_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 6_2_Trinity_Road  1807x2401px
+2026-06-19 16:19  INFO       [56/65] 6_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:19  INFO         → 10_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [57/65] 10_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 72_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [58/65] 72_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 86_202_The_Broadway  1859x2401px
+2026-06-19 16:19  INFO       [59/65] 86_202_The_Broadway | 1 plan(s)
+2026-06-19 16:19  INFO         → 2_2_Trinity_Road_1  1807x1213px
+2026-06-19 16:19  INFO         → 2_2_Trinity_Road_0  1826x1217px
+2026-06-19 16:19  INFO       [60/65] 2_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:19  INFO         → 3_2_Trinity_Road_1  1807x1213px
+2026-06-19 16:19  INFO         → 3_2_Trinity_Road_0  1832x1217px
+2026-06-19 16:19  INFO       [61/65] 3_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:19  INFO         → 1_2_Trinity_Road_1  1807x1213px
+2026-06-19 16:19  INFO         → 1_2_Trinity_Road_0  1840x1217px
+2026-06-19 16:19  INFO       [62/65] 1_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:19  INFO         → 4_2_Trinity_Road_1  1807x1213px
+2026-06-19 16:19  INFO         → 4_2_Trinity_Road_0  1854x1217px
+2026-06-19 16:19  INFO       [63/65] 4_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:19  INFO         → 5_2_Trinity_Road_1  1807x1213px
+2026-06-19 16:19  INFO         → 5_2_Trinity_Road_0  1870x1217px
+2026-06-19 16:19  INFO       [64/65] 5_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:19  INFO         → 11_202_The_Broadway  1807x2401px
+2026-06-19 16:19  INFO       [65/65] 11_202_The_Broadway | 1 plan(s)
+2026-06-19 16:22  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-19 16:22  INFO         → 1_202_The_Broadway  1833x2396px
+2026-06-19 16:22  INFO       [1/65] 1_202_The_Broadway | 1 plan(s)
+2026-06-19 16:22  INFO         → 3_202_The_Broadway  1807x2401px
+2026-06-19 16:22  INFO       [2/65] 3_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 4-5-6_202_The_Broadway  1807x2401px
+2026-06-19 16:23  INFO       [3/65] 4-5-6_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 8_202_The_Broadway  1807x2401px
+2026-06-19 16:23  INFO       [4/65] 8_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 12_202_The_Broadway  1807x2401px
+2026-06-19 16:23  INFO       [5/65] 12_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 17_202_The_Broadway  1807x2396px
+2026-06-19 16:23  INFO       [6/65] 17_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 18_202_The_Broadway  1807x2396px
+2026-06-19 16:23  INFO       [7/65] 18_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 19_202_The_Broadway  1807x2396px
+2026-06-19 16:23  INFO       [8/65] 19_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 20-34-48-62-76_202_The_Broadway  1807x2396px
+2026-06-19 16:23  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 21-35-49-63-77-88_202_The_Broadway  1807x2396px
+2026-06-19 16:23  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 32-46-60_202_The_Broadway  1807x2396px
+2026-06-19 16:23  INFO       [11/65] 32-46-60_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 33-47-61-75_202_The_Broadway  1807x2396px
+2026-06-19 16:23  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 81-92_202_The_Broadway  1807x2401px
+2026-06-19 16:23  INFO       [13/65] 81-92_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 82-93_202_The_Broadway  1807x2401px
+2026-06-19 16:23  INFO       [14/65] 82-93_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 98_202_The_Broadway  1807x2401px
+2026-06-19 16:23  INFO       [15/65] 98_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 99_202_The_Broadway  1814x2401px
+2026-06-19 16:23  INFO       [16/65] 99_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO         → 101_202_The_Broadway  1807x2401px
+2026-06-19 16:23  INFO       [17/65] 101_202_The_Broadway | 1 plan(s)
+2026-06-19 16:23  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-19 16:23  INFO     Added job "auto_run_job" to job store "default"
+2026-06-19 16:23  INFO     Scheduler started
+2026-06-19 16:24  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-19 16:24  INFO         → 1_202_The_Broadway  1837x2400px
+2026-06-19 16:24  INFO       [1/65] 1_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 3_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [2/65] 3_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 4-5-6_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [3/65] 4-5-6_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 8_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [4/65] 8_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 12_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [5/65] 12_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 17_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [6/65] 17_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 18_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [7/65] 18_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 19_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [8/65] 19_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 20-34-48-62-76_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 21-35-49-63-77-88_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 32-46-60_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [11/65] 32-46-60_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 33-47-61-75_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 81-92_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [13/65] 81-92_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 82-93_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [14/65] 82-93_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 98_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [15/65] 98_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 99_202_The_Broadway  1818x2405px
+2026-06-19 16:24  INFO       [16/65] 99_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 101_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [17/65] 101_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 102_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [18/65] 102_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 7_2_Trinity_Road  1837x2400px
+2026-06-19 16:24  INFO       [19/65] 7_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 8-11_Handed_2_Trinity_Road  1837x2406px
+2026-06-19 16:24  INFO       [20/65] 8-11_Handed_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 9_2_Trinity_Road  1837x2400px
+2026-06-19 16:24  INFO       [21/65] 9_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 10_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [22/65] 10_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 12-17_Handed_2_Trinity_Road  1837x2406px
+2026-06-19 16:24  INFO       [23/65] 12-17_Handed_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 13-19-25_2_Trinity_Road  1837x2400px
+2026-06-19 16:24  INFO       [24/65] 13-19-25_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 14-20_2_Trinity_Road  1837x2400px
+2026-06-19 16:24  INFO       [25/65] 14-20_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 15-21_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [26/65] 15-21_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 26_2_Trinity_Road  1837x2400px
+2026-06-19 16:24  INFO       [27/65] 26_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 27_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [28/65] 27_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 31_2_Trinity_Road  1811x2405px
+2026-06-19 16:24  INFO       [29/65] 31_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 32_2_Trinity_Road  1811x2405px
+2026-06-19 16:24  INFO       [30/65] 32_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 2_202_The_Broadway  1822x2405px
+2026-06-19 16:24  INFO       [31/65] 2_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 7-16_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [32/65] 7-16_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 9_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [33/65] 9_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 13-14-15-27-28-29-_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [34/65] 13-14-15-27-28-29-_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 23-37-51-65-79-90_202_The_Broadway  1837x2400px
+2026-06-19 16:24  INFO       [35/65] 23-37-51-65-79-90_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 24-38-52-66-80-91_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [36/65] 24-38-52-66-80-91_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 39-53-67_202_The_Broadway  1812x2405px
+2026-06-19 16:24  INFO       [37/65] 39-53-67_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 25_202_The_Broadway  1812x2405px
+2026-06-19 16:24  INFO       [38/65] 25_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 26-40-54-68_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [39/65] 26-40-54-68_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 45-59_202_The_Broadway  1837x2400px
+2026-06-19 16:24  INFO       [40/65] 45-59_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 31_202_The_Broadway  1837x2400px
+2026-06-19 16:24  INFO       [41/65] 31_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 73_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [42/65] 73_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 74_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [43/65] 74_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 97_202_The_Broadway  1838x2405px
+2026-06-19 16:24  INFO       [44/65] 97_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 22-36-50-64-78-89_202_The_Broadway  1845x2405px
+2026-06-19 16:24  INFO       [45/65] 22-36-50-64-78-89_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 44-58_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [46/65] 44-58_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 30_202_The_Broadway  1811x2400px
+2026-06-19 16:24  INFO       [47/65] 30_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 87_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [48/65] 87_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 100_202_The_Broadway  1841x2405px
+2026-06-19 16:24  INFO       [49/65] 100_202_The_Broadway | 1 plan(s)
+2026-06-19 16:24  INFO         → 18_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [50/65] 18_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 23_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [51/65] 23_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 24_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [52/65] 24_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 29_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [53/65] 29_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 30_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [54/65] 30_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 33_2_Trinity_Road  1811x2400px
+2026-06-19 16:24  INFO       [55/65] 33_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 6_2_Trinity_Road  1811x2405px
+2026-06-19 16:24  INFO       [56/65] 6_2_Trinity_Road | 1 plan(s)
+2026-06-19 16:24  INFO         → 10_202_The_Broadway  1811x2405px
+2026-06-19 16:24  INFO       [57/65] 10_202_The_Broadway | 1 plan(s)
+2026-06-19 16:25  INFO         → 72_202_The_Broadway  1811x2405px
+2026-06-19 16:25  INFO       [58/65] 72_202_The_Broadway | 1 plan(s)
+2026-06-19 16:25  INFO         → 86_202_The_Broadway  1863x2405px
+2026-06-19 16:25  INFO       [59/65] 86_202_The_Broadway | 1 plan(s)
+2026-06-19 16:25  INFO         → 2_2_Trinity_Road_1  1810x1222px
+2026-06-19 16:25  INFO         → 2_2_Trinity_Road_0  1830x1226px
+2026-06-19 16:25  INFO       [60/65] 2_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:25  INFO         → 3_2_Trinity_Road_1  1810x1222px
+2026-06-19 16:25  INFO         → 3_2_Trinity_Road_0  1836x1226px
+2026-06-19 16:25  INFO       [61/65] 3_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:25  INFO         → 1_2_Trinity_Road_1  1810x1222px
+2026-06-19 16:25  INFO         → 1_2_Trinity_Road_0  1844x1226px
+2026-06-19 16:25  INFO       [62/65] 1_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:25  INFO         → 4_2_Trinity_Road_1  1810x1222px
+2026-06-19 16:25  INFO         → 4_2_Trinity_Road_0  1858x1226px
+2026-06-19 16:25  INFO       [63/65] 4_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:25  INFO         → 5_2_Trinity_Road_1  1810x1222px
+2026-06-19 16:25  INFO         → 5_2_Trinity_Road_0  1874x1226px
+2026-06-19 16:25  INFO       [64/65] 5_2_Trinity_Road | 2 plan(s)
+2026-06-19 16:25  INFO         → 11_202_The_Broadway  1811x2405px
+2026-06-19 16:25  INFO       [65/65] 11_202_The_Broadway | 1 plan(s)
+2026-06-19 16:38  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 16:38:48 BST)" (scheduled at 2026-06-19 16:38:48.891611+01:00)
+2026-06-19 16:38  INFO     Auto-checking folders for media and cropper...
+2026-06-19 16:38  INFO     Starting multi-dimension batch processing...
+2026-06-19 16:38  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 16:53:48 BST)" executed successfully
+2026-06-19 16:53  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:08:48 BST)" (scheduled at 2026-06-19 16:53:48.891611+01:00)
+2026-06-19 16:53  INFO     Auto-checking folders for media and cropper...
+2026-06-19 16:53  INFO     Starting multi-dimension batch processing...
+2026-06-19 16:53  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:08:48 BST)" executed successfully
+2026-06-19 17:08  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:23:48 BST)" (scheduled at 2026-06-19 17:08:48.891611+01:00)
+2026-06-19 17:08  INFO     Auto-checking folders for media and cropper...
+2026-06-19 17:08  INFO     Starting multi-dimension batch processing...
+2026-06-19 17:08  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:23:48 BST)" executed successfully
+2026-06-19 17:23  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:38:48 BST)" (scheduled at 2026-06-19 17:23:48.891611+01:00)
+2026-06-19 17:23  INFO     Auto-checking folders for media and cropper...
+2026-06-19 17:23  INFO     Starting multi-dimension batch processing...
+2026-06-19 17:23  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:38:48 BST)" executed successfully
+2026-06-19 17:38  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:53:48 BST)" (scheduled at 2026-06-19 17:38:48.891611+01:00)
+2026-06-19 17:38  INFO     Auto-checking folders for media and cropper...
+2026-06-19 17:38  INFO     Starting multi-dimension batch processing...
+2026-06-19 17:38  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 17:53:48 BST)" executed successfully
+2026-06-19 17:53  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:08:48 BST)" (scheduled at 2026-06-19 17:53:48.891611+01:00)
+2026-06-19 17:53  INFO     Auto-checking folders for media and cropper...
+2026-06-19 17:53  INFO     Starting multi-dimension batch processing...
+2026-06-19 17:53  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:08:48 BST)" executed successfully
+2026-06-19 18:08  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:23:48 BST)" (scheduled at 2026-06-19 18:08:48.891611+01:00)
+2026-06-19 18:08  INFO     Auto-checking folders for media and cropper...
+2026-06-19 18:08  INFO     Starting multi-dimension batch processing...
+2026-06-19 18:08  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:23:48 BST)" executed successfully
+2026-06-19 18:23  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:38:48 BST)" (scheduled at 2026-06-19 18:23:48.891611+01:00)
+2026-06-19 18:23  INFO     Auto-checking folders for media and cropper...
+2026-06-19 18:23  INFO     Starting multi-dimension batch processing...
+2026-06-19 18:23  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:38:48 BST)" executed successfully
+2026-06-19 18:38  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:53:48 BST)" (scheduled at 2026-06-19 18:38:48.891611+01:00)
+2026-06-19 18:38  INFO     Auto-checking folders for media and cropper...
+2026-06-19 18:38  INFO     Starting multi-dimension batch processing...
+2026-06-19 18:38  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 18:53:48 BST)" executed successfully
+2026-06-19 18:53  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:08:48 BST)" (scheduled at 2026-06-19 18:53:48.891611+01:00)
+2026-06-19 18:53  INFO     Auto-checking folders for media and cropper...
+2026-06-19 18:53  INFO     Starting multi-dimension batch processing...
+2026-06-19 18:53  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:08:48 BST)" executed successfully
+2026-06-19 19:08  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:23:48 BST)" (scheduled at 2026-06-19 19:08:48.891611+01:00)
+2026-06-19 19:08  INFO     Auto-checking folders for media and cropper...
+2026-06-19 19:08  INFO     Starting multi-dimension batch processing...
+2026-06-19 19:08  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:23:48 BST)" executed successfully
+2026-06-19 19:23  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:38:48 BST)" (scheduled at 2026-06-19 19:23:48.891611+01:00)
+2026-06-19 19:23  INFO     Auto-checking folders for media and cropper...
+2026-06-19 19:23  INFO     Starting multi-dimension batch processing...
+2026-06-19 19:23  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:38:48 BST)" executed successfully
+2026-06-19 19:38  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:53:48 BST)" (scheduled at 2026-06-19 19:38:48.891611+01:00)
+2026-06-19 19:38  INFO     Auto-checking folders for media and cropper...
+2026-06-19 19:38  INFO     Starting multi-dimension batch processing...
+2026-06-19 19:38  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 19:53:48 BST)" executed successfully
+2026-06-19 19:53  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:08:48 BST)" (scheduled at 2026-06-19 19:53:48.891611+01:00)
+2026-06-19 19:53  INFO     Auto-checking folders for media and cropper...
+2026-06-19 19:53  INFO     Starting multi-dimension batch processing...
+2026-06-19 19:53  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:08:48 BST)" executed successfully
+2026-06-19 20:08  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:23:48 BST)" (scheduled at 2026-06-19 20:08:48.891611+01:00)
+2026-06-19 20:08  INFO     Auto-checking folders for media and cropper...
+2026-06-19 20:08  INFO     Starting multi-dimension batch processing...
+2026-06-19 20:08  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:23:48 BST)" executed successfully
+2026-06-19 20:23  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:38:48 BST)" (scheduled at 2026-06-19 20:23:48.891611+01:00)
+2026-06-19 20:23  INFO     Auto-checking folders for media and cropper...
+2026-06-19 20:23  INFO     Starting multi-dimension batch processing...
+2026-06-19 20:23  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:38:48 BST)" executed successfully
+2026-06-19 20:38  INFO     Running job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:53:48 BST)" (scheduled at 2026-06-19 20:38:48.891611+01:00)
+2026-06-19 20:38  INFO     Auto-checking folders for media and cropper...
+2026-06-19 20:38  INFO     Starting multi-dimension batch processing...
+2026-06-19 20:38  INFO     Job "auto_run_job (trigger: interval[0:15:00], next run at: 2026-06-19 20:53:48 BST)" executed successfully
+2026-06-22 10:34  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-22 10:34  INFO     Added job "auto_run_job" to job store "default"
+2026-06-22 10:34  INFO     Scheduler started
+2026-06-22 10:34  INFO     [floorplan] (FINAL) Powerhouse_A4_Plans_Sheets_Batch_2.pdf — 42 page(s)
+2026-06-22 10:34  INFO       [1/42] page_1 | 0 plan(s)
+2026-06-22 10:34  INFO         → Lots_Road  2985x2519px
+2026-06-22 10:34  INFO       [2/42] Lots_Road | 1 plan(s)
+2026-06-22 10:34  INFO       [3/42] page_3 | 0 plan(s)
+2026-06-22 10:34  INFO         → Lots_Road  3008x2519px
+2026-06-22 10:34  INFO       [4/42] Lots_Road | 1 plan(s)
+2026-06-22 10:34  INFO       [5/42] page_5 | 0 plan(s)
+2026-06-22 10:34  INFO         → Lots_Road  2978x2519px
+2026-06-22 10:34  INFO       [6/42] Lots_Road | 1 plan(s)
+2026-06-22 10:34  INFO       [7/42] page_7 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  2965x2519px
+2026-06-22 10:35  INFO       [8/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [9/42] page_9 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  3068x2519px
+2026-06-22 10:35  INFO       [10/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [11/42] page_11 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  3032x2519px
+2026-06-22 10:35  INFO       [12/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [13/42] page_13 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  3061x2524px
+2026-06-22 10:35  INFO       [14/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [15/42] page_15 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  3052x2524px
+2026-06-22 10:35  INFO       [16/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [17/42] page_17 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  2985x2524px
+2026-06-22 10:35  INFO       [18/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [19/42] page_19 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  3080x2524px
+2026-06-22 10:35  INFO       [20/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [21/42] page_21 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  3200x2519px
+2026-06-22 10:35  INFO       [22/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [23/42] page_23 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  2852x2519px
+2026-06-22 10:35  INFO       [24/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [25/42] page_25 | 0 plan(s)
+2026-06-22 10:35  INFO         → page_26  3619x2134px
+2026-06-22 10:35  INFO       [26/42] page_26 | 1 plan(s)
+2026-06-22 10:35  INFO       [27/42] page_27 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  2886x2519px
+2026-06-22 10:35  INFO       [28/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [29/42] page_29 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  2895x2519px
+2026-06-22 10:35  INFO       [30/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [31/42] page_31 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  2977x2519px
+2026-06-22 10:35  INFO       [32/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [33/42] page_33 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  2921x2519px
+2026-06-22 10:35  INFO       [34/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [35/42] page_35 | 0 plan(s)
+2026-06-22 10:35  INFO         → Lots_Road  3214x2519px
+2026-06-22 10:35  INFO       [36/42] Lots_Road | 1 plan(s)
+2026-06-22 10:35  INFO       [37/42] page_37 | 0 plan(s)
+2026-06-22 10:35  INFO         → page_38  3271x2362px
+2026-06-22 10:35  INFO       [38/42] page_38 | 1 plan(s)
+2026-06-22 10:35  INFO       [39/42] page_39 | 0 plan(s)
+2026-06-22 10:35  INFO         → page_40  3271x2362px
+2026-06-22 10:35  INFO       [40/42] page_40 | 1 plan(s)
+2026-06-22 10:35  INFO       [41/42] page_41 | 0 plan(s)
+2026-06-22 10:35  INFO         → page_42  3846x1989px
+2026-06-22 10:35  INFO       [42/42] page_42 | 1 plan(s)
+2026-06-22 10:46  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-22 10:46  INFO     Added job "auto_run_job" to job store "default"
+2026-06-22 10:46  INFO     Scheduler started
+2026-06-22 10:46  INFO     [floorplan] (FINAL) Powerhouse_A4_Plans_Sheets_Batch_2.pdf — 42 page(s)
+2026-06-22 10:46  INFO       [1/42] page_1 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2985x2519px
+2026-06-22 10:46  INFO       [2/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [3/42] page_3 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  3008x2519px
+2026-06-22 10:46  INFO       [4/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [5/42] page_5 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2978x2519px
+2026-06-22 10:46  INFO       [6/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [7/42] page_7 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2965x2519px
+2026-06-22 10:46  INFO       [8/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [9/42] page_9 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  3068x2519px
+2026-06-22 10:46  INFO       [10/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [11/42] page_11 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  3032x2519px
+2026-06-22 10:46  INFO       [12/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [13/42] page_13 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  3061x2524px
+2026-06-22 10:46  INFO       [14/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [15/42] page_15 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  3052x2524px
+2026-06-22 10:46  INFO       [16/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [17/42] page_17 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2985x2524px
+2026-06-22 10:46  INFO       [18/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [19/42] page_19 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  3080x2524px
+2026-06-22 10:46  INFO       [20/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [21/42] page_21 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  3200x2519px
+2026-06-22 10:46  INFO       [22/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [23/42] page_23 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2852x2519px
+2026-06-22 10:46  INFO       [24/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [25/42] page_25 | 0 plan(s)
+2026-06-22 10:46  INFO         → page_26  3619x2134px
+2026-06-22 10:46  INFO       [26/42] page_26 | 1 plan(s)
+2026-06-22 10:46  INFO       [27/42] page_27 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2886x2519px
+2026-06-22 10:46  INFO       [28/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [29/42] page_29 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2895x2519px
+2026-06-22 10:46  INFO       [30/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [31/42] page_31 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2977x2519px
+2026-06-22 10:46  INFO       [32/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [33/42] page_33 | 0 plan(s)
+2026-06-22 10:46  INFO         → Lots_Road  2921x2519px
+2026-06-22 10:46  INFO       [34/42] Lots_Road | 1 plan(s)
+2026-06-22 10:46  INFO       [35/42] page_35 | 0 plan(s)
+2026-06-22 10:47  INFO         → Lots_Road  3214x2519px
+2026-06-22 10:47  INFO       [36/42] Lots_Road | 1 plan(s)
+2026-06-22 10:47  INFO       [37/42] page_37 | 0 plan(s)
+2026-06-22 10:47  INFO         → page_38  3271x2362px
+2026-06-22 10:47  INFO       [38/42] page_38 | 1 plan(s)
+2026-06-22 10:47  INFO       [39/42] page_39 | 0 plan(s)
+2026-06-22 10:47  INFO         → page_40  3271x2362px
+2026-06-22 10:47  INFO       [40/42] page_40 | 1 plan(s)
+2026-06-22 10:47  INFO       [41/42] page_41 | 0 plan(s)
+2026-06-22 10:47  INFO         → page_42  3846x1989px
+2026-06-22 10:47  INFO       [42/42] page_42 | 1 plan(s)
+2026-06-22 10:54  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-22 10:54  INFO         → 1_202_The_Broadway  1837x2400px
+2026-06-22 10:54  INFO       [1/65] 1_202_The_Broadway | 1 plan(s)
+2026-06-22 10:54  INFO         → 3_202_The_Broadway  1811x2405px
+2026-06-22 10:54  INFO       [2/65] 3_202_The_Broadway | 1 plan(s)
+2026-06-22 10:54  INFO         → 4-5-6_202_The_Broadway  1811x2405px
+2026-06-22 10:54  INFO       [3/65] 4-5-6_202_The_Broadway | 1 plan(s)
+2026-06-22 10:54  INFO         → 8_202_The_Broadway  1811x2405px
+2026-06-22 10:54  INFO       [4/65] 8_202_The_Broadway | 1 plan(s)
+2026-06-22 10:54  INFO         → 12_202_The_Broadway  1811x2405px
+2026-06-22 10:54  INFO       [5/65] 12_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 17_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [6/65] 17_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 18_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [7/65] 18_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 19_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [8/65] 19_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 20-34-48-62-76_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [9/65] 20-34-48-62-76_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 21-35-49-63-77-88_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [10/65] 21-35-49-63-77-88_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 32-46-60_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [11/65] 32-46-60_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 33-47-61-75_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [12/65] 33-47-61-75_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 81-92_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [13/65] 81-92_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 82-93_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [14/65] 82-93_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 98_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [15/65] 98_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 99_202_The_Broadway  1818x2405px
+2026-06-22 10:55  INFO       [16/65] 99_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 101_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [17/65] 101_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 102_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [18/65] 102_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 7_2_Trinity_Road  1837x2400px
+2026-06-22 10:55  INFO       [19/65] 7_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 8-11_Handed_2_Trinity_Road  1837x2406px
+2026-06-22 10:55  INFO       [20/65] 8-11_Handed_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 9_2_Trinity_Road  1837x2400px
+2026-06-22 10:55  INFO       [21/65] 9_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 10_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [22/65] 10_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 12-17_Handed_2_Trinity_Road  1837x2406px
+2026-06-22 10:55  INFO       [23/65] 12-17_Handed_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 13-19-25_2_Trinity_Road  1837x2400px
+2026-06-22 10:55  INFO       [24/65] 13-19-25_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 14-20_2_Trinity_Road  1837x2400px
+2026-06-22 10:55  INFO       [25/65] 14-20_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 15-21_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [26/65] 15-21_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 26_2_Trinity_Road  1837x2400px
+2026-06-22 10:55  INFO       [27/65] 26_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 27_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [28/65] 27_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 31_2_Trinity_Road  1811x2405px
+2026-06-22 10:55  INFO       [29/65] 31_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 32_2_Trinity_Road  1811x2405px
+2026-06-22 10:55  INFO       [30/65] 32_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 2_202_The_Broadway  1822x2405px
+2026-06-22 10:55  INFO       [31/65] 2_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 7-16_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [32/65] 7-16_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 9_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [33/65] 9_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 13-14-15-27-28-29-_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [34/65] 13-14-15-27-28-29-_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 23-37-51-65-79-90_202_The_Broadway  1837x2400px
+2026-06-22 10:55  INFO       [35/65] 23-37-51-65-79-90_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 24-38-52-66-80-91_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [36/65] 24-38-52-66-80-91_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 39-53-67_202_The_Broadway  1812x2405px
+2026-06-22 10:55  INFO       [37/65] 39-53-67_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 25_202_The_Broadway  1812x2405px
+2026-06-22 10:55  INFO       [38/65] 25_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 26-40-54-68_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [39/65] 26-40-54-68_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 45-59_202_The_Broadway  1837x2400px
+2026-06-22 10:55  INFO       [40/65] 45-59_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 31_202_The_Broadway  1837x2400px
+2026-06-22 10:55  INFO       [41/65] 31_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 73_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [42/65] 73_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 74_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [43/65] 74_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 97_202_The_Broadway  1838x2405px
+2026-06-22 10:55  INFO       [44/65] 97_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 22-36-50-64-78-89_202_The_Broadway  1845x2405px
+2026-06-22 10:55  INFO       [45/65] 22-36-50-64-78-89_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 44-58_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [46/65] 44-58_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 30_202_The_Broadway  1811x2400px
+2026-06-22 10:55  INFO       [47/65] 30_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 87_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [48/65] 87_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 100_202_The_Broadway  1841x2405px
+2026-06-22 10:55  INFO       [49/65] 100_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 18_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [50/65] 18_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 23_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [51/65] 23_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 24_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [52/65] 24_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 29_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [53/65] 29_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 30_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [54/65] 30_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 33_2_Trinity_Road  1811x2400px
+2026-06-22 10:55  INFO       [55/65] 33_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 6_2_Trinity_Road  1811x2405px
+2026-06-22 10:55  INFO       [56/65] 6_2_Trinity_Road | 1 plan(s)
+2026-06-22 10:55  INFO         → 10_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [57/65] 10_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 72_202_The_Broadway  1811x2405px
+2026-06-22 10:55  INFO       [58/65] 72_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 86_202_The_Broadway  1863x2405px
+2026-06-22 10:55  INFO       [59/65] 86_202_The_Broadway | 1 plan(s)
+2026-06-22 10:55  INFO         → 2_2_Trinity_Road_1  1810x1222px
+2026-06-22 10:56  INFO         → 2_2_Trinity_Road_0  1830x1226px
+2026-06-22 10:56  INFO       [60/65] 2_2_Trinity_Road | 2 plan(s)
+2026-06-22 10:56  INFO         → 3_2_Trinity_Road_1  1810x1222px
+2026-06-22 10:56  INFO         → 3_2_Trinity_Road_0  1836x1226px
+2026-06-22 10:56  INFO       [61/65] 3_2_Trinity_Road | 2 plan(s)
+2026-06-22 10:56  INFO         → 1_2_Trinity_Road_1  1810x1222px
+2026-06-22 10:56  INFO         → 1_2_Trinity_Road_0  1844x1226px
+2026-06-22 10:56  INFO       [62/65] 1_2_Trinity_Road | 2 plan(s)
+2026-06-22 10:56  INFO         → 4_2_Trinity_Road_1  1810x1222px
+2026-06-22 10:56  INFO         → 4_2_Trinity_Road_0  1858x1226px
+2026-06-22 10:56  INFO       [63/65] 4_2_Trinity_Road | 2 plan(s)
+2026-06-22 10:56  INFO         → 5_2_Trinity_Road_1  1810x1222px
+2026-06-22 10:56  INFO         → 5_2_Trinity_Road_0  1874x1226px
+2026-06-22 10:56  INFO       [64/65] 5_2_Trinity_Road | 2 plan(s)
+2026-06-22 10:56  INFO         → 11_202_The_Broadway  1811x2405px
+2026-06-22 10:56  INFO       [65/65] 11_202_The_Broadway | 1 plan(s)
+2026-06-22 10:59  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-22 10:59  INFO         → 1_202_The_Broadway  1837x2400px
+2026-06-22 10:59  INFO       [1/65] 1_202_The_Broadway | 1 plan(s)
+2026-06-22 10:59  INFO     Scheduler has been shut down
+2026-06-22 10:59  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-22 10:59  INFO     Added job "auto_run_job" to job store "default"
+2026-06-22 10:59  INFO     Scheduler started
+2026-06-22 10:59  INFO     [floorplan] Wimbledon_Place_FloorTypes_2026_V4.pdf — 65 page(s)
+2026-06-22 10:59  INFO         → page_1  622x1250px (teal)
+2026-06-22 10:59  INFO       [1/65] page_1 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_2  827x1160px (teal)
+2026-06-22 11:00  INFO       [2/65] page_2 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_3  463x1362px (teal)
+2026-06-22 11:00  INFO       [3/65] page_3 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_4  841x652px (teal)
+2026-06-22 11:00  INFO       [4/65] page_4 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_5  814x1376px (teal)
+2026-06-22 11:00  INFO       [5/65] page_5 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_6  643x1185px (teal)
+2026-06-22 11:00  INFO       [6/65] page_6 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_7  588x1050px (teal)
+2026-06-22 11:00  INFO       [7/65] page_7 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_8  601x1089px (teal)
+2026-06-22 11:00  INFO       [8/65] page_8 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_9  653x1013px (teal)
+2026-06-22 11:00  INFO       [9/65] page_9 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_10  575x1058px (teal)
+2026-06-22 11:00  INFO       [10/65] page_10 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_11  588x1111px (teal)
+2026-06-22 11:00  INFO       [11/65] page_11 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_12  602x1150px (teal)
+2026-06-22 11:00  INFO       [12/65] page_12 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_13  764x949px (teal)
+2026-06-22 11:00  INFO       [13/65] page_13 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_14  835x1367px (teal)
+2026-06-22 11:00  INFO       [14/65] page_14 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_15  826x856px (teal)
+2026-06-22 11:00  INFO       [15/65] page_15 | 1 plan(s)
+2026-06-22 11:00  INFO         → page_16  992x645px (teal)
+2026-06-22 11:00  INFO       [16/65] page_16 | 1 plan(s)
+2026-06-22 11:01  INFO         → page_17  1010x723px (teal)
+2026-06-22 11:01  INFO       [17/65] page_17 | 1 plan(s)
+2026-06-22 11:01  INFO     [floorplan] S155260_CNH The Waldens Houses Brochure_DRAFT5_010724 [3-5].pdf — 3 page(s)
+2026-06-22 11:02  INFO     Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-22 11:02  INFO     Added job "auto_run_job" to job store "default"
+2026-06-22 11:02  INFO     Scheduler started
+2026-06-22 11:02  INFO     [floorplan] FEC1007_Floorplans_Tower 3_1920x1080px_v3.pdf — 26 page(s)
+2026-06-22 11:02  INFO         → page_1  1887x2529px (teal)
+2026-06-22 11:02  INFO       [1/26] page_1 | 1 plan(s)
+2026-06-22 11:02  INFO         → page_2  3754x2529px (teal)
+2026-06-22 11:02  INFO       [2/26] page_2 | 1 plan(s)
+2026-06-22 11:02  INFO         → page_3  3754x2529px (teal)
+2026-06-22 11:02  INFO       [3/26] page_3 | 1 plan(s)
+2026-06-22 11:02  INFO         → page_4  3754x2529px (teal)
+2026-06-22 11:02  INFO       [4/26] page_4 | 1 plan(s)
+2026-06-22 11:02  INFO         → page_5  3754x2529px (teal)
+2026-06-22 11:02  INFO       [5/26] page_5 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_6  3754x2529px (teal)
+2026-06-22 11:03  INFO       [6/26] page_6 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_7  3754x2529px (teal)
+2026-06-22 11:03  INFO       [7/26] page_7 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_8  3754x2529px (teal)
+2026-06-22 11:03  INFO       [8/26] page_8 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_9  3754x2529px (teal)
+2026-06-22 11:03  INFO       [9/26] page_9 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_10  3754x2529px (teal)
+2026-06-22 11:03  INFO       [10/26] page_10 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_11  3754x2529px (teal)
+2026-06-22 11:03  INFO       [11/26] page_11 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_12  3754x2529px (teal)
+2026-06-22 11:03  INFO       [12/26] page_12 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_13  3754x2529px (teal)
+2026-06-22 11:03  INFO       [13/26] page_13 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_14  3754x2529px (teal)
+2026-06-22 11:03  INFO       [14/26] page_14 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_15  3754x2529px (teal)
+2026-06-22 11:03  INFO       [15/26] page_15 | 1 plan(s)
+2026-06-22 11:03  INFO         → page_16  3754x2529px (teal)
+2026-06-22 11:03  INFO       [16/26] page_16 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_17  3754x2529px (teal)
+2026-06-22 11:04  INFO       [17/26] page_17 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_18  3754x2529px (teal)
+2026-06-22 11:04  INFO       [18/26] page_18 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_19  3754x2529px (teal)
+2026-06-22 11:04  INFO       [19/26] page_19 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_20  3754x2529px (teal)
+2026-06-22 11:04  INFO       [20/26] page_20 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_21  3754x2529px (teal)
+2026-06-22 11:04  INFO       [21/26] page_21 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_22  3754x2529px (teal)
+2026-06-22 11:04  INFO       [22/26] page_22 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_23  3754x2529px (teal)
+2026-06-22 11:04  INFO       [23/26] page_23 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_24  3754x2529px (teal)
+2026-06-22 11:04  INFO       [24/26] page_24 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_25  3754x2529px (teal)
+2026-06-22 11:04  INFO       [25/26] page_25 | 1 plan(s)
+2026-06-22 11:04  INFO         → page_26  3754x2529px (teal)
+2026-06-22 11:04  INFO       [26/26] page_26 | 1 plan(s)

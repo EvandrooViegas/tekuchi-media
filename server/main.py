@@ -43,6 +43,7 @@ from routes.thumbnail.router import router as thumbnail_router
 from routes.cropper.router   import router as cropper_router
 from routes.compare.router   import router as compare_router
 from routes.font.router      import router as font_router
+from routes.floorplan.router import router as floorplan_router
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 config      = configparser.ConfigParser()
@@ -112,6 +113,7 @@ app.include_router(thumbnail_router)
 app.include_router(cropper_router)
 app.include_router(compare_router)
 app.include_router(font_router)
+app.include_router(floorplan_router)
 
 from routes.cropper.router import _encode_img
 
